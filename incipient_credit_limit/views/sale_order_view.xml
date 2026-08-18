@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="action_sale_credit_holds" model="ir.actions.act_window">
+        <field name="name">Credit Hold</field>
+        <field name="res_model">sale.order</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('is_credit_hold', '=', True)]</field>
+        <field name="context">{'default_is_credit_hold': True}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">No credit holds!</p>
+            <p>Orders appear here when a customer exceeds their credit limit.</p>
+        </field>
+    </record>
+
+    <!-- Credit Hold menu under Sales ▶ Orders -->
+    <menuitem id="menu_sale_credit_holds"
+              name="Credit Holds"
+              parent="sale.sale_order_menu"
+              action="action_sale_credit_holds"
+              sequence="15"/>
+
+    <record id="sale.action_quotations_with_onboarding" model="ir.actions.act_window">
+        <field name="domain">[('is_credit_hold', '=', False), ('state', 'in', ['draft', 'sent'])]</field>
+    </record>
+
+    <record id="view_sale_order_form_credit_hold_inherit" model="ir.ui.view">
+        <field name="name">sale.order.form.credit.hold.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//header/button[1]" position="before">
+                <button name="action_release_credit_hold"
+                        string="Release Credit Hold"
+                        type="object"
+                        class="btn-warning"
+                        invisible="not is_credit_hold"
+                        groups="account.group_account_manager"/>
+            </xpath>
+
+            <xpath expr="//sheet" position="inside">
+                <div class="alert alert-danger mb-3"
+                     role="alert"
+                     invisible="not is_credit_hold">
+                    <i class="fa fa-ban me-2"/>
+                    <strong>This order is on Credit Hold.</strong>
+                    Customer has exceeded their credit limit.
+                    Click <em>Release Credit Hold</em> to approve and return to Quotations.
+                </div>
+            </xpath>
+
+        </field>
+    </record>
+
+    <record id="view_quotation_tree_with_onboarding_credit_hold" model="ir.ui.view">
+        <field name="name">sale.order.tree.credit.hold</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_quotation_tree_with_onboarding"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='state']" position="after">
+                <field name="is_credit_hold" optional="show" widget="boolean_toggle"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_order_tree_credit_hold" model="ir.ui.view">
+        <field name="name">sale.order.tree.credit.hold</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='state']" position="after">
+                <field name="is_credit_hold" optional="show" widget="boolean_toggle"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_sales_order_filter_credit_hold" model="ir.ui.view">
+        <field name="name">sale.order.search.credit.hold</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_sales_order_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='my_sale_orders_filter']" position="after">
+                <filter string="On Credit Hold" name="filter_credit_hold" domain="[('is_credit_hold', '=', True)]"/>
+                <separator/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

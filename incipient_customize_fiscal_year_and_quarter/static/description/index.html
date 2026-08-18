@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Customize Fiscal Year & Quarters | Incipient Corp</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index_file.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section class="incipient-module-wrapper" style="font-family: 'Roboto', sans-serif">
+        <div class="container shadow px-0" style="border-radius: 8px">
+            <div class="px-md-5 p-2" style="border-radius: 20px; font-family: 'Roboto', sans-serif">
+                <!-- Navigation Tabs (Unified Header - 3 Column Layout) -->
+                <div class="py-3 px-3 px-md-5 border-bottom bg-white rounded-top-4">
+                    <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
+                        <!-- Left: Logo -->
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <img alt="Incipient Corp" src="incipient-corp.png"
+                                style="height: 65px; max-height: 65px; width: auto; object-fit: contain" />
+                        </div>
+                        <!-- Center: Navigation Tabs -->
+                        <ul class="nav nav-pills align-items-center justify-content-center border-0 gap-2 mb-0"
+                            id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button aria-controls="overview" aria-selected="true"
+                                    class="nav-link active bg-dark text-white px-3 py-2 fw-semibold border-0 rounded-2 text-decoration-none"
+                                    data-bs-target="#overview" id="overview-tab" role="tab" type="button"
+                                    style="font-family: 'Montserrat', sans-serif; font-size: 14px">Overview</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button aria-controls="features" aria-selected="false"
+                                    class="nav-link text-dark bg-transparent px-3 py-2 fw-semibold border-0 rounded-2 text-decoration-none"
+                                    data-bs-target="#features" id="features-tab" role="tab" type="button"
+                                    style="font-family: 'Montserrat', sans-serif; font-size: 14px">Features</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button aria-controls="screenshots" aria-selected="false"
+                                    class="nav-link text-dark bg-transparent px-3 py-2 fw-semibold border-0 rounded-2 text-decoration-none"
+                                    data-bs-target="#screenshots" id="screenshots-tab" role="tab" type="button"
+                                    style="font-family: 'Montserrat', sans-serif; font-size: 14px">Description</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button aria-controls="faq" aria-selected="false"
+                                    class="nav-link text-dark bg-transparent px-3 py-2 fw-semibold border-0 rounded-2 text-decoration-none"
+                                    data-bs-target="#faq" id="faq-tab" role="tab" type="button"
+                                    style="font-family: 'Montserrat', sans-serif; font-size: 14px">FAQs</button>
+                            </li>
+                        </ul>
+                        <!-- Right: Module Title -->
+                        <div
+                            class="d-flex align-items-center justify-content-center justify-content-lg-end text-lg-end">
+                            <h5 class="mb-0 text-dark fw-bold"
+                                style="font-family: 'Montserrat', sans-serif; font-size: 17px; line-height: 1.2">
+                                Customize Fiscal Year<br class="d-none d-sm-inline" />&amp; Quarters
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="border-radius: 20px; font-family: 'Roboto', sans-serif">
+                <!-- Tab Content Container -->
+                <div class="tab-content p-4 p-md-5" id="myTabContent">
+
+                    <!-- OVERVIEW TAB -->
+                    <div aria-labelledby="overview-tab" class="tab-pane fade show active" id="overview" role="tabpanel">
+
+                        <!-- Unified Premium Hero Banner -->
+                        <div class="p-5 text-center text-white rounded-4 shadow-sm position-relative overflow-hidden mb-4"
+                            style="background: linear-gradient(135deg, #111111 0%, #222222 100%); border: 1px solid #333333; min-height: 240px;">
+                            <div class="position-relative z-1 py-3">
+                                <h1 class="fw-bold mb-3"
+                                    style="font-family: 'Montserrat', sans-serif; font-size: 38px;">Customize Fiscal
+                                    Year & Quarters</h1>
+                                <p class="fs-5 opacity-75 mb-4" style="max-width: 800px; margin: 0 auto;">Intelligent
+                                    date filtering, quarter group-by, and custom fiscal year alignment for Odoo 19.</p>
+
+                                <!-- Edition Badges Integrated inside Hero -->
+                                <div class="d-flex justify-content-center gap-2 flex-wrap mt-3">
+                                    <span class="badge px-3 py-2 fw-semibold shadow-sm"
+                                        style="background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.3); font-size: 14px; backdrop-filter: blur(4px)">✓
+                                        Community Edition</span>
+                                    <span class="badge px-3 py-2 fw-semibold shadow-sm"
+                                        style="background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.3); font-size: 14px; backdrop-filter: blur(4px)">✓
+                                        Enterprise Edition</span>
+                                    <span class="badge px-3 py-2 fw-semibold shadow-sm"
+                                        style="background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.3); font-size: 14px; backdrop-filter: blur(4px)">✓
+                                        Odoo.sh Compatible</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Clean 3 Quick Contact Cards (Light Theme) -->
+                        <div class="row g-4 justify-content-center mx-auto mb-5">
+                            <div class="col-md-4">
+                                <div
+                                    class="p-4 rounded-4 text-center h-100 shadow-sm border border-light bg-white hover-shadow">
+                                    <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3 shadow-sm"
+                                        style="width: 50px; height: 50px; background-color: rgba(13, 110, 253, 0.08)">
+                                        <img style="filter: brightness(0);" height="24" src="icons/globe-blue.svg"
+                                            width="24" />
+                                    </div>
+                                    <div class="fw-bold text-dark mb-1"
+                                        style="font-size: 16px; font-family: 'Montserrat', sans-serif">Free Pre-Sales
+                                        Demo</div>
+                                    <div class="text-muted" style="font-size: 14px"><a
+                                            class="text-dark text-decoration-none fw-semibold"
+                                            href="mailto:info@incipientcorp.com">info@incipientcorp.com</a></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div
+                                    class="p-4 rounded-4 text-center h-100 shadow-sm border border-light bg-white hover-shadow">
+                                    <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3 shadow-sm"
+                                        style="width: 50px; height: 50px; background-color: rgba(232, 62, 140, 0.08)">
+                                        <img style="filter: brightness(0);" height="24" src="icons/headset-pink.svg"
+                                            width="24" />
+                                    </div>
+                                    <div class="fw-bold text-dark mb-1"
+                                        style="font-size: 16px; font-family: 'Montserrat', sans-serif">Lifetime Free
+                                        Support</div>
+                                    <div class="text-muted" style="font-size: 14px"><a
+                                            class="text-dark text-decoration-none fw-semibold"
+                                            href="mailto:support@incipientcorp.com">support@incipientcorp.com</a></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div
+                                    class="p-4 rounded-4 text-center h-100 shadow-sm border border-light bg-white hover-shadow">
+                                    <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3 shadow-sm"
+                                        style="width: 50px; height: 50px; background-color: rgba(253, 126, 20, 0.08)">
+                                        <img style="filter: brightness(0);" height="24" src="icons/gears-blue.svg"
+                                            width="24" />
+                                    </div>
+                                    <div class="fw-bold text-dark mb-1"
+                                        style="font-size: 16px; font-family: 'Montserrat', sans-serif">Customization
+                                        Request</div>
+                                    <div class="text-muted" style="font-size: 14px"><a
+                                            class="text-dark text-decoration-none fw-semibold"
+                                            href="mailto:info@incipientcorp.com">info@incipientcorp.com</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Key Highlights Heading -->
+                        <div class="row justify-content-center mt-5 pt-4">
+                            <div class="col-12 text-center">
+                                <h3 class="fw-bold"
+                                    style="font-family: 'Montserrat', sans-serif; color: #111111; font-size: 30px">Key
+                                    Highlights</h3>
+                                <div class="d-flex justify-content-center align-items-center mt-2">
+                                    <img alt="line" src="images/line.png" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Key Highlights Grid -->
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-10 mt-5 pt-4">
+                                <div class="row g-4 justify-content-center">
+                                    <div class="col-md-4">
+                                        <div
+                                            class="text-center p-4 bg-white rounded-4 shadow-sm border border-light h-100 hover-shadow">
+                                            <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3 shadow-sm"
+                                                style="background-color: #f4f4f4; width: 70px; height: 70px">
+                                                <img style="filter: brightness(0);" height="32" src="icons/clock.svg"
+                                                    width="32" />
+                                            </div>
+                                            <h5 class="fw-bold text-dark" style="font-family: 'Montserrat', sans-serif">
+                                                Dynamic Fiscal Quarters</h5>
+                                            <p class="text-muted small mb-0">Filter sales orders, vendor bills, and
+                                                financial statements by custom fiscal quarters (Q1, Q2, Q3, Q4)
+                                                dynamically.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div
+                                            class="text-center p-4 bg-white rounded-4 shadow-sm border border-light h-100 hover-shadow">
+                                            <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3 shadow-sm"
+                                                style="background-color: #f4f4f4; width: 70px; height: 70px">
+                                                <img style="filter: brightness(0);" height="32"
+                                                    src="icons/chart-line.svg" width="32" />
+                                            </div>
+                                            <h5 class="fw-bold text-dark" style="font-family: 'Montserrat', sans-serif">
+                                                Custom Fiscal Start Alignment</h5>
+                                            <p class="text-muted small mb-0">Align search view date ranges with your
+                                                company's official fiscal year start month and day setting.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div
+                                            class="text-center p-4 bg-white rounded-4 shadow-sm border border-light h-100 hover-shadow">
+                                            <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3 shadow-sm"
+                                                style="background-color: #f4f4f4; width: 70px; height: 70px">
+                                                <img style="filter: brightness(0);" height="32" src="icons/shield.svg"
+                                                    width="32" />
+                                            </div>
+                                            <h5 class="fw-bold text-dark" style="font-family: 'Montserrat', sans-serif">
+                                                Seamless Group-By Quarters</h5>
+                                            <p class="text-muted small mb-0">Group list views, kanban cards, and pivot
+                                                tables by Fiscal Quarter to analyze revenue trends instantly.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- What Sets Us Apart -->
+                        <div class="row position-relative justify-content-center mx-auto my-5 py-5 rounded-4 shadow-sm"
+                            style="background-color: #f4f4f4; width: 100%; max-width: 1000px">
+                            <h1 class="mb-4 col-12"
+                                style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 36px; line-height: 50px; text-align: center; color: #171618">
+                                What Sets <span style="color: #111111">Customize Fiscal Year & Quarters</span> Apart?
+                            </h1>
+                            <p class="mb-4 col-lg-9 col-12"
+                                style="text-align: center; font-weight: 400; font-size: 16px; line-height: 25px; color: #171618">
+                                The Customize Fiscal Year & Quarters module by Incipient Corp empowers financial teams
+                                by extending standard Odoo date filters and group-by functionality. Align your financial
+                                reports, sales analysis, and accounting dashboards with custom fiscal year start dates
+                                and quarterly breakdowns (Q1, Q2, Q3, Q4) across all standard and custom Odoo views.</p>
+                            <p class="text-center" style="font-weight: 700; font-size: 18px; color: #111111">Empower
+                                your accounting team with automated quarterly insights and accurate fiscal reporting!
+                            </p>
+                        </div>
+
+                        <!-- Premium Support Section -->
+                        <div class="row pb-sm-5 mt-5 pt-4">
+                            <div class="col-12 col-lg-10 mx-auto">
+                                <!-- Premium Support - Every Step -->
+                                <div class="text-center mb-5 mt-5 pt-4">
+                                    <h2 class="fw-bold"
+                                        style="font-family: 'Montserrat', sans-serif; color: #111111; font-size: 28px">
+                                        Premium Support - Every Step</h2>
+                                    <div class="d-flex justify-content-center align-items-center mb-3 mt-2">
+                                        <img alt="line" src="images/line.png" />
+                                    </div>
+                                    <p class="text-muted" style="font-size: 15px">We stand behind every purchase with
+                                        hands-on, expert support from day one - and for life.</p>
+                                </div>
+                                <div class="row g-4 justify-content-center">
+                                    <div class="col-12 col-md-4">
+                                        <div class="card h-100 text-center shadow-sm"
+                                            style="border: 1px solid #e5e7eb; border-radius: 12px; padding: 30px 20px">
+                                            <div class="mb-4 mx-auto d-flex align-items-center justify-content-center"
+                                                style="width: 60px; height: 60px; border: 2px solid #111111; border-radius: 50%">
+                                                <img alt="demo" src="icons/globe-blue.svg"
+                                                    style="filter: brightness(0); width: 24px; height: 24px" />
+                                            </div>
+                                            <h4 class="fw-bold mb-3"
+                                                style="font-family: 'Montserrat', sans-serif; color: #111111; font-size: 18px">
+                                                Free Pre-Sales Consultation</h4>
+                                            <p class="text-muted mb-4 flex-grow-1"
+                                                style="font-size: 13px; line-height: 1.6">See the module live before you
+                                                commit. Our team walks you through every feature, answers your
+                                                questions, and confirms the fit.</p>
+                                            <a class="btn w-100 fw-bold" href="mailto:info@incipientcorp.com"
+                                                style="background-color: #111111; color: #ffffff; border-radius: 6px; padding: 10px 0; font-size: 14px">
+                                                <img alt="email" src="icons/headset-white.svg"
+                                                    style="filter: brightness(0); width: 16px; height: 16px; margin-right: 8px" />
+                                                info@incipientcorp.com
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="card h-100 text-center shadow-sm"
+                                            style="border: 1px solid #e5e7eb; border-radius: 12px; padding: 30px 20px">
+                                            <div class="mb-4 mx-auto d-flex align-items-center justify-content-center"
+                                                style="width: 60px; height: 60px; border: 2px solid #111111; border-radius: 50%">
+                                                <img alt="rocket" src="icons/rocket.svg"
+                                                    style="filter: brightness(0); width: 24px; height: 24px" />
+                                            </div>
+                                            <h4 class="fw-bold mb-3"
+                                                style="font-family: 'Montserrat', sans-serif; color: #111111; font-size: 18px">
+                                                Free Post-Purchase Setup</h4>
+                                            <p class="text-muted mb-4 flex-grow-1"
+                                                style="font-size: 13px; line-height: 1.6">Get hands-on configuration
+                                                support after purchase — module installed, fiscal start month set up,
+                                                and verified.</p>
+                                            <a class="btn w-100 fw-bold" href="mailto:support@incipientcorp.com"
+                                                style="background-color: #111111; color: #ffffff; border-radius: 6px; padding: 10px 0; font-size: 14px">
+                                                <img alt="email" src="icons/headset-white.svg"
+                                                    style="filter: brightness(0); width: 16px; height: 16px; margin-right: 8px" />
+                                                support@incipientcorp.com
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="card h-100 text-center shadow-sm"
+                                            style="border: 1px solid #e5e7eb; border-radius: 12px; padding: 30px 20px">
+                                            <div class="mb-4 mx-auto d-flex align-items-center justify-content-center"
+                                                style="width: 60px; height: 60px; border: 2px solid #111111; border-radius: 50%">
+                                                <img alt="shield" src="icons/shield.svg"
+                                                    style="filter: brightness(0); width: 24px; height: 24px" />
+                                            </div>
+                                            <h4 class="fw-bold mb-3"
+                                                style="font-family: 'Montserrat', sans-serif; color: #111111; font-size: 18px">
+                                                Lifetime Free Support</h4>
+                                            <p class="text-muted mb-4 flex-grow-1"
+                                                style="font-size: 13px; line-height: 1.6">Every purchase includes
+                                                lifetime free support and updates for your version — no hidden fees.</p>
+                                            <a class="btn w-100 fw-bold" href="mailto:support@incipientcorp.com"
+                                                style="background-color: #111111; color: #ffffff; border-radius: 6px; padding: 10px 0; font-size: 14px">
+                                                <img alt="headset" src="icons/headset-white.svg"
+                                                    style="filter: brightness(0); width: 16px; height: 16px; margin-right: 8px" />
+                                                support@incipientcorp.com
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hot Features Section (Expanded 12 Cards) -->
+                        <div class="position-relative row mx-auto justify-content-center py-5">
+                            <div class="text-center mb-5">
+                                <h3 class="fw-bold"
+                                    style="font-family: 'Montserrat', sans-serif; color: #111111; font-size: 30px">Hot
+                                    Features</h3>
+                                <div class="d-flex justify-content-center align-items-center mt-2">
+                                    <img alt="line" src="images/line.png" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-10">
+                                <div class="row g-3">
+                                    <div class="col-12 col-md-4">
+                                        <div class="d-flex align-items-center p-3 shadow-sm h-100 hover-shadow"
+                                            style="background-color: #ffffff; border: 1px solid #e5e7eb; border-radius: 10px">
+                                            <img alt="icon" src="icons/bolt-blue.svg"
+                                                style="filter: brightness(0); width: 36px; height: 36px; margin-right: 15px" />
+                                            <div style="text-align: left">
+                                                <span
+                                                    style="font-size: 14px; font-weight: 700; color: #111111; line-height: 1.2">Dynamic
+                                                    Quarter Filters</span>
+                                                <span class="badge bg-danger ms-1"
+                                                    style="font-size: 9px; padding: 3px 5px; border-radius: 4px">HOT</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="d-flex align-items-center p-3 shadow-sm h-100 hover-shadow"
+                                            style="background-color: #ffffff; border: 1px solid #e5e7eb; border-radius: 10px">
+                                            <img alt="icon" src="icons/shield.svg"
+                                                style="filter: brightness(0); width: 36px; height: 36px; margin-right: 15px" />
+                                            <div style="text-align: left">
+                                                <span
+                                                    style="font-size: 14px; font-weight: 700; color: #111111; line-height: 1.2">Fiscal
+                                                    Start Alignment</span>
+                                                <span class="badge bg-danger ms-1"
+                                                    style="font-size: 9px; padding: 3px 5px; border-radius: 4px">HOT</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="d-flex align-items-center p-3 shadow-sm h-100 hover-shadow"
+                                            style="background-color: #ffffff; border: 1px solid #e5e7eb; border-radius: 10px">
+                                            <img alt="icon" src="icons/chart-pie-blue.svg"
+                                                style="filter: brightness(0); width: 36px; height: 36px; margin-right: 15px" />
+                                            <div style="text-align: left">
+                                                <span
+                                                    style="font-size: 14px; font-weight: 700; color: #111111; line-height: 1.2">Group-By
+                                                    Quarters</span>
+                                                <span class="badge bg-danger ms-1"
+                                                    style="font-size: 9px; padding: 3px 5px; border-radius: 4px">HOT</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="d-flex align-items-center p-3 shadow-sm h-100 hover-shadow"
+                                            style="background-color: #ffffff; border: 1px solid #e5e7eb; border-radius: 10px">
+                                            <img alt="icon" src="icons/sync-light.svg"
+                                                style="filter: brightness(0); width: 36px; height: 36px; margin-right: 15px" />
+                                            <div style="text-align: left">
+                                                <span
+                                                    style="font-size: 14px; font-weight: 700; color: #111111; line-height: 1.2">Multi-Company
+                                                    Support</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="d-flex align-items-center p-3 shadow-sm h-100 hover-shadow"
+                                            style="background-color: #ffffff; border: 1px solid #e5e7eb; border-radius: 10px">
+                                            <img alt="icon" src="icons/chart-line.svg"
+                                                style="filter: brightness(0); width: 36px; height: 36px; margin-right: 15px" />
+                                            <div style="text-align: left">
+                                                <span
+                                                    style="font-size: 14px; font-weight: 700; color: #111111; line-height: 1.2">Pivot
+                                                    View Aggregation</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="d-flex align-items-center p-3 shadow-sm h-100 hover-shadow"
+                                            style="background-color: #ffffff; border: 1px solid #e5e7eb; border-radius: 10px">
+                                            <img alt="icon" src="icons/gears-blue.svg"
+                                                style="filter: brightness(0); width: 36px; height: 36px; margin-right: 15px" />
+                                            <div style="text-align: left">
+                                                <span
+                                                    style="font-size: 14px; font-weight: 700; color: #111111; line-height: 1.2">Universal
+                                                    View Compatibility</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="d-flex align-items-center p-3 shadow-sm h-100 hover-shadow"
+                                            style="background-color: #ffffff; border: 1px solid #e5e7eb; border-radius: 10px">
+                                            <img alt="icon" src="icons/clock.svg"
+                                                style="filter: brightness(0); width: 36px; height: 36px; margin-right: 15px" />
+                                            <div style="text-align: left">
+                                                <span
+                                                    style="font-size: 14px; font-weight: 700; color: #111111; line-height: 1.2">Fast
+                                                    Date Calculation Engine</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="d-flex align-items-center p-3 shadow-sm h-100 hover-shadow"
+                                            style="background-color: #ffffff; border: 1px solid #e5e7eb; border-radius: 10px">
+                                            <img alt="icon" src="icons/book-blue.svg"
+                                                style="filter: brightness(0); width: 36px; height: 36px; margin-right: 15px" />
+                                            <div style="text-align: left">
+                                                <span
+                                                    style="font-size: 14px; font-weight: 700; color: #111111; line-height: 1.2">Quarterly
+                                                    Financial Exports</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call To Action Banner -->
+                        <div class="d-flex mt-4 rounded-4 shadow-sm overflow-hidden position-relative"
+                            style="background-color: #f4f4f4">
+                            <div class="row px-4 px-md-5 py-5 w-100 position-relative mx-0">
+                                <div class="col-xl-9 d-flex flex-column justify-content-center">
+                                    <h3 class="mb-4 fw-bold text-dark"
+                                        style="font-family: 'Montserrat', sans-serif; font-size: 36px; line-height: 50px">
+                                        Streamline Your Quarterly Financial Reporting.
+                                        <span style="color: #111111">Custom fiscal year filters by Incipient
+                                            Corp.</span>
+                                    </h3>
+                                    <p class="mb-4 fw-semibold text-muted" style="font-size: 18px">Visit our website to
+                                        discover more Odoo solutions!</p>
+                                    <div class="d-flex align-items-center">
+                                        <a class="d-flex align-items-center shadow-sm" href="https://incipientcorp.com"
+                                            style="text-decoration: none; border-radius: 8px; background-color: #ffffff; border: 1px solid #e5e7eb; padding: 12px 20px"
+                                            target="_blank">
+                                            <img style="filter: brightness(0);" height="20"
+                                                src="icons/external-link.svg" width="20" />
+                                            <span class="text-dark fw-bold ms-3" style="font-size: 16px">Visit Incipient
+                                                Corp</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FEATURES TAB -->
+                    <div aria-labelledby="features-tab" class="tab-pane fade d-none" id="features" role="tabpanel">
+                        <div class="row justify-content-center mx-auto my-5 py-5 rounded-4"
+                            style="background-color: #f8f9fa">
+                            <div class="col-12 text-center mb-5">
+                                <h1 class="mb-3"
+                                    style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 36px; color: #171618">
+                                    Explore The <span style="color: #111111">Detailed Features</span></h1>
+                                <p class="text-muted" style="font-size: 16px; max-width: 800px; margin: 0 auto;">
+                                    Comprehensive technical breakdown of all capabilities in Customize Fiscal Year &
+                                    Quarters — built to deliver perfect fiscal date alignment across Odoo 19.
+                                </p>
+                            </div>
+                            <div class="col-12 col-lg-10">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="d-flex p-4 bg-white rounded-4 shadow-sm h-100 hover-shadow"
+                                            style="border: 1px solid #e5e7eb">
+                                            <div class="flex-shrink-0 me-4">
+                                                <div class="d-flex align-items-center justify-content-center rounded-3"
+                                                    style="width: 50px; height: 50px; background-color: #f4f4f4">
+                                                    <img alt="icon" src="icons/bolt-blue.svg"
+                                                        style="filter: brightness(0); width: 24px; height: 24px" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold text-dark mb-2"
+                                                    style="font-family: 'Montserrat', sans-serif; font-size: 17px">
+                                                    Dynamic Fiscal Quarter Search Filters</h5>
+                                                <p class="text-muted mb-0" style="font-size: 14px; line-height: 1.6">
+                                                    Filter any Odoo list, kanban, or pivot view by Q1, Q2, Q3, or Q4
+                                                    according to your company's custom fiscal start month with one
+                                                    click.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex p-4 bg-white rounded-4 shadow-sm h-100 hover-shadow"
+                                            style="border: 1px solid #e5e7eb">
+                                            <div class="flex-shrink-0 me-4">
+                                                <div class="d-flex align-items-center justify-content-center rounded-3"
+                                                    style="width: 50px; height: 50px; background-color: #f4f4f4">
+                                                    <img alt="icon" src="icons/gears-blue.svg"
+                                                        style="filter: brightness(0); width: 24px; height: 24px" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold text-dark mb-2"
+                                                    style="font-family: 'Montserrat', sans-serif; font-size: 17px">
+                                                    Custom Fiscal Start Month & Day Setup</h5>
+                                                <p class="text-muted mb-0" style="font-size: 14px; line-height: 1.6">
+                                                    Define unique fiscal start dates per company entity (e.g. April 1st
+                                                    for UK/India, July 1st for Australia, Oct 1st for US Federal).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex p-4 bg-white rounded-4 shadow-sm h-100 hover-shadow"
+                                            style="border: 1px solid #e5e7eb">
+                                            <div class="flex-shrink-0 me-4">
+                                                <div class="d-flex align-items-center justify-content-center rounded-3"
+                                                    style="width: 50px; height: 50px; background-color: #f4f4f4">
+                                                    <img alt="icon" src="icons/chart-pie-blue.svg"
+                                                        style="filter: brightness(0); width: 24px; height: 24px" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold text-dark mb-2"
+                                                    style="font-family: 'Montserrat', sans-serif; font-size: 17px">
+                                                    Group-By Fiscal Quarter Aggregation</h5>
+                                                <p class="text-muted mb-0" style="font-size: 14px; line-height: 1.6">
+                                                    Native Group-By option in search panels allowing instant grouping of
+                                                    Sales Orders, Vendor Bills, and Invoices by Fiscal Quarter.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex p-4 bg-white rounded-4 shadow-sm h-100 hover-shadow"
+                                            style="border: 1px solid #e5e7eb">
+                                            <div class="flex-shrink-0 me-4">
+                                                <div class="d-flex align-items-center justify-content-center rounded-3"
+                                                    style="width: 50px; height: 50px; background-color: #f4f4f4">
+                                                    <img alt="icon" src="icons/chart-line.svg"
+                                                        style="filter: brightness(0); width: 24px; height: 24px" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold text-dark mb-2"
+                                                    style="font-family: 'Montserrat', sans-serif; font-size: 17px">Pivot
+                                                    & Graph View Reporting Integration</h5>
+                                                <p class="text-muted mb-0" style="font-size: 14px; line-height: 1.6">
+                                                    Compare quarterly revenue, expenses, and profit margins
+                                                    year-over-year directly inside Odoo pivot tables and graphical
+                                                    charts.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex p-4 bg-white rounded-4 shadow-sm h-100 hover-shadow"
+                                            style="border: 1px solid #e5e7eb">
+                                            <div class="flex-shrink-0 me-4">
+                                                <div class="d-flex align-items-center justify-content-center rounded-3"
+                                                    style="width: 50px; height: 50px; background-color: #f4f4f4">
+                                                    <img alt="icon" src="icons/shield.svg"
+                                                        style="filter: brightness(0); width: 24px; height: 24px" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold text-dark mb-2"
+                                                    style="font-family: 'Montserrat', sans-serif; font-size: 17px">
+                                                    Multi-Company Fiscal Isolation</h5>
+                                                <p class="text-muted mb-0" style="font-size: 14px; line-height: 1.6">
+                                                    Complete multi-company isolation ensuring each subsidiary operates
+                                                    under its legal fiscal year calendar without data collision.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex p-4 bg-white rounded-4 shadow-sm h-100 hover-shadow"
+                                            style="border: 1px solid #e5e7eb">
+                                            <div class="flex-shrink-0 me-4">
+                                                <div class="d-flex align-items-center justify-content-center rounded-3"
+                                                    style="width: 50px; height: 50px; background-color: #f4f4f4">
+                                                    <img alt="icon" src="icons/clock.svg"
+                                                        style="filter: brightness(0); width: 24px; height: 24px" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold text-dark mb-2"
+                                                    style="font-family: 'Montserrat', sans-serif; font-size: 17px">
+                                                    High-Speed Date Calculation Engine</h5>
+                                                <p class="text-muted mb-0" style="font-size: 14px; line-height: 1.6">
+                                                    Built on optimized database domain expressions ensuring
+                                                    lightning-fast search filter response times even on large databases.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex p-4 bg-white rounded-4 shadow-sm h-100 hover-shadow"
+                                            style="border: 1px solid #e5e7eb">
+                                            <div class="flex-shrink-0 me-4">
+                                                <div class="d-flex align-items-center justify-content-center rounded-3"
+                                                    style="width: 50px; height: 50px; background-color: #f4f4f4">
+                                                    <img alt="icon" src="icons/book-blue.svg"
+                                                        style="filter: brightness(0); width: 24px; height: 24px" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold text-dark mb-2"
+                                                    style="font-family: 'Montserrat', sans-serif; font-size: 17px">
+                                                    Quarterly Financial Report Exports</h5>
+                                                <p class="text-muted mb-0" style="font-size: 14px; line-height: 1.6">
+                                                    Export aligned quarterly financial statements to Excel (XLSX) or PDF
+                                                    for executive board presentations and audit compliance.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex p-4 bg-white rounded-4 shadow-sm h-100 hover-shadow"
+                                            style="border: 1px solid #e5e7eb">
+                                            <div class="flex-shrink-0 me-4">
+                                                <div class="d-flex align-items-center justify-content-center rounded-3"
+                                                    style="width: 50px; height: 50px; background-color: #f4f4f4">
+                                                    <img alt="icon" src="icons/sync-light.svg"
+                                                        style="filter: brightness(0); width: 24px; height: 24px" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold text-dark mb-2"
+                                                    style="font-family: 'Montserrat', sans-serif; font-size: 17px">
+                                                    Universal Odoo Model Compatibility</h5>
+                                                <p class="text-muted mb-0" style="font-size: 14px; line-height: 1.6">
+                                                    Works seamlessly across Sales, Purchasing, Invoicing, Accounting,
+                                                    Stock Picking, and custom Odoo data models.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex p-4 bg-white rounded-4 shadow-sm h-100 hover-shadow"
+                                            style="border: 1px solid #e5e7eb">
+                                            <div class="flex-shrink-0 me-4">
+                                                <div class="d-flex align-items-center justify-content-center rounded-3"
+                                                    style="width: 50px; height: 50px; background-color: #f4f4f4">
+                                                    <img alt="icon" src="icons/globe-blue.svg"
+                                                        style="filter: brightness(0); width: 24px; height: 24px" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold text-dark mb-2"
+                                                    style="font-family: 'Montserrat', sans-serif; font-size: 17px">Leap
+                                                    Year & Variable Month Alignment</h5>
+                                                <p class="text-muted mb-0" style="font-size: 14px; line-height: 1.6">
+                                                    Smart handling of leap years and variable month lengths ensuring
+                                                    perfect start-to-end date accuracy for Q1 through Q4.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex p-4 bg-white rounded-4 shadow-sm h-100 hover-shadow"
+                                            style="border: 1px solid #e5e7eb">
+                                            <div class="flex-shrink-0 me-4">
+                                                <div class="d-flex align-items-center justify-content-center rounded-3"
+                                                    style="width: 50px; height: 50px; background-color: #f4f4f4">
+                                                    <img alt="icon" src="icons/puzzle-piece-light.svg"
+                                                        style="filter: brightness(0); width: 24px; height: 24px" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold text-dark mb-2"
+                                                    style="font-family: 'Montserrat', sans-serif; font-size: 17px">
+                                                    Zero-Configuration Out-of-the-Box Setup</h5>
+                                                <p class="text-muted mb-0" style="font-size: 14px; line-height: 1.6">
+                                                    Ready to install instantly with zero complex technical dependencies
+                                                    or mandatory Python code overrides required.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex p-4 bg-white rounded-4 shadow-sm h-100 hover-shadow"
+                                            style="border: 1px solid #e5e7eb">
+                                            <div class="flex-shrink-0 me-4">
+                                                <div class="d-flex align-items-center justify-content-center rounded-3"
+                                                    style="width: 50px; height: 50px; background-color: #f4f4f4">
+                                                    <img alt="icon" src="icons/user-tie-orange.svg"
+                                                        style="filter: brightness(0); width: 24px; height: 24px" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold text-dark mb-2"
+                                                    style="font-family: 'Montserrat', sans-serif; font-size: 17px">
+                                                    Granular Access Control Security</h5>
+                                                <p class="text-muted mb-0" style="font-size: 14px; line-height: 1.6">
+                                                    Inherits standard Odoo accounting access security groups so
+                                                    unauthorized users cannot alter corporate fiscal start settings.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex p-4 bg-white rounded-4 shadow-sm h-100 hover-shadow"
+                                            style="border: 1px solid #e5e7eb">
+                                            <div class="flex-shrink-0 me-4">
+                                                <div class="d-flex align-items-center justify-content-center rounded-3"
+                                                    style="width: 50px; height: 50px; background-color: #f4f4f4">
+                                                    <img alt="icon" src="icons/rocket.svg"
+                                                        style="filter: brightness(0); width: 24px; height: 24px" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold text-dark mb-2"
+                                                    style="font-family: 'Montserrat', sans-serif; font-size: 17px">
+                                                    Community & Enterprise Edition Parity</h5>
+                                                <p class="text-muted mb-0" style="font-size: 14px; line-height: 1.6">
+                                                    Tested and verified to run identically across Odoo Community
+                                                    Edition, Odoo Enterprise Edition, and Odoo.sh Cloud.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DESCRIPTION TAB (Alternating Left-Right Layout with Simple 2-Line Text) -->
+                    <div aria-labelledby="screenshots-tab" class="tab-pane fade d-none" id="screenshots"
+                        role="tabpanel">
+                        <div class="mb-5 pt-4">
+                            <h1 class="mb-5"
+                                style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 40px; text-align: center; color: #171618">
+                                See It In <span style="color: #111111">Action</span>
+                            </h1>
+
+                            <!-- Row 1: Text Left, Image Right -->
+                            <div class="row mx-auto px-md-5 px-2 my-lg-4 my-2 py-5 row-gap-3">
+                                <div class="col-lg-4">
+                                    <div class="d-flex h-100 justify-content-center align-items-start flex-column">
+                                        <h3 class="text-start w-100 mb-0"
+                                            style="font-family: 'Montserrat', sans-serif; color: #060506; font-size: 22px; font-weight: 700">
+                                            Company Fiscal Year Start Date Configuration
+                                        </h3>
+                                        <p class="mt-3 text-start mb-2"
+                                            style="color: #5c5f6e; font-size: 15px; line-height: 1.6">
+                                            Configure your company's official fiscal year start month and day in Odoo
+                                            Accounting settings with a single setting.
+                                        </p>
+                                        <p class="text-start mb-0"
+                                            style="color: #5c5f6e; font-size: 15px; line-height: 1.6">
+                                            Automatically aligns all Q1, Q2, Q3, and Q4 date ranges across your entire
+                                            organization with full multi-company isolation.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <img alt="Fiscal Year Start Date Configuration" class="img-fluid w-100 shadow"
+                                        src="screenshot1.png"
+                                        style="border: 3.6px solid #4c5562; border-radius: 16px; object-fit: cover"
+                                        onerror="this.onerror=null; this.src='incipient-corp.png';" />
+                                </div>
+                            </div>
+
+                            <!-- Row 2: Image Left, Text Right (Soft Gray BG) -->
+                            <div class="row mx-auto px-md-5 px-2 my-lg-4 my-2 py-5 row-gap-3"
+                                style="background-color: #fafafa; border-radius: 16px">
+                                <div class="col-lg-8 order-2 order-lg-1">
+                                    <img alt="Search View Fiscal Quarter Date Filtering" class="img-fluid w-100 shadow"
+                                        src="screenshot2.png"
+                                        style="border: 3.6px solid #4c5562; border-radius: 16px; object-fit: cover"
+                                        onerror="this.onerror=null; this.src='incipient-corp.png';" />
+                                </div>
+                                <div class="col-lg-4 order-1 order-lg-2">
+                                    <div class="d-flex h-100 justify-content-center align-items-start flex-column">
+                                        <h3 class="text-start w-100 mb-0"
+                                            style="font-family: 'Montserrat', sans-serif; color: #060506; font-size: 22px; font-weight: 700">
+                                            Dynamic Search View Filtering by Fiscal Quarters
+                                        </h3>
+                                        <p class="mt-3 text-start mb-2"
+                                            style="color: #5c5f6e; font-size: 15px; line-height: 1.6">
+                                            Filter any list, kanban, or financial view by Fiscal Quarter directly from
+                                            the standard Odoo search panel.
+                                        </p>
+                                        <p class="text-start mb-0"
+                                            style="color: #5c5f6e; font-size: 15px; line-height: 1.6">
+                                            Instantly isolate sales orders, vendor bills, and journal entries for Q1,
+                                            Q2, Q3, or Q4 without manual date math.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Row 3: Text Left, Image Right -->
+                            <div class="row mx-auto px-md-5 px-2 my-lg-4 my-2 py-5 row-gap-3">
+                                <div class="col-lg-4">
+                                    <div class="d-flex h-100 justify-content-center align-items-start flex-column">
+                                        <h3 class="text-start w-100 mb-0"
+                                            style="font-family: 'Montserrat', sans-serif; color: #060506; font-size: 22px; font-weight: 700">
+                                            Pivot & Graph View Group-By Quarter Aggregation
+                                        </h3>
+                                        <p class="mt-3 text-start mb-2"
+                                            style="color: #5c5f6e; font-size: 15px; line-height: 1.6">
+                                            Group financial data by Fiscal Quarter in Odoo Pivot tables and graphical
+                                            bar/line charts effortlessly.
+                                        </p>
+                                        <p class="text-start mb-0"
+                                            style="color: #5c5f6e; font-size: 15px; line-height: 1.6">
+                                            Analyze quarterly revenue performance, profit margins, and expense trends
+                                            side-by-side across multiple fiscal years.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <img alt="Pivot & Graph View Group-By Quarter" class="img-fluid w-100 shadow"
+                                        src="screenshot3.png"
+                                        style="border: 3.6px solid #4c5562; border-radius: 16px; object-fit: cover"
+                                        onerror="this.onerror=null; this.src='incipient-corp.png';" />
+                                    <img alt="Pivot & Graph View Group-By Quarter" class="img-fluid w-100 shadow mt-4"
+                                        src="screenshot3-1.png"
+                                        style="border: 3.6px solid #4c5562; border-radius: 16px; object-fit: cover"
+                                        onerror="this.onerror=null; this.src='incipient-corp.png';" />
+                                </div>
+                            </div>
+
+                            <!-- Row 4: Image Left, Text Right (Soft Gray BG) -->
+                            <div class="row mx-auto px-md-5 px-2 my-lg-4 my-2 py-5 row-gap-3"
+                                style="background-color: #fafafa; border-radius: 16px">
+                                <div class="col-lg-8 order-2 order-lg-1">
+                                    <img alt="Export Aligned Financial & Sales Reports" class="img-fluid w-100 shadow"
+                                        src="screenshot4.png"
+                                        style="border: 3.6px solid #4c5562; border-radius: 16px; object-fit: cover"
+                                        onerror="this.onerror=null; this.src='incipient-corp.png';" />
+                                </div>
+                                <div class="col-lg-4 order-1 order-lg-2">
+                                    <div class="d-flex h-100 justify-content-center align-items-start flex-column">
+                                        <h3 class="text-start w-100 mb-0"
+                                            style="font-family: 'Montserrat', sans-serif; color: #060506; font-size: 22px; font-weight: 700">
+                                            Executive Export of Aligned Quarterly Data
+                                        </h3>
+                                        <p class="mt-3 text-start mb-2"
+                                            style="color: #5c5f6e; font-size: 15px; line-height: 1.6">
+                                            Export filtered quarterly datasets directly to Excel (XLSX) or printable PDF
+                                            financial guides.
+                                        </p>
+                                        <p class="text-start mb-0"
+                                            style="color: #5c5f6e; font-size: 15px; line-height: 1.6">
+                                            Generates cleanly formatted spreadsheet reports perfect for executive board
+                                            presentations and audit archives.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- FAQ TAB -->
+                    <div aria-labelledby="faq-tab" class="tab-pane fade d-none" id="faq" role="tabpanel">
+                        <div class="row justify-content-center mx-auto my-5 py-5 rounded-4"
+                            style="background-color: #ffffff">
+                            <div class="col-12 text-center mb-5">
+                                <h1 class="mb-3"
+                                    style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 36px; color: #171618">
+                                    Frequently Asked <span style="color: #111111">Questions</span>
+                                </h1>
+                            </div>
+                            <div class="col-12 col-lg-10">
+                                <div class="accordion" id="faqAccordion">
+                                    <div class="accordion-item border-0 mb-3 rounded-4 shadow-sm">
+                                        <h2 class="accordion-header" id="heading1"
+                                            style="font-family: 'Montserrat', sans-serif">
+                                            <div aria-controls="collapse1" aria-expanded="true"
+                                                class="accordion-button rounded-4 fw-bold text-dark cursor-pointer"
+                                                data-bs-target="#collapse1" data-bs-toggle="collapse"
+                                                style="background-color: #f8f9fa">
+                                                1. Is this app compatible with both Odoo Community and Enterprise?
+                                            </div>
+                                        </h2>
+                                        <div aria-labelledby="heading1" class="accordion-collapse collapse show"
+                                            data-bs-parent="#faqAccordion" id="collapse1">
+                                            <div class="accordion-body text-muted">
+                                                Yes, Customize Fiscal Year & Quarters is fully compatible with both Odoo
+                                                Community and Enterprise Edition (v19.0).
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-3 rounded-4 shadow-sm">
+                                        <h2 class="accordion-header" id="heading2"
+                                            style="font-family: 'Montserrat', sans-serif">
+                                            <div aria-controls="collapse2" aria-expanded="false"
+                                                class="accordion-button rounded-4 fw-bold text-dark collapsed cursor-pointer"
+                                                data-bs-target="#collapse2" data-bs-toggle="collapse"
+                                                style="background-color: #f8f9fa">
+                                                2. How does the module handle non-calendar fiscal year start dates?
+                                            </div>
+                                        </h2>
+                                        <div aria-labelledby="heading2" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion" id="collapse2">
+                                            <div class="accordion-body text-muted">
+                                                The module respects your company fiscal year start settings (e.g. April
+                                                1st to March 31st), dynamically shifting Q1, Q2, Q3, Q4 date ranges to
+                                                match your financial year.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-3 rounded-4 shadow-sm">
+                                        <h2 class="accordion-header" id="heading3"
+                                            style="font-family: 'Montserrat', sans-serif">
+                                            <div aria-controls="collapse3" aria-expanded="false"
+                                                class="accordion-button rounded-4 fw-bold text-dark collapsed cursor-pointer"
+                                                data-bs-target="#collapse3" data-bs-toggle="collapse"
+                                                style="background-color: #f8f9fa">
+                                                3. Which views support Fiscal Quarter date filtering and grouping?
+                                            </div>
+                                        </h2>
+                                        <div aria-labelledby="heading3" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion" id="collapse3">
+                                            <div class="accordion-body text-muted">
+                                                All standard search views, list views, kanban views, graph views, and
+                                                pivot reporting tables support the new quarter filters and group-by
+                                                options.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-3 rounded-4 shadow-sm">
+                                        <h2 class="accordion-header" id="heading4"
+                                            style="font-family: 'Montserrat', sans-serif">
+                                            <div aria-controls="collapse4" aria-expanded="false"
+                                                class="accordion-button rounded-4 fw-bold text-dark collapsed cursor-pointer"
+                                                data-bs-target="#collapse4" data-bs-toggle="collapse"
+                                                style="background-color: #f8f9fa">
+                                                4. Does it support multi-company setups?
+                                            </div>
+                                        </h2>
+                                        <div aria-labelledby="heading4" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion" id="collapse4">
+                                            <div class="accordion-body text-muted">
+                                                Yes, each company can have its own fiscal year configuration, and date
+                                                filters adapt according to the currently active user company context.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-3 rounded-4 shadow-sm">
+                                        <h2 class="accordion-header" id="heading5"
+                                            style="font-family: 'Montserrat', sans-serif">
+                                            <div aria-controls="collapse5" aria-expanded="false"
+                                                class="accordion-button rounded-4 fw-bold text-dark collapsed cursor-pointer"
+                                                data-bs-target="#collapse5" data-bs-toggle="collapse"
+                                                style="background-color: #f8f9fa">
+                                                5. Can I configure custom quarter date boundaries?
+                                            </div>
+                                        </h2>
+                                        <div aria-labelledby="heading5" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion" id="collapse5">
+                                            <div class="accordion-body text-muted">
+                                                Yes, custom quarter start and end date ranges can be defined per fiscal
+                                                year under Accounting / Invoicing Settings.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-3 rounded-4 shadow-sm">
+                                        <h2 class="accordion-header" id="heading6"
+                                            style="font-family: 'Montserrat', sans-serif">
+                                            <div aria-controls="collapse6" aria-expanded="false"
+                                                class="accordion-button rounded-4 fw-bold text-dark collapsed cursor-pointer"
+                                                data-bs-target="#collapse6" data-bs-toggle="collapse"
+                                                style="background-color: #f8f9fa">
+                                                6. Will this affect existing accounting journal entries or past
+                                                transactions?
+                                            </div>
+                                        </h2>
+                                        <div aria-labelledby="heading6" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion" id="collapse6">
+                                            <div class="accordion-body text-muted">
+                                                No, the module non-destructively calculates fiscal year and quarter date
+                                                ranges for filtering and pivot reporting without altering posted move
+                                                lines.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-3 rounded-4 shadow-sm">
+                                        <h2 class="accordion-header" id="heading7"
+                                            style="font-family: 'Montserrat', sans-serif">
+                                            <div aria-controls="collapse7" aria-expanded="false"
+                                                class="accordion-button rounded-4 fw-bold text-dark collapsed cursor-pointer"
+                                                data-bs-target="#collapse7" data-bs-toggle="collapse"
+                                                style="background-color: #f8f9fa">
+                                                7. Does this module support Excel and PDF export filtering by quarter?
+                                            </div>
+                                        </h2>
+                                        <div aria-labelledby="heading7" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion" id="collapse7">
+                                            <div class="accordion-body text-muted">
+                                                Yes, all filtered pivot views and financial reports maintain quarter
+                                                grouping when exported to XLSX spreadsheets or PDF reports.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-3 rounded-4 shadow-sm">
+                                        <h2 class="accordion-header" id="heading8"
+                                            style="font-family: 'Montserrat', sans-serif">
+                                            <div aria-controls="collapse8" aria-expanded="false"
+                                                class="accordion-button rounded-4 fw-bold text-dark collapsed cursor-pointer"
+                                                data-bs-target="#collapse8" data-bs-toggle="collapse"
+                                                style="background-color: #f8f9fa">
+                                                8. Is any database migration required after installation?
+                                            </div>
+                                        </h2>
+                                        <div aria-labelledby="heading8" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion" id="collapse8">
+                                            <div class="accordion-body text-muted">
+                                                No, installation is instant and zero data migration is needed. The
+                                                quarter calculation engine automatically applies to existing records
+                                                upon module activation.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Support Footer Banner -->
+                    <div class="container my-5 pb-5">
+                        <div class="rounded-4 shadow-sm p-4 p-md-5 d-flex flex-column flex-md-row align-items-center justify-content-between bg-gradient position-relative overflow-hidden"
+                            style="background-color: #111111">
+                            <div class="text-center text-md-start mb-4 mb-md-0 position-relative z-1">
+                                <h2 class="fw-bold text-white mb-2"
+                                    style="font-family: 'Montserrat', sans-serif; font-size: 32px">Need Help or
+                                    Customization?</h2>
+                                <p class="text-white-50 mb-0 fs-5">Our experts are available to provide support and
+                                    assist with your Odoo workflows.</p>
+                            </div>
+                            <div class="position-relative z-1">
+                                <a class="btn btn-light btn-lg fw-bold rounded-pill shadow px-4 py-3"
+                                    href="mailto:support@incipientcorp.com" style="color: #111111">
+                                    Get Free Support
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <script defer="" src="index_file.js"></script>
+</body>
+
+</html>

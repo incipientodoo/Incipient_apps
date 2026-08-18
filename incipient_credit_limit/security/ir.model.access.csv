@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_wizard_credit_release_sales_manager,wizard.credit.release_sales_manager,model_wizard_credit_release,sales_team.group_sale_manager,1,1,1,1
+access_wizard_credit_release_account_manager,wizard.credit.release_account_manager,model_wizard_credit_release,account.group_account_manager,1,1,1,1
