@@ -11,8 +11,8 @@ Extends fiscal year configurations with quarter-based views, group by, and repor
 aligned across date filters and group by options based on company fiscal year settings.
     """,
     'author': 'Incipient Corp',
-    'website': '',
-    'license': 'LGPL-3',
+    'website': 'www.incipientcorp.com',
+    'license': 'OPL-1',
     'depends': [
         'base_setup',
         'accountant',

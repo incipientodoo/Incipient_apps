@@ -3,6 +3,9 @@
     'version': '19.0.1.0.0',
     'category': 'Sales',
     'summary': 'Put sale orders on credit hold when customer exceeds credit limit',
+    'author': 'Incipient Corp',
+    'website': 'www.incipientcorp.com',
+    'license': 'OPL-1',
     'depends': [
         'sale',
         'sale_management',
@@ -19,7 +22,6 @@
     ],
     'installable': True,
     'application': False,
-    'license': 'LGPL-3',
     'images': ['static/description/banner.gif'],
     'price': 40,
     'currency': 'USD',
