@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="contract_import_wizard_form" model="ir.ui.view">
+        <field name="name">contract.import.wizard.form</field>
+        <field name="model">contract.import.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Import Contract from Excel">
+                <group>
+                    <group>
+                        <field name="vendor_id"/>
+                        <field name="source"/>
+                        <field name="date_start"/>
+                        <field name="date_end"/>
+                    </group>
+                    <group>
+                        <field name="file_data" filename="file_name"/>
+                        <field name="file_name" invisible="1"/>
+                        <field name="product_column"/>
+                        <field name="cost_column"/>
+                        <field name="header_row"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="action_import" string="Import" type="object" class="oe_highlight"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_contract_import_wizard" model="ir.actions.act_window">
+        <field name="name">Import Contract (Excel)</field>
+        <field name="res_model">contract.import.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

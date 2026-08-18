@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="expiration_report_list_view" model="ir.ui.view">
+        <field name="name">discretionary.price.expiration.list</field>
+        <field name="model">discretionary.price</field>
+        <field name="arch" type="xml">
+            <list string="Expiration Report" decoration-danger="is_expired == True">
+                <field name="vendor_id"/>
+                <field name="customer_id"/>
+                <field name="product_id"/>
+                <field name="source_type"/>
+                <field name="override_cost"/>
+                <field name="resale_price"/>
+                <field name="expiration_date"/>
+                <field name="is_expired"/>
+                <field name="contract_id"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_expiration_report" model="ir.actions.act_window">
+        <field name="name">Expiration Report</field>
+        <field name="res_model">discretionary.price</field>
+        <field name="view_mode">list,form</field>
+        <field name="view_id" ref="expiration_report_list_view"/>
+        <field name="domain">[('expiration_date', '!=', False)]</field>
+    </record>
+
+</odoo>

@@ -15,7 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body style="font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; color: #111827;"
+<body style="font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; color: #0f172a;"
     class="py-4 py-md-5">
     <div class="container p-0 overflow-hidden bg-white shadow-lg"
         style="border-radius: 24px; border: 1px solid #e2e8f0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; scroll-behavior: smooth;">
@@ -30,13 +30,13 @@
                         style="font-family: 'Outfit', sans-serif; letter-spacing: -0.3px;">Sale Credit Hold & Credit
                         Limit</h1>
                     <span
-                        class="badge bg-dark text-white border border-dark px-3 py-1 rounded-pill small fw-bold"
+                        class="badge bg-danger-subtle text-danger border border-danger-subtle px-3 py-1 rounded-pill small fw-bold"
                         style="font-size: 11px;">Incipient Risk Control Suite</span>
                 </div>
             </div>
             <div class="d-flex align-items-center gap-2">
                 <span class="px-4 py-2 rounded-pill fw-bold text-white small shadow-sm"
-                    style="background: #000000; padding: 6px 18px !important;">Odoo
+                    style="background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); padding: 6px 18px !important;">Odoo
                     19.0 Ready</span>
                 <span class="px-4 py-2 rounded-pill fw-bold text-dark small border"
                     style="background-color: #f8fafc; padding: 6px 18px !important;">Enterprise Certified</span>
@@ -64,12 +64,12 @@
 
         <!-- EXECUTIVE HERO BANNER -->
         <section id="overview" class="p-4 p-md-5 text-white position-relative overflow-hidden"
-            style="background: linear-gradient(135deg, #000000 0%, #111111 50%, #1c1c1c 100%); border-bottom: 1px solid #222222;">
+            style="background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #31102b 100%); border-bottom: 1px solid #334155;">
             <div class="row align-items-center g-4 py-md-3">
                 <div class="col-lg-8">
                     <div class="d-inline-flex align-items-center gap-2 px-3 py-1.5 rounded-pill mb-3 border border-white border-opacity-20"
                         style="background: rgba(255,255,255,0.08); backdrop-filter: blur(10px);">
-                        <span class="rounded-circle bg-light" style="width: 8px; height: 8px;"></span>
+                        <span class="rounded-circle bg-danger" style="width: 8px; height: 8px;"></span>
                         <span class="small fw-semibold text-white-50" style="letter-spacing: 0.5px;">AUTOMATED FINANCIAL
                             CREDIT RISK CONTROL</span>
                     </div>
@@ -111,7 +111,7 @@
         <!-- EXECUTIVE HIGHLIGHTS & KEY CAPABILITIES CARDS -->
         <section class="p-4 p-md-5 bg-light border-bottom">
             <div class="text-center mb-5">
-                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">KEY
+                <span class="badge bg-danger-subtle text-danger px-3 py-1.5 rounded-pill fw-bold mb-2">KEY
                     ADVANTAGES</span>
                 <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Built for Enterprise Credit
                     Control</h3>
@@ -124,14 +124,14 @@
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm"
-                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #000000, #222222); font-size: 20px;">
+                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #ef4444, #dc2626); font-size: 20px;">
                                 🛡️
                             </div>
                             <div>
                                 <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">
                                     Automatic Risk Hold</h4>
                                 <span
-                                    class="badge bg-dark text-white border border-dark rounded-pill">Delivery
+                                    class="badge bg-danger-subtle text-danger border border-danger-subtle rounded-pill">Delivery
                                     Intercept</span>
                             </div>
                         </div>
@@ -147,14 +147,14 @@
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm"
-                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #111111, #333333); font-size: 20px;">
+                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #2563eb, #3b82f6); font-size: 20px;">
                                 ⚡
                             </div>
                             <div>
                                 <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">
                                     Real-Time Exposure</h4>
                                 <span
-                                    class="badge bg-dark text-white border border-dark rounded-pill">Live
+                                    class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill">Live
                                     Formula</span>
                             </div>
                         </div>
@@ -170,14 +170,14 @@
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm"
-                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #000000, #1c1c1c); font-size: 20px;">
+                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #059669, #10b981); font-size: 20px;">
                                 🔑
                             </div>
                             <div>
                                 <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Manager
                                     Sign-off</h4>
                                 <span
-                                    class="badge bg-dark text-white border border-dark rounded-pill">Release
+                                    class="badge bg-success-subtle text-success border border-success-subtle rounded-pill">Release
                                     Wizard</span>
                             </div>
                         </div>
@@ -193,7 +193,7 @@
         <!-- PROBLEM VS SOLUTION COMPARISON -->
         <section id="impact" class="p-4 p-md-5">
             <div class="text-center mb-5">
-                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">OPERATIONAL
+                <span class="badge bg-danger-subtle text-danger px-3 py-1.5 rounded-pill fw-bold mb-2">OPERATIONAL
                     IMPACT</span>
                 <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">The Business Transformation
                 </h3>
@@ -203,26 +203,26 @@
             <div class="row g-4">
                 <div class="col-md-6">
                     <div
-                        class="p-4 p-md-5 rounded-4 border border-secondary bg-light h-100 shadow-sm">
+                        class="p-4 p-md-5 rounded-4 border border-danger-subtle bg-danger-subtle bg-opacity-10 h-100 shadow-sm">
                         <div class="d-flex align-items-center gap-2 mb-3">
-                            <span class="badge bg-secondary text-white rounded-pill px-3 py-1 fw-bold">WITHOUT APP</span>
-                            <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">
+                            <span class="badge bg-danger text-white rounded-pill px-3 py-1 fw-bold">WITHOUT APP</span>
+                            <h4 class="h5 fw-bold text-danger mb-0" style="font-family: 'Outfit', sans-serif;">
                                 Uncontrolled Credit Risk</h4>
                         </div>
                         <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
                             style="line-height: 1.6;">
                             <li class="d-flex align-items-start gap-2">
-                                <span class="text-dark fw-bold">✕</span>
+                                <span class="text-danger fw-bold">✕</span>
                                 <span>Sales teams confirm orders for overdue customers without visibility into total
                                     financial exposure.</span>
                             </li>
                             <li class="d-flex align-items-start gap-2">
-                                <span class="text-dark fw-bold">✕</span>
+                                <span class="text-danger fw-bold">✕</span>
                                 <span>Warehouse staff fulfill goods on over-limit orders, leading to severe bad debt
                                     risks.</span>
                             </li>
                             <li class="d-flex align-items-start gap-2">
-                                <span class="text-dark fw-bold">✕</span>
+                                <span class="text-danger fw-bold">✕</span>
                                 <span>No formal managerial approval hierarchy or audit log for credit overrides.</span>
                             </li>
                         </ul>
@@ -231,27 +231,27 @@
 
                 <div class="col-md-6">
                     <div
-                        class="p-4 p-md-5 rounded-4 border border-dark bg-dark text-white h-100 shadow-sm">
+                        class="p-4 p-md-5 rounded-4 border border-success-subtle bg-success-subtle bg-opacity-10 h-100 shadow-sm">
                         <div class="d-flex align-items-center gap-2 mb-3">
-                            <span class="badge bg-white text-dark rounded-pill px-3 py-1 fw-bold">WITH INCIPIENT
+                            <span class="badge bg-success text-white rounded-pill px-3 py-1 fw-bold">WITH INCIPIENT
                                 APP</span>
-                            <h4 class="h5 fw-bold text-white mb-0" style="font-family: 'Outfit', sans-serif;">
+                            <h4 class="h5 fw-bold text-success mb-0" style="font-family: 'Outfit', sans-serif;">
                                 Automated Financial Safeguards</h4>
                         </div>
-                        <ul class="list-unstyled text-white-50 small mb-0 d-flex flex-column gap-2"
+                        <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
                             style="line-height: 1.6;">
                             <li class="d-flex align-items-start gap-2">
-                                <span class="text-white fw-bold">✓</span>
+                                <span class="text-success fw-bold">✓</span>
                                 <span>Automated credit evaluation upon quotation confirmation, taking unpaid bills and
                                     open orders into account.</span>
                             </li>
                             <li class="d-flex align-items-start gap-2">
-                                <span class="text-white fw-bold">✓</span>
+                                <span class="text-success fw-bold">✓</span>
                                 <span>Delivery order generation is instantly intercepted and blocked while on Credit
                                     Hold status.</span>
                             </li>
                             <li class="d-flex align-items-start gap-2">
-                                <span class="text-white fw-bold">✓</span>
+                                <span class="text-success fw-bold">✓</span>
                                 <span>Dedicated Manager Release Wizard with required approval notes and chatter feed
                                     audit logging.</span>
                             </li>
@@ -264,7 +264,7 @@
         <!-- ENHANCED 12-FEATURE SUITE (NO NUMBERS) -->
         <section id="features" class="p-4 p-md-5 bg-light border-top border-bottom">
             <div class="text-center mb-5">
-                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">EXTENSIVE
+                <span class="badge bg-danger-subtle text-danger px-3 py-1.5 rounded-pill fw-bold mb-2">EXTENSIVE
                     CAPABILITIES</span>
                 <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Comprehensive Feature Suite
                 </h3>
@@ -276,7 +276,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-danger rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Partner Credit Limit & Exposure</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Set maximum allowed credit limits directly on customer partner forms with real-time exposure calculation.</p>
@@ -286,7 +286,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-danger rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Delivery Order Shipping Block</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Automatically intercepts and locks outgoing stock pickings if a customer has overdue invoices or exceeded credit limits.</p>
@@ -296,7 +296,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-danger rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Overdue Reconciliation Release</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Automatically un-holds pending sales orders when customer payments or bank statements clear overdue invoice balances.</p>
@@ -306,7 +306,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-danger rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Manager Release Wizard</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Dedicated 'Release Credit Hold' wizard allowing authorized Sales Managers to grant credit overrides with mandatory audit notes.</p>
@@ -316,7 +316,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-danger rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Chatter Audit Feed</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Maintains an un-alterable log on sales order chatter tracking credit hold triggers, manager override decisions, and automated emails.</p>
@@ -326,7 +326,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-danger rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Real-Time Risk & Past-Due Formula</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Combines past-due overdue balances, unpaid posted customer invoices, draft bills, and un-invoiced sales order totals for live exposure calculation.</p>
@@ -336,7 +336,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-danger rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Multi-Currency & Multi-Company</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Supports automatic multi-currency conversion to company main currency for accurate global enterprise credit tracking.</p>
@@ -346,7 +346,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-danger rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">VIP Customer Bypass Flag</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Configure trusted partner bypass exceptions so key enterprise accounts never experience automated sales blocks.</p>
@@ -356,7 +356,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-danger rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Granular Security Groups</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Restricts override authority strictly to designated Credit Managers via standard Odoo user access control security groups.</p>
@@ -366,7 +366,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-danger rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Automated Email Alerts</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Dispatches instant automated notification emails to Credit Managers whenever a high-value order triggers a Credit Hold.</p>
@@ -376,7 +376,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-danger rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Draft Invoice Risk Inclusion</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Optionally include draft invoices in exposure calculations to prevent credit leakage prior to invoice posting.</p>
@@ -386,7 +386,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-danger rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Native Sales & Warehouse Workflow</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Integrates cleanly into standard Odoo sales order confirmation without disrupting existing warehouse workflows.</p>
@@ -406,7 +406,7 @@
             <!-- Step 1 (Text Left, Image Right) -->
             <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
                 <div class="col-lg-5">
-                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 01</span>
+                    <span class="px-3 py-1 rounded-pill bg-danger text-white fw-bold small mb-2 d-inline-block">Step 01</span>
                     <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Partner Credit Limit & AR Threshold Setup</h4>
                     <p class="text-secondary mb-3" style="line-height: 1.6;">Open any customer profile in Contacts (<code>res.partner</code>) and access the Invoicing tab to establish custom credit limits and financial risk parameters.</p>
                     <p class="text-secondary small mb-0" style="line-height: 1.6;">Set custom monetary threshold limits while the system continuously tracks live Accounts Receivable exposure and past-due invoice balances in real time.</p>
@@ -421,7 +421,7 @@
             <!-- Step 2 (Image Left, Text Right) -->
             <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
                 <div class="col-lg-5">
-                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 02</span>
+                    <span class="px-3 py-1 rounded-pill bg-danger text-white fw-bold small mb-2 d-inline-block">Step 02</span>
                     <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Quotation Past-Due Balance Auto-Intercept</h4>
                     <p class="text-secondary mb-3" style="line-height: 1.6;">When a sales representative creates a new quotation, the system instantly evaluates the customer's payment history for existing past-due balances.</p>
                     <p class="text-secondary small mb-0" style="line-height: 1.6;">If an unpaid past-due invoice is detected, the order is automatically placed on Credit Hold (<code>is_credit_hold = True</code>) with an alert logged directly to the Chatter feed.</p>
@@ -436,7 +436,7 @@
             <!-- Step 3 (Text Left, Image Right) -->
             <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
                 <div class="col-lg-5">
-                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 03</span>
+                    <span class="px-3 py-1 rounded-pill bg-danger text-white fw-bold small mb-2 d-inline-block">Step 03</span>
                     <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Accounting Settlement & Automated Hold Clearance</h4>
                     <p class="text-secondary mb-3" style="line-height: 1.6;">Finance teams can view open customer invoices in Accounting and register payments to settle overdue balances.</p>
                     <p class="text-secondary small mb-0" style="line-height: 1.6;">Upon payment posting, the system automatically re-evaluates the customer's account status, clears the Credit Hold, and posts a confirmation update to the sales order Chatter.</p>
@@ -451,7 +451,7 @@
             <!-- Step 4 (Image Left, Text Right) -->
             <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
                 <div class="col-lg-5">
-                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 04</span>
+                    <span class="px-3 py-1 rounded-pill bg-danger text-white fw-bold small mb-2 d-inline-block">Step 04</span>
                     <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Over-Limit Quotation Flagging & Confirmation Lock</h4>
                     <p class="text-secondary mb-3" style="line-height: 1.6;">Creating an order that exceeds the customer's defined credit limit automatically triggers an over-limit warning flag.</p>
                     <p class="text-secondary small mb-0" style="line-height: 1.6;">Sales reps attempting to click 'Confirm' are blocked by a system <code>UserError</code> dialog, keeping the order safely locked in Draft status until authorized release.</p>
@@ -466,7 +466,7 @@
             <!-- Step 5 (Text Left, Image Right) -->
             <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
                 <div class="col-lg-5">
-                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 05</span>
+                    <span class="px-3 py-1 rounded-pill bg-danger text-white fw-bold small mb-2 d-inline-block">Step 05</span>
                     <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Credit Hold Orders Centralized List View</h4>
                     <p class="text-secondary mb-3" style="line-height: 1.6;">Credit Managers can monitor all blocked sales orders across the organization via the dedicated 'Credit Hold' menu under Sales &rarr; Orders.</p>
                     <p class="text-secondary small mb-0" style="line-height: 1.6;">The centralized list view filters all active orders currently on hold, displaying live totals, order dates, customer risk standing, and quick access to managerial release actions.</p>
@@ -481,7 +481,7 @@
             <!-- Step 6 (Image Left, Text Right) -->
             <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
                 <div class="col-lg-5">
-                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 06</span>
+                    <span class="px-3 py-1 rounded-pill bg-danger text-white fw-bold small mb-2 d-inline-block">Step 06</span>
                     <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Managerial Credit Release Wizard & Audit Trail</h4>
                     <p class="text-secondary mb-3" style="line-height: 1.6;">Authorized Credit Managers can launch the 'Release Credit Hold' smart action button on blocked quotations to review risk factors.</p>
                     <p class="text-secondary small mb-0" style="line-height: 1.6;">Submitting the wizard with a mandatory justification note clears the credit hold flag and writes a permanent audit log with the manager's sign-off to the Chatter.</p>
@@ -496,7 +496,7 @@
             <!-- Step 7 (Text Left, Image Right) -->
             <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
                 <div class="col-lg-5">
-                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 07</span>
+                    <span class="px-3 py-1 rounded-pill bg-danger text-white fw-bold small mb-2 d-inline-block">Step 07</span>
                     <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Order Confirmation & Outgoing Delivery Generation</h4>
                     <p class="text-secondary mb-3" style="line-height: 1.6;">Once the credit hold is released by management, sales representatives can seamlessly confirm the quotation into an active Sale Order.</p>
                     <p class="text-secondary small mb-0" style="line-height: 1.6;">The order state updates to <code>Sale Order</code> and automatically provisions an outgoing Delivery Order (<code>stock.picking</code>) for warehouse picking and fulfillment.</p>
@@ -511,7 +511,7 @@
             <!-- Step 8 (Image Left, Text Right) -->
             <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
                 <div class="col-lg-5">
-                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 08</span>
+                    <span class="px-3 py-1 rounded-pill bg-danger text-white fw-bold small mb-2 d-inline-block">Step 08</span>
                     <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Warehouse Outgoing Delivery Shipping Intercept</h4>
                     <p class="text-secondary mb-3" style="line-height: 1.6;">When storekeepers attempt to validate an outgoing shipment in Inventory, the system performs a live Accounts Receivable credit check against customer standing.</p>
                     <p class="text-secondary small mb-0" style="line-height: 1.6;">If unpaid past-due invoices or exceeded limits remain at dispatch, shipping is blocked with an explicit <code>UserError</code> popup to prevent bad debt dispatch.</p>
@@ -526,7 +526,7 @@
             <!-- Step 9 (Text Left, Image Right) -->
             <div class="row align-items-center g-4">
                 <div class="col-lg-5">
-                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 09</span>
+                    <span class="px-3 py-1 rounded-pill bg-danger text-white fw-bold small mb-2 d-inline-block">Step 09</span>
                     <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Final Payment Settlement & Successful Delivery Validation</h4>
                     <p class="text-secondary mb-3" style="line-height: 1.6;">Once the customer registers final payment with the accounting team, the storekeeper re-opens the pending Delivery Order in Inventory.</p>
                     <p class="text-secondary small mb-0" style="line-height: 1.6;">Clicking 'Validate' succeeds instantly without errors, allowing goods to be dispatched and transitioning the shipment to <code>Done</code> status.</p>
@@ -729,7 +729,7 @@
                         </h5>
                         <p class="text-secondary small mb-2">Schedule a live walkthrough with our technical team.</p>
                         <a href="mailto:hello@incipientcorp.com"
-                            class="fw-bold text-dark text-decoration-underline small">hello@incipientcorp.com</a>
+                            class="fw-bold text-primary text-decoration-none small">hello@incipientcorp.com</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -739,7 +739,7 @@
                         </h5>
                         <p class="text-secondary small mb-2">Request custom Odoo credit workflows or approval rules.</p>
                         <a href="mailto:hello@incipientcorp.com"
-                            class="fw-bold text-dark text-decoration-underline small">hello@incipientcorp.com</a>
+                            class="fw-bold text-primary text-decoration-none small">hello@incipientcorp.com</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -749,7 +749,7 @@
                         </h5>
                         <p class="text-secondary small mb-2">Direct assistance for configuration & upgrades.</p>
                         <a href="mailto:hello@incipientcorp.com"
-                            class="fw-bold text-dark text-decoration-underline small">hello@incipientcorp.com</a>
+                            class="fw-bold text-success text-decoration-none small">hello@incipientcorp.com</a>
                     </div>
                 </div>
             </div>
@@ -757,7 +757,7 @@
 
         <!-- FOOTER BANNER -->
         <footer class="p-4 p-md-5 text-white text-center"
-            style="background: linear-gradient(135deg, #000000 0%, #111111 50%, #1c1c1c 100%);">
+            style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
             <img src="incipient-corp.png" alt="Incipient Corp" style="height: 48px; filter: brightness(0) invert(1);"
                 class="mb-3">
             <h3 class="h4 fw-bold mb-2" style="font-family: 'Outfit', sans-serif;">Incipient Corp — Enterprise Odoo

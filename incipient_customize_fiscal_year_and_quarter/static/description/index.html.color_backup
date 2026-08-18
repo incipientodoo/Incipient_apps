@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body style="font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; color: #111827;" class="py-4 py-md-5">
+<body style="font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; color: #0f172a;" class="py-4 py-md-5">
     <div class="container p-0 overflow-hidden bg-white shadow-lg" style="border-radius: 24px; border: 1px solid #e2e8f0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; scroll-behavior: smooth;">
         
         <!-- BRAND HEADER -->
@@ -22,11 +22,11 @@
                 <img src="incipient-corp.png" alt="Incipient Corp" style="height: 55px; object-fit: contain;">
                 <div class="border-start ps-3">
                     <h1 class="h5 fw-extrabold text-dark mb-1" style="font-family: 'Outfit', sans-serif; letter-spacing: -0.3px;">Customize Fiscal Year & Quarters</h1>
-                    <span class="badge bg-dark text-white border border-dark px-3 py-1 rounded-pill small fw-bold" style="font-size: 11px;">Incipient Financial Suite</span>
+                    <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-1 rounded-pill small fw-bold" style="font-size: 11px;">Incipient Financial Suite</span>
                 </div>
             </div>
             <div class="d-flex align-items-center gap-2">
-                <span class="px-4 py-2 rounded-pill fw-bold text-white small shadow-sm" style="background: #000000; padding: 6px 18px !important;">Odoo 19.0 Ready</span>
+                <span class="px-4 py-2 rounded-pill fw-bold text-white small shadow-sm" style="background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%); padding: 6px 18px !important;">Odoo 19.0 Ready</span>
                 <span class="px-4 py-2 rounded-pill fw-bold text-dark small border" style="background-color: #f8fafc; padding: 6px 18px !important;">Enterprise Certified</span>
             </div>
         </header>
@@ -42,11 +42,11 @@
         </nav>
 
         <!-- EXECUTIVE HERO BANNER -->
-        <section id="overview" class="p-4 p-md-5 text-white position-relative overflow-hidden" style="background: linear-gradient(135deg, #000000 0%, #111111 50%, #1c1c1c 100%); border-bottom: 1px solid #222222;">
+        <section id="overview" class="p-4 p-md-5 text-white position-relative overflow-hidden" style="background: linear-gradient(135deg, #090d16 0%, #0f172a 40%, #1e1b4b 100%); border-bottom: 1px solid #334155;">
             <div class="row align-items-center g-4 py-md-3">
                 <div class="col-lg-8">
                     <div class="d-inline-flex align-items-center gap-2 px-3 py-1.5 rounded-pill mb-3 border border-white border-opacity-20" style="background: rgba(255,255,255,0.08); backdrop-filter: blur(10px);">
-                        <span class="rounded-circle bg-light" style="width: 8px; height: 8px;"></span>
+                        <span class="rounded-circle bg-success" style="width: 8px; height: 8px;"></span>
                         <span class="small fw-semibold text-white-50" style="letter-spacing: 0.5px;">ENTERPRISE FINANCIAL CALENDAR ENGINE</span>
                     </div>
                     <h2 class="display-5 fw-bold mb-3 text-white" style="font-family: 'Outfit', sans-serif; line-height: 1.15; letter-spacing: -1px;">
@@ -74,7 +74,7 @@
         <!-- EXECUTIVE HIGHLIGHTS & KEY CAPABILITIES CARDS -->
         <section class="p-4 p-md-5 bg-light border-bottom">
             <div class="text-center mb-5">
-                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">KEY ADVANTAGES</span>
+                <span class="badge bg-primary-subtle text-primary px-3 py-1.5 rounded-pill fw-bold mb-2">KEY ADVANTAGES</span>
                 <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Built for Corporate Financial Control</h3>
                 <p class="text-muted">Eliminate manual date calculations with dynamic quarter filtering</p>
             </div>
@@ -84,12 +84,12 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
                         <div class="d-flex align-items-center gap-3 mb-3">
-                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm" style="width: 48px; height: 48px; background: linear-gradient(135deg, #000000, #222222); font-size: 20px;">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm" style="width: 48px; height: 48px; background: linear-gradient(135deg, #4f46e5, #3b82f6); font-size: 20px;">
                                 📅
                             </div>
                             <div>
                                 <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Dynamic Quarters</h4>
-                                <span class="badge bg-dark text-white border border-dark rounded-pill">Q1, Q2, Q3, Q4 Filters</span>
+                                <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill">Q1, Q2, Q3, Q4 Filters</span>
                             </div>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">
@@ -102,12 +102,12 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
                         <div class="d-flex align-items-center gap-3 mb-3">
-                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm" style="width: 48px; height: 48px; background: linear-gradient(135deg, #111111, #333333); font-size: 20px;">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm" style="width: 48px; height: 48px; background: linear-gradient(135deg, #0284c7, #06b6d4); font-size: 20px;">
                                 🏢
                             </div>
                             <div>
                                 <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Multi-Company</h4>
-                                <span class="badge bg-dark text-white border border-dark rounded-pill">Isolated Schedules</span>
+                                <span class="badge bg-info-subtle text-info border border-info-subtle rounded-pill">Isolated Schedules</span>
                             </div>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">
@@ -120,12 +120,12 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
                         <div class="d-flex align-items-center gap-3 mb-3">
-                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm" style="width: 48px; height: 48px; background: linear-gradient(135deg, #000000, #1c1c1c); font-size: 20px;">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm" style="width: 48px; height: 48px; background: linear-gradient(135deg, #10b981, #059669); font-size: 20px;">
                                 📊
                             </div>
                             <div>
                                 <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Pivot & Graph</h4>
-                                <span class="badge bg-dark text-white border border-dark rounded-pill">Native Aggregation</span>
+                                <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill">Native Aggregation</span>
                             </div>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">
@@ -139,29 +139,29 @@
         <!-- PROBLEM VS SOLUTION COMPARISON -->
         <section id="impact" class="p-4 p-md-5">
             <div class="text-center mb-5">
-                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">OPERATIONAL IMPACT</span>
+                <span class="badge bg-danger-subtle text-danger px-3 py-1.5 rounded-pill fw-bold mb-2">OPERATIONAL IMPACT</span>
                 <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">The Business Transformation</h3>
                 <p class="text-muted">How Customize Fiscal Year & Quarters solves standard Odoo reporting gaps</p>
             </div>
 
             <div class="row g-4">
                 <div class="col-md-6">
-                    <div class="p-4 p-md-5 rounded-4 border border-secondary bg-light h-100 shadow-sm">
+                    <div class="p-4 p-md-5 rounded-4 border border-danger-subtle bg-danger-subtle bg-opacity-10 h-100 shadow-sm">
                         <div class="d-flex align-items-center gap-2 mb-3">
-                            <span class="badge bg-secondary text-white rounded-pill px-3 py-1 fw-bold">WITHOUT APP</span>
-                            <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Default Odoo Limitation</h4>
+                            <span class="badge bg-danger text-white rounded-pill px-3 py-1 fw-bold">WITHOUT APP</span>
+                            <h4 class="h5 fw-bold text-danger mb-0" style="font-family: 'Outfit', sans-serif;">Default Odoo Limitation</h4>
                         </div>
                         <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2" style="line-height: 1.6;">
                             <li class="d-flex align-items-start gap-2">
-                                <span class="text-dark fw-bold">✕</span>
+                                <span class="text-danger fw-bold">✕</span>
                                 <span>Default search filters assume a standard Jan 1 - Dec 31 calendar year.</span>
                             </li>
                             <li class="d-flex align-items-start gap-2">
-                                <span class="text-dark fw-bold">✕</span>
+                                <span class="text-danger fw-bold">✕</span>
                                 <span>Companies with non-standard fiscal schedules (e.g. Apr 1 - Mar 31) face inaccurate reporting.</span>
                             </li>
                             <li class="d-flex align-items-start gap-2">
-                                <span class="text-dark fw-bold">✕</span>
+                                <span class="text-danger fw-bold">✕</span>
                                 <span>Accountants spend hours performing manual date math and Excel exports to calculate quarterly numbers.</span>
                             </li>
                         </ul>
@@ -169,22 +169,22 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="p-4 p-md-5 rounded-4 border border-dark bg-dark text-white h-100 shadow-sm">
+                    <div class="p-4 p-md-5 rounded-4 border border-success-subtle bg-success-subtle bg-opacity-10 h-100 shadow-sm">
                         <div class="d-flex align-items-center gap-2 mb-3">
-                            <span class="badge bg-white text-dark rounded-pill px-3 py-1 fw-bold">WITH INCIPIENT APP</span>
-                            <h4 class="h5 fw-bold text-white mb-0" style="font-family: 'Outfit', sans-serif;">Automated Fiscal Intelligence</h4>
+                            <span class="badge bg-success text-white rounded-pill px-3 py-1 fw-bold">WITH INCIPIENT APP</span>
+                            <h4 class="h5 fw-bold text-success mb-0" style="font-family: 'Outfit', sans-serif;">Automated Fiscal Intelligence</h4>
                         </div>
-                        <ul class="list-unstyled text-white-50 small mb-0 d-flex flex-column gap-2" style="line-height: 1.6;">
+                        <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2" style="line-height: 1.6;">
                             <li class="d-flex align-items-start gap-2">
-                                <span class="text-white fw-bold">✓</span>
+                                <span class="text-success fw-bold">✓</span>
                                 <span>Search panel dynamically calculates Q1, Q2, Q3, and Q4 based on your official fiscal start month.</span>
                             </li>
                             <li class="d-flex align-items-start gap-2">
-                                <span class="text-white fw-bold">✓</span>
+                                <span class="text-success fw-bold">✓</span>
                                 <span>Full multi-company support allows each operating entity to maintain its own unique fiscal start date.</span>
                             </li>
                             <li class="d-flex align-items-start gap-2">
-                                <span class="text-white fw-bold">✓</span>
+                                <span class="text-success fw-bold">✓</span>
                                 <span>Native Group-By Quarter aggregation in list, kanban, pivot, and graph views with instant execution.</span>
                             </li>
                         </ul>
@@ -196,7 +196,7 @@
         <!-- ENHANCED 12-FEATURE SUITE (NO NUMBERS) -->
         <section id="features" class="p-4 p-md-5 bg-light border-top border-bottom">
             <div class="text-center mb-5">
-                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">EXTENSIVE CAPABILITIES</span>
+                <span class="badge bg-primary-subtle text-primary px-3 py-1.5 rounded-pill fw-bold mb-2">EXTENSIVE CAPABILITIES</span>
                 <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Comprehensive Feature Suite</h3>
                 <p class="text-muted">12 Core capabilities engineered for precision financial reporting</p>
             </div>
@@ -206,7 +206,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-primary rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Dynamic Search Filters</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Filter any Odoo list, kanban, or pivot view by Q1, Q2, Q3, or Q4 according to your company's custom fiscal start month with a single click.</p>
@@ -216,7 +216,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-primary rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Multi-Company Isolation</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Define unique fiscal start dates per company entity (e.g. April 1st for UK/India, July 1st for Australia) with complete security isolation.</p>
@@ -226,7 +226,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-primary rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Pivot & Graph Integration</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Compare quarterly revenue, expenses, and profit margins year-over-year directly inside Odoo pivot tables and graphical charts.</p>
@@ -236,7 +236,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-primary rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Custom Fiscal Settings</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Configure custom fiscal start month and day in standard accounting settings with automatic global propagation.</p>
@@ -246,7 +246,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-primary rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Aligned Data Exports</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Export filtered quarterly data directly to Excel or PDF with accurate date range headers for external auditors.</p>
@@ -256,7 +256,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-primary rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">High-Performance Queries</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Optimized database domain expressions ensure lightning-fast search filter response times even on massive enterprise databases.</p>
@@ -266,7 +266,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-primary rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Sales & Purchase Integration</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Extends fiscal quarter search and group-by filters to Sales Orders, Purchase Orders, and Stock Movements.</p>
@@ -276,7 +276,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-primary rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Automated Date Engine</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Automatically adjusts leap years and varying month lengths to ensure exact day-level accuracy across fiscal years.</p>
@@ -286,7 +286,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-primary rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Accounting & Invoicing Native</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Plugs directly into standard Customer Invoices, Vendor Bills, and Journal Items search views without overrides.</p>
@@ -296,7 +296,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-primary rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Multi-Currency Analysis</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Calculates quarterly revenue and expense aggregates across foreign currency transactions seamlessly.</p>
@@ -306,7 +306,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-primary rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Edition Compatibility</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">100% compatible with Odoo Community Edition, Enterprise Edition, and Odoo.sh cloud deployments.</p>
@@ -316,7 +316,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
                         <div class="d-flex align-items-center gap-2.5 mb-3">
-                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <span class="badge bg-primary rounded-circle p-2" style="width: 12px; height: 12px;"></span>
                             <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Zero External Code</h5>
                         </div>
                         <p class="text-secondary small mb-0" style="line-height: 1.6;">Pure Odoo framework extension requiring zero external Python libraries or third-party servers.</p>
@@ -336,7 +336,7 @@
             <!-- Step 1 (Text Left, Image Right) -->
             <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
                 <div class="col-lg-5">
-                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 01</span>
+                    <span class="px-3 py-1 rounded-pill bg-primary text-white fw-bold small mb-2 d-inline-block">Step 01</span>
                     <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Fiscal Year Start Configuration</h4>
                     <p class="text-secondary mb-3" style="line-height: 1.6;">Configure your company's official fiscal year start month and day in Odoo Accounting settings.</p>
                     <p class="text-secondary small mb-0" style="line-height: 1.6;">Automatically aligns all Q1, Q2, Q3, and Q4 date ranges across your entire organization with full multi-company security isolation.</p>
@@ -351,7 +351,7 @@
             <!-- Step 2 (Image Left, Text Right) -->
             <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
                 <div class="col-lg-5">
-                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 02</span>
+                    <span class="px-3 py-1 rounded-pill bg-primary text-white fw-bold small mb-2 d-inline-block">Step 02</span>
                     <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Dynamic Quarter Search Filtering</h4>
                     <p class="text-secondary mb-3" style="line-height: 1.6;">Filter any list, kanban, or financial view by Fiscal Quarter directly from the standard Odoo search panel.</p>
                     <p class="text-secondary small mb-0" style="line-height: 1.6;">Instantly isolate sales orders, vendor bills, and journal entries for Q1, Q2, Q3, or Q4 without manual date math.</p>
@@ -366,7 +366,7 @@
             <!-- Step 3 (Text Left, Image Right) -->
             <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
                 <div class="col-lg-5">
-                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 03</span>
+                    <span class="px-3 py-1 rounded-pill bg-primary text-white fw-bold small mb-2 d-inline-block">Step 03</span>
                     <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Pivot & Graph View Group-By</h4>
                     <p class="text-secondary mb-3" style="line-height: 1.6;">Analyze revenue and expense distributions across quarters in Odoo Pivot & Graph views.</p>
                     <p class="text-secondary small mb-0" style="line-height: 1.6;">Group records by Fiscal Quarter to generate executive summary reports and financial trend charts.</p>
@@ -381,7 +381,7 @@
             <!-- Step 4 (Image Left, Text Right) -->
             <div class="row align-items-center g-4 flex-lg-row-reverse">
                 <div class="col-lg-5">
-                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 04</span>
+                    <span class="px-3 py-1 rounded-pill bg-primary text-white fw-bold small mb-2 d-inline-block">Step 04</span>
                     <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Aligned Quarterly Data Exports</h4>
                     <p class="text-secondary mb-3" style="line-height: 1.6;">Export filtered quarterly data directly to Excel or PDF with accurate date range headers.</p>
                     <p class="text-secondary small mb-0" style="line-height: 1.6;">Maintains absolute alignment with your corporate fiscal calendar for seamless external auditing.</p>
@@ -557,7 +557,7 @@
                         <div class="h3 mb-2">🌐</div>
                         <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Pre-Sales Enquiry</h5>
                         <p class="text-secondary small mb-2">Schedule a live walkthrough with our technical team.</p>
-                        <a href="mailto:hello@incipientcorp.com" class="fw-bold text-dark text-decoration-underline small">hello@incipientcorp.com</a>
+                        <a href="mailto:hello@incipientcorp.com" class="fw-bold text-primary text-decoration-none small">hello@incipientcorp.com</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -565,7 +565,7 @@
                         <div class="h3 mb-2">🛠️</div>
                         <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Custom Development</h5>
                         <p class="text-secondary small mb-2">Request custom Odoo features or workflow tweaks.</p>
-                        <a href="mailto:hello@incipientcorp.com" class="fw-bold text-dark text-decoration-underline small">hello@incipientcorp.com</a>
+                        <a href="mailto:hello@incipientcorp.com" class="fw-bold text-primary text-decoration-none small">hello@incipientcorp.com</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -573,14 +573,14 @@
                         <div class="h3 mb-2">🎧</div>
                         <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Lifetime Support</h5>
                         <p class="text-secondary small mb-2">Direct assistance for configuration & upgrades.</p>
-                        <a href="mailto:hello@incipientcorp.com" class="fw-bold text-dark text-decoration-underline small">hello@incipientcorp.com</a>
+                        <a href="mailto:hello@incipientcorp.com" class="fw-bold text-success text-decoration-none small">hello@incipientcorp.com</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- FOOTER BANNER -->
-        <footer class="p-4 p-md-5 text-white text-center" style="background: linear-gradient(135deg, #000000 0%, #111111 50%, #1c1c1c 100%);">
+        <footer class="p-4 p-md-5 text-white text-center" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
             <img src="incipient-corp.png" alt="Incipient Corp" style="height: 48px; filter: brightness(0) invert(1);" class="mb-3">
             <h3 class="h4 fw-bold mb-2" style="font-family: 'Outfit', sans-serif;">Incipient Corp — Enterprise Odoo Solutions</h3>
             <p class="text-white-50 mb-4" style="max-width: 600px; margin: 0 auto;">High-performance, business-tested Odoo apps designed for accounting, sales, and supply chain excellence.</p>
