@@ -9,7 +9,6 @@
         'account',
         'stock',
         'mail',
-        'incipient_contact_customization',
     ],
     'data': [
         'security/ir.model.access.csv',
@@ -21,4 +20,7 @@
     'installable': True,
     'application': False,
     'license': 'LGPL-3',
+    'images': ['static/description/banner.gif'],
+    'price': 40,
+    'currency': 'USD',
 }

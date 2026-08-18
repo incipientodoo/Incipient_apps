@@ -4,9 +4,9 @@
     <record id="view_partner_form_inherit_sale_credit_limit" model="ir.ui.view">
         <field name="name">res.partner.form.inherit.sale.credit.limit</field>
         <field name="model">res.partner</field>
-        <field name="inherit_id" ref="incipient_contact_customization.view_partner_form_inherit_customer_config"/>
+        <field name="inherit_id" ref="account.view_partner_property_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='customer_number']" position="before">
+            <xpath expr="//field[@name='property_payment_term_id']" position="after">
                 <field name="credit_limit"/>
             </xpath>
         </field>

@@ -27,4 +27,7 @@ aligned across date filters and group by options based on company fiscal year se
     'installable': True,
     'application': False,
     'auto_install': False,
+    'images': ['static/description/banner.gif'],
+    'price': 100,
+    'currency': 'USD',
 }
