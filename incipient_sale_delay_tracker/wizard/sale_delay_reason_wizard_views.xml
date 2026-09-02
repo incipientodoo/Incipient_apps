@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_sale_delay_reason_wizard" model="ir.ui.view">
+        <field name="name">sale.delay.reason.wizard.form</field>
+        <field name="model">sale.delay.reason.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Reason for Delay">
+                <group>
+                    <field name="reason_for_delay"/>
+                </group>
+                <footer>
+                    <button name="action_confirm_with_reason" type="object" string="Confirm" class="btn-primary"/>
+                    <button string="Cancel" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

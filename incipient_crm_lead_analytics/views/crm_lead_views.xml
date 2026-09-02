@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="crm_lead_view_form_analytics" model="ir.ui.view">
+        <field name="name">crm.lead.form.analytics</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='lead_priority']" position="inside">
+                <field name="neglected_status"/>
+                <field name="cycle_time_to_qualify"/>
+            </xpath>
+            
+            <!-- Add tracking buckets in Misc / Tracking group -->
+            <xpath expr="//group[@name='Misc']" position="inside">
+                <field name="forecast_bucket"/>
+                <field name="lead_to_opp_bucket"/>
+                <field name="lead_age_bucket" readonly="1"/>
+            </xpath>
+            
+            <!-- Add sales activity notebook page -->
+            <xpath expr="//notebook" position="inside">
+                <page string="Sales Activity" name="sales_activity">
+                    <group>
+                        <field name="last_sales_step" readonly="1"/>
+                        <field name="last_sales_step_date" readonly="1"/>
+                        <field name="next_sales_step" readonly="1"/>
+                        <field name="next_sales_step_date" readonly="1"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Add analytics fields to tree list view -->
+    <record id="crm_lead_tree_view_analytics" model="ir.ui.view">
+        <field name="name">crm.lead.list.analytics</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_case_tree_view_oppor"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='stage_id']" position="after">
+                <field name="neglected_status" optional="hide"/>
+                <field name="last_sales_step" optional="hide"/>
+                <field name="last_sales_step_date" optional="hide"/>
+                <field name="next_sales_step" optional="hide"/>
+                <field name="next_sales_step_date" optional="hide"/>
+                <field name="cycle_time_to_qualify" optional="hide"/>
+                <field name="forecast_bucket" optional="hide"/>
+                <field name="lead_to_opp_bucket" optional="hide"/>
+                <field name="lead_age_bucket" optional="hide"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
