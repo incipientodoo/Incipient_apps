@@ -15,6 +15,6 @@
     'application': False,
     'auto_install': False,
     'images': ['static/description/banner.gif'],
-    'price': 00,
+    'price': 30,
     'currency': 'USD',
 }
