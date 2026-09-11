@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_saleorder_document_inherit_weight" inherit_id="sale.report_saleorder_document">
+        
+        <!-- Add headers for Unit Weight and Ext Weight -->
+        <xpath expr="//th[@name='th_quantity']" position="after">
+            <th name="th_unit_weight" class="text-end">Unit Wt.</th>
+            <th name="th_ext_weight" class="text-end">Ext Wt.</th>
+        </xpath>
+
+        <!-- Add cell values for standard lines -->
+        <xpath expr="//td[@name='td_product_quantity']" position="after">
+            <td name="td_unit_weight" class="text-end">
+                <span t-field="line.unit_weight"/>
+            </td>
+            <td name="td_ext_weight" class="text-end">
+                <span t-field="line.ext_weight"/>
+            </td>
+        </xpath>
+
+        <xpath expr="//td[@name='td_section_name']" position="attributes">
+            <attribute name="t-att-colspan">3</attribute>
+        </xpath>
+        <xpath expr="//td[@name='td_section_name']" position="after">
+            <td class="text-end text-nowrap">
+                <!-- Ext Wt column for section weight -->
+                <span t-if="line.display_type == 'line_section' and line.section_total_weight"
+                      t-field="line.section_total_weight" 
+                      t-options='{"widget": "float", "precision": 2}'
+                      style="font-size: 0.8em; font-weight: bold;"/>
+            </td>
+            <td t-att-colspan="1 + (1 if display_discount else 0) + (1 if display_taxes else 0)"></td>
+        </xpath>
+
+    </template>
+</odoo>

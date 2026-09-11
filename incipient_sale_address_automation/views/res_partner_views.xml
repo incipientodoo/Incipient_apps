@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_inherit_sale_address_automation" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.sale.address.automation</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <!-- For Company Contacts (child_ids) popup -->
+            <xpath expr="//field[@name='child_ids']/form//field[@name='function']" position="after">
+                <field name="is_primary_account"/>
+                <field name="is_primary_saleable"/>
+            </xpath>
+
+            <!-- For main partner form - Sales & Purchase tab -->
+            <xpath expr="//notebook/page[@name='sales_purchases']//group[@name='sale']" position="inside">
+                <field name="primary_saleable_partner_id" invisible="not is_company"/>
+                <field name="is_primary_saleable" invisible="is_company"/>
+            </xpath>
+            
+            <!-- For main partner form - Accounting tab -->
+            <xpath expr="//notebook/page[@name='accounting']//group[@name='general']" position="inside">
+                <field name="primary_account_partner_id" invisible="not is_company"/>
+                <field name="is_primary_account" invisible="is_company"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
