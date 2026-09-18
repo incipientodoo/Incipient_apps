@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Sale Order -->
+    <record id="view_order_form_inherit_guid" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit.guid</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="guid" groups="incipient_guid_synchronization.group_unex_guid"/>
+            </xpath>
+            <xpath expr="//list/field[@name='product_id']" position="after">
+                <field name="guid" groups="incipient_guid_synchronization.group_unex_guid" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Purchase Order -->
+    <record id="view_purchase_order_form_inherit_guid" model="ir.ui.view">
+        <field name="name">purchase.order.form.inherit.guid</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="guid" groups="incipient_guid_synchronization.group_unex_guid"/>
+            </xpath>
+            <xpath expr="//list/field[@name='product_id']" position="before">
+                <field name="guid" groups="incipient_guid_synchronization.group_unex_guid" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Account Move -->
+    <record id="view_move_form_inherit_guid" model="ir.ui.view">
+        <field name="name">account.move.form.inherit.guid</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_shipping_id']" position="before">
+                <field name="guid" groups="incipient_guid_synchronization.group_unex_guid"/>
+            </xpath>
+            <xpath expr="//list/field[@name='product_id']" position="before">
+                <field name="guid" groups="incipient_guid_synchronization.group_unex_guid" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Res Partner -->
+    <record id="view_partner_form_inherit_guid" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.guid</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="guid" groups="incipient_guid_synchronization.group_unex_guid"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- CRM Lead -->
+    <record id="view_crm_lead_form_inherit_guid" model="ir.ui.view">
+        <field name="name">crm.lead.form.inherit.guid</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="guid" groups="incipient_guid_synchronization.group_unex_guid"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
