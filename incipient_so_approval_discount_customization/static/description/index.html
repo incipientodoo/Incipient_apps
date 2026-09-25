@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Sales Order Approval & Discount Control Flow | Incipient Corp</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="index_file.css" rel="stylesheet" />
+</head>
+
+<body style="font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; color: #111827;"
+    class="py-4 py-md-5">
+    <div class="container p-0 overflow-hidden bg-white shadow-lg"
+        style="border-radius: 24px; border: 1px solid #e2e8f0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; scroll-behavior: smooth;">
+
+        <!-- BRAND HEADER -->
+        <header id="top"
+            class="d-flex flex-column flex-md-row align-items-center justify-content-between p-4 px-md-5 bg-white border-bottom gap-3">
+            <div class="d-flex align-items-center gap-3">
+                <img src="incipient-corp.png" alt="Incipient Corp" style="height: 50px; object-fit: contain;">
+                <div class="border-start ps-3">
+                    <h1 class="h5 fw-extrabold text-dark mb-1"
+                        style="font-family: 'Outfit', sans-serif; letter-spacing: -0.3px; color: #111827;">Sales Order
+                        Approval & Discount Control Flow</h1>
+                    <span class="badge bg-dark text-white px-3 py-1 rounded-pill small fw-bold"
+                        style="font-size: 11px; background-color: #000000; color: #ffffff;">Incipient Enterprise
+                        Suite</span>
+                </div>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <span
+                    style="background-color: #000000; color: #ffffff; padding: 6px 18px; border-radius: 50px; font-weight: 700; font-size: 12px; display: inline-block;">Odoo
+                    19.0 Ready</span>
+                <span
+                    style="background-color: #f1f5f9; color: #000000; border: 1px solid #cbd5e1; padding: 6px 18px; border-radius: 50px; font-weight: 700; font-size: 12px; display: inline-block;">Enterprise
+                    Certified</span>
+            </div>
+        </header>
+
+        <!-- QUICK-NAV BAR -->
+        <nav class="d-flex align-items-center justify-content-center gap-2 py-2 px-3 border-bottom flex-wrap"
+            style="background-color: #f8fafc;">
+            <a href="#overview"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Overview</a>
+            <a href="#impact"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Business
+                Impact</a>
+            <a href="#features"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Feature
+                Suite</a>
+            <a href="#walkthrough"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Walkthrough</a>
+            <a href="#faq"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">FAQ</a>
+            <a href="#support"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Support</a>
+        </nav>
+
+        <!-- EXECUTIVE HERO BANNER -->
+        <!-- EXECUTIVE HERO BANNER SECTION -->
+        <section id="overview"
+            style="background-color: #000000; color: #ffffff; padding: 40px 30px; border-radius: 0 0 20px 20px; margin: 0 0 30px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8">
+                    <h1
+                        style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 34px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 16px; line-height: 1.2;">
+                        Sales Order Approval & Discount Control Flow
+                    </h1>
+                    <p
+                        style="color: #cbd5e1; font-size: 16px; line-height: 1.6; max-width: 680px; margin-bottom: 24px;">
+                        Implement robust approval hierarchies and discount limits for sales orders to maintain
+                        profitability and enforce company policies.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span
+                            style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓
+                            Community Edition</span>
+                        <span
+                            style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓
+                            Enterprise Edition</span>
+                        <span
+                            style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓
+                            Odoo.sh Cloud</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div
+                        style="background-color: #111111; border: 1px solid #333333; padding: 24px; border-radius: 16px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                        <h4
+                            style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 18px; font-weight: 700; margin-bottom: 8px;">
+                            Need Setup Assistance?</h4>
+                        <p style="color: #cbd5e1; font-size: 13px; margin-bottom: 16px; line-height: 1.5;">Free
+                            pre-sales consultation and lifetime support for every installation.</p>
+                        <a href="mailto:support@incipientcorp.com"
+                            style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 20px; border-radius: 8px; display: block; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Contact
+                            Technical Support</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXECUTIVE HIGHLIGHTS & KEY CAPABILITIES CARDS -->
+        <section class="p-4 p-md-5 bg-light border-bottom">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">KEY ADVANTAGES</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Enforce Sales Policies &
+                    Margins</h3>
+                <p class="text-muted">Prevent unauthorized discounts and streamline the approval process</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm"
+                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #000000, #222222); font-size: 20px;">
+                                🛡️
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">
+                                    Discount Limits</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Margin
+                                    Protection</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Define maximum allowable discounts per user or role to protect your profit margins and
+                            prevent unauthorized price reductions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm"
+                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #111111, #333333); font-size: 20px;">
+                                👥
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">
+                                    Multi-level Approvals</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Hierarchical
+                                    Workflow</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Set up custom approval layers based on total amount or discount percentage to ensure proper
+                            oversight of sales orders.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm"
+                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #000000, #1c1c1c); font-size: 20px;">
+                                🔔
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">
+                                    Automated Alerts</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Instant
+                                    Notifications</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Automatically notify managers and designated approvers instantly when a sales order requires
+                            their authorization.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEM VS SOLUTION COMPARISON -->
+        <section id="impact" class="p-4 p-md-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">OPERATIONAL IMPACT</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">The Business Transformation
+                </h3>
+                <p class="text-muted">How Sales Order Approval & Discount Control Flow solves standard Odoo sales
+                    challenges</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-4 p-md-5 rounded-4 border border-secondary bg-light h-100 shadow-sm">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="badge bg-secondary text-white rounded-pill px-3 py-1 fw-bold">WITHOUT
+                                APP</span>
+                            <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Default
+                                Odoo Limitation</h4>
+                        </div>
+                        <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
+                            style="line-height: 1.6;">
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>Salespersons can apply arbitrary discounts to sales orders without managerial
+                                    oversight.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>Lack of multi-level approval hierarchies for large sales orders or excessive
+                                    discounts.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>Profit margins are put at risk due to unrestricted price reductions and
+                                    unmonitored sales processes.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="p-4 p-md-5 rounded-4 border border-dark bg-dark text-white h-100 shadow-sm">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="badge bg-white text-dark rounded-pill px-3 py-1 fw-bold">WITH INCIPIENT
+                                APP</span>
+                            <h4 class="h5 fw-bold text-white mb-0" style="font-family: 'Outfit', sans-serif;">Automated
+                                Approval & Discount Control</h4>
+                        </div>
+                        <ul class="list-unstyled text-white-50 small mb-0 d-flex flex-column gap-2"
+                            style="line-height: 1.6;">
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>Define strict maximum discount limits per user, role, or globally to protect your
+                                    profit margins.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>Implement dynamic multi-level approval workflows based on order amounts or
+                                    requested discount percentages.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>Automated instant alerts notify designated approvers, accelerating the
+                                    authorization process securely.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENHANCED 12-FEATURE SUITE (NO NUMBERS) -->
+        <section id="features" class="p-4 p-md-5 bg-light border-top border-bottom">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">EXTENSIVE
+                    CAPABILITIES</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Comprehensive Feature Suite
+                </h3>
+                <p class="text-muted">12 Core capabilities engineered for precision discount control</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Dynamic
+                                Approval Layers</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Set up custom approval rules
+                            based on sales order total amount or discount thresholds to ensure proper oversight.</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Discount
+                                Thresholds</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Configure maximum discount
+                            percentages allowed per user role or globally to protect your profit margins.</p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Multi-level
+                                Hierarchies</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Require multiple approvals for
+                            high-value orders or excessive discounts (e.g. Manager then Director).</p>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Instant
+                                Notifications</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Send automatic email and system
+                            alerts to designated approvers when a sales order action is required.</p>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">One-Click
+                                Authorization</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Approvers can quickly review and
+                            approve or reject sales orders directly from the standard order view.</p>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Audit Trails
+                            </h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Maintain a complete history in
+                            the chatter of who requested, approved, or rejected specific order discounts.</p>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Margin
+                                Protection</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Automatically block sales orders
+                            from confirmation if they violate minimum margin rules without approval.</p>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Role-Based
+                                Access</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Granular control over which
+                            specific user groups or managers have the authority to approve discount exceptions.</p>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Bypass
+                                Capabilities</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Allow top-level executives or
+                            administrators to bypass the standard approval workflow when strictly needed.</p>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Custom Alert
+                                Templates</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Modify the email notification
+                            messages sent to approvers to include all relevant order and discount details.</p>
+                    </div>
+                </div>
+                <!-- 11 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Edition
+                                Compatibility</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">100% compatible with Odoo
+                            Community Edition, Enterprise Edition, and Odoo.sh cloud deployments.</p>
+                    </div>
+                </div>
+                <!-- 12 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Zero External
+                                Code</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Pure Odoo framework extension
+                            requiring zero external Python libraries or third-party servers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISUAL WALKTHROUGH -->
+        <section id="walkthrough" class="p-4 p-md-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">INTERFACE SHOWCASE</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Step-by-Step Visual
+                    Walkthrough</h3>
+                <p class="text-muted">How Sales Order Approval & Discount Control Flow operates in Odoo</p>
+            </div>
+
+            <!-- Step 1 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 01</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Standard Discount Application</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Create a Quotation and apply a standard discount within the allowed limits.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="step_1.png" alt="Standard Discount" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 02</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Quote Sent & Customer Response</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Once sent to the customer, the quote awaits their decision to either Accept or Reject the offer.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="step_2.png" alt="Accept or Reject Quote" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 03</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Ready To Schedule</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">After acceptance, internal confirmation moves the status to Ready To Schedule.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="step_3.png" alt="Confirm Quote" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 04</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Sales Order Confirmation</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">The standard quote completes its flow by becoming a confirmed Sales Order without requiring extra approvals.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="step_4.png" alt="Sales Order Confirmed" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 05</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">High Discount - Send For Approval</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">If a higher discount is applied (e.g., 10%), the system requires the quote to be Sent For Approval.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="step_5.png" alt="Send For Approval" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 06</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Manager Review</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">The order is locked in the Waiting for Approval stage, where designated managers can Approve or Deny it.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="step_6.png" alt="Waiting for Approval" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 7 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 07</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Discount Approved</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Once approved, the record moves to the Approved stage and is ready to be sent to the customer.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="step_7.png" alt="Approved Stage" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 8 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 08</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Send Approved Quote</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">The salesperson can now send the approved high-discount quote to the customer using the Send To Customer button.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="step_8.png" alt="Send To Customer" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 9 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 09</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Quote Delivered</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">The status updates to Quote Sent, awaiting the customer's final decision on the special offer.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="step_9.png" alt="Quote Sent" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 10 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 10</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Customer Acceptance</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Upon customer acceptance, the order is marked as Accepted and is ready to be scheduled.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="step_10.png" alt="Accepted Stage" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 11 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 11</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Final Internal Confirmation</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Click Confirm to officially lock in the scheduled and accepted order.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="step_11.png" alt="Confirm Scheduled" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 12 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 12</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Sales Order Finalized</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">The transaction safely lands in the Sales Order stage with full audit logs of the approval process.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="step_12.png" alt="Sales Order Finalized" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 13 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 13</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Payment Terms Access Control</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Assign the Payment Terms Readonly permission in User Settings to prevent unauthorized changes to payment structures.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="step_13.png" alt="User Permissions" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 14 -->
+            <div class="row align-items-center g-4 flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 14</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Read-Only Enforcement</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">For users without the permission, the Payment Terms field on the Sales Order remains strictly read-only, preventing manual overrides.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="step_14.png" alt="Read Only Payment Terms" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPANDED 10 FAQ ACCORDION ITEMS -->
+
+        <!-- EXPANDED 10 FAQ SECTION WITH QUESTION HEADERS AND ANSWER BODIES -->
+
+        <!-- INTERACTIVE HTML5 FAQ SECTION (CLICK TO OPEN/CLOSE WITHOUT JS) -->
+
+        <!-- PURE HTML5 CLICK-TO-OPEN FAQ SECTION (NO JS NEEDED, SANITIZER SAFE) -->
+        <section id="faq" class="p-4 p-md-5 bg-light border-top">
+            <div class="text-center mb-5">
+                <h3 class="h2 fw-bold" style="font-family: 'Outfit', sans-serif; color: #111827;">Frequently Asked
+                    Questions</h3>
+                <p style="color: #6b7280;">Click any question below to expand or collapse details</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <details open
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            1. Is Sales Order Approval & Discount Control Flow compatible with Odoo Enterprise,
+                            Community, and Odoo.sh?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Yes! Sales Order Approval & Discount Control Flow is 100% compatible with Odoo Community
+                            Edition, Enterprise Edition, and Odoo.sh cloud deployments without modifying core files.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            2. How does the multi-level approval hierarchy work??
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            You can configure multiple tiers of approvers based on the discount percentage or total
+                            order amount. For example, a 10% discount might require a manager's approval, while a 20%
+                            discount requires a director's approval.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            3. Can I set different discount limits for different sales teams or users??
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Yes, you can define maximum allowable discounts per user role or globally, ensuring that
+                            junior sales staff have lower limits than senior sales managers.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            4. Are approvers notified automatically when an order needs authorization?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Absolutely. The system automatically sends email notifications and internal Odoo alerts to
+                            the designated approvers the moment a sales order exceeds the configured thresholds.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            5. What happens if a sales order is rejected by an approver?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            If rejected, the sales order status is updated, and the salesperson is notified. The
+                            salesperson can then revise the order and re-submit it for approval, with the entire history
+                            logged in the chatter.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            6. Does this module require installing third-party Python packages?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            None at all. It is a clean, native Odoo app that installs in seconds without installing
+                            external Python dependencies.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            7. Is it possible for top-level management to bypass the approval process?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Yes, the module includes bypass capabilities that can be granted to specific administrative
+                            or executive roles, allowing them to confirm orders directly when necessary.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            8. Does the purchase include free lifetime updates for future Odoo releases?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Yes. Every purchase from Incipient Corp includes lifetime free updates for the purchased
+                            major version line.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            9. Can I customize the email notification templates?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Yes, all email notifications use standard Odoo email templates, which can be fully
+                            customized to include specific order details, company branding, and personalized messages.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            10. How do I get technical support or assistance if needed?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Simply email our dedicated engineering team at <a href="mailto:support@incipientcorp.com"
+                                style="color: #111827; font-weight: 700;">support@incipientcorp.com</a>. We respond
+                            within 24 hours.
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- SERVICE TRUST & CONTACT CARDS -->
+        <section id="support" class="p-4 p-md-5 bg-white border-top">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🌐</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Pre-Sales Enquiry
+                        </h5>
+                        <p class="text-secondary small mb-2">Schedule a live walkthrough with our technical team.</p>
+                        <a href="mailto:support@incipientcorp.com"
+                            class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🛠️</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Custom Development
+                        </h5>
+                        <p class="text-secondary small mb-2">Request custom Odoo features or workflow tweaks.</p>
+                        <a href="mailto:support@incipientcorp.com"
+                            class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🎧</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Lifetime Support
+                        </h5>
+                        <p class="text-secondary small mb-2">Direct assistance for configuration & upgrades.</p>
+                        <a href="mailto:support@incipientcorp.com"
+                            class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER BANNER -->
+        <footer
+            style="background-color: #000000; color: #ffffff; text-align: center; padding: 40px 20px; border-radius: 0 0 24px 24px; border-top: 1px solid #222222;">
+            <div style="text-align: center;">
+                <img src="incipient-corp.png" alt="Incipient Corp"
+                    style="height: 48px; filter: brightness(0) invert(1); margin-bottom: 16px; display: inline-block;">
+            </div>
+            <h3
+                style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 22px; font-weight: 700; margin-bottom: 8px; text-align: center;">
+                Incipient Corp — Enterprise Odoo Solutions</h3>
+            <p
+                style="color: #cbd5e1; font-size: 14px; max-width: 600px; margin: 0 auto 24px auto; line-height: 1.6; text-align: center;">
+                High-performance, business-tested Odoo apps designed for accounting, sales, and supply chain excellence.
+            </p>
+            <div style="text-align: center; width: 100%; margin-top: 20px;">
+                <a href="mailto:support@incipientcorp.com"
+                    style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 28px; border-radius: 50px; text-decoration: none; display: inline-block; margin: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">Pre-Sales
+                    Enquiries</a>
+                <a href="mailto:support@incipientcorp.com"
+                    style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 28px; border-radius: 50px; text-decoration: none; display: inline-block; margin: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">Technical
+                    Support</a>
+            </div>
+        </footer>
+
+    </div>
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

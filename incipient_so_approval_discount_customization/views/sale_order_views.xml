@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_order_form_inherit_approval_discount" model="ir.ui.view">
+        <field name="name">sale.order.form.approval.discount</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_quotation_send']" position="after">
+                <field name="show_send_for_approval" invisible="1"/>
+                <field name="show_send_to_customer" invisible="1"/>
+                <field name="is_send_to_customer" invisible="1"/>
+                <button string="Approve" name="action_approve" type="object" class="oe_highlight" invisible="state != 'waiting_for_approval'"/>
+                <button string="Denied" name="action_denied" type="object" class="oe_highlight" invisible="state != 'waiting_for_approval'"/>
+                <button string="Approved to Send" name="action_approve_to_send" type="object" class="oe_highlight" invisible="state != 'approved'"/>
+                <button string="Send For Approval" name="action_send_for_approval" type="object" class="oe_highlight" invisible="not show_send_for_approval"/>
+                <button string="Send To Customer" name="action_send_to_customer" type="object" class="oe_highlight" invisible="not show_send_to_customer"/>
+                <button string="Accept" name="action_accept" type="object" class="oe_highlight" invisible="state != 'sent'"/>
+                <button string="Reject" name="action_reject" type="object" class="oe_highlight" invisible="state != 'sent'"/>
+                <button string="Accepted" name="action_accepted" type="object" class="oe_highlight" invisible="state != 'waiting_for_acceptance'"/>
+                <button name="action_ready_for_schedule" type="object" string="Ready for Schedule" class="oe_highlight" invisible="state != 'accepted'"/>
+            </xpath>
+
+            <xpath expr="//field[@name='order_line']/list/field[@name='tax_ids']"
+                   position="after">
+                <field name="additional_discount" readonly="parent.state == 'sale'" />
+                <field name="additional_discount_amount" optional="show"/>
+                <field name="total_discount_amount" optional="hide" />
+                <field name="discount" optional="hide"/>
+            </xpath>
+            
+            <xpath expr="//button[@name='action_cancel']" position="attributes">
+                <attribute name="invisible">state not in ('draft','denied','approved_to_send','sale', 'ready_schedule')</attribute>
+            </xpath>
+            
+            <xpath expr="//button[@name='action_unlock']" position="attributes">
+                <attribute name="invisible">state not in ('waiting_for_acceptance','sale', 'ready_schedule', 'accepted')</attribute>
+            </xpath>
+            
+            <xpath expr="//button[@name='action_draft']" position="attributes">
+                <attribute name="invisible">state not in ('cancel','denied')</attribute>
+            </xpath>
+            
+            <xpath expr="//button[@id='quotation_send_primary']" position="attributes">
+                <attribute name="invisible">state != 'draft' or not is_send_to_customer</attribute>
+            </xpath>
+            
+            <xpath expr="//button[@id='quotation_send']" position="attributes">
+                <attribute name="invisible">state not in ('sent', 'sale') or not is_send_to_customer</attribute>
+            </xpath>
+            
+            <xpath expr="//field[@name='payment_term_id']" position="after">
+                <field name="extra_discount" readonly="1" widget="percentage"/>
+                <field name="is_payment_term_readonly" invisible="1"/>
+            </xpath>
+            
+            <xpath expr="//field[@name='payment_term_id']" position="attributes">
+                <attribute name="readonly">not is_payment_term_readonly</attribute>
+            </xpath>
+
+            <xpath expr="//header/button[@name='action_confirm' and not(@id)]" position="attributes">
+                <attribute name="id">action_confirm_draft</attribute>
+            </xpath>
+            
+            <xpath expr="//header/button[@id='action_confirm']" position="attributes">
+                <attribute name="invisible">state != 'ready_schedule'</attribute>
+            </xpath>
+            
+            <xpath expr="//header/button[@id='action_confirm_draft']" position="replace">
+            </xpath>
+        </field>
+    </record>
+</odoo>
