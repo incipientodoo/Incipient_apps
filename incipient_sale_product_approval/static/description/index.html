@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Per-Product Dual Approval Gate on Sales Orders | Incipient Corp</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="index_file.css" rel="stylesheet" />
+</head>
+
+<body style="font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; color: #111827;"
+    class="py-4 py-md-5">
+    <div class="container p-0 overflow-hidden bg-white shadow-lg"
+        style="border-radius: 24px; border: 1px solid #e2e8f0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; scroll-behavior: smooth;">
+
+        <!-- BRAND HEADER -->
+        <header id="top"
+            class="d-flex flex-column flex-md-row align-items-center justify-content-between p-4 px-md-5 bg-white border-bottom gap-3">
+            <div class="d-flex align-items-center gap-3">
+                <img src="incipient-corp.png" alt="Incipient Corp" style="height: 50px; object-fit: contain;">
+                <div class="border-start ps-3">
+                    <h1 class="h5 fw-extrabold text-dark mb-1"
+                        style="font-family: 'Outfit', sans-serif; letter-spacing: -0.3px; color: #111827;">Per-Product Dual Approval Gate</h1>
+                    <span class="badge bg-dark text-white px-3 py-1 rounded-pill small fw-bold"
+                        style="font-size: 11px; background-color: #000000; color: #ffffff;">Incipient Enterprise
+                        Suite</span>
+                </div>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <span
+                    style="background-color: #000000; color: #ffffff; padding: 6px 18px; border-radius: 50px; font-weight: 700; font-size: 12px; display: inline-block;">Odoo
+                    19.0 Ready</span>
+                <span
+                    style="background-color: #f1f5f9; color: #000000; border: 1px solid #cbd5e1; padding: 6px 18px; border-radius: 50px; font-weight: 700; font-size: 12px; display: inline-block;">Enterprise
+                    Certified</span>
+            </div>
+        </header>
+
+        <!-- QUICK-NAV BAR -->
+        <nav class="d-flex align-items-center justify-content-center gap-2 py-2 px-3 border-bottom flex-wrap"
+            style="background-color: #f8fafc;">
+            <a href="#overview"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Overview</a>
+            <a href="#impact"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Business
+                Impact</a>
+            <a href="#features"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Feature
+                Suite</a>
+            <a href="#walkthrough"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Walkthrough</a>
+            <a href="#faq"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">FAQ</a>
+            <a href="#support"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Support</a>
+        </nav>
+
+        <!-- EXECUTIVE HERO BANNER -->
+        <!-- EXECUTIVE HERO BANNER SECTION -->
+        <section id="overview"
+            style="background-color: #000000; color: #ffffff; padding: 40px 30px; border-radius: 0 0 20px 20px; margin: 0 0 30px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8">
+                    <h1
+                        style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 34px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 16px; line-height: 1.2;">
+                        Per-Product Dual Approval Gate on Sales Orders
+                    </h1>
+                    <p
+                        style="color: #cbd5e1; font-size: 16px; line-height: 1.6; max-width: 680px; margin-bottom: 24px;">
+                        Enforce Customer Sign-Off and Sales Manager Approval on orders with restricted or high-value items, routing them into Waiting Approval before fulfillment and inventory release.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span
+                            style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓
+                            Community Edition</span>
+                        <span
+                            style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓
+                            Enterprise Edition</span>
+                        <span
+                            style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓
+                            Odoo.sh Cloud</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div
+                        style="background-color: #111111; border: 1px solid #333333; padding: 24px; border-radius: 16px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                        <h4
+                            style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 18px; font-weight: 700; margin-bottom: 8px;">
+                            Need Setup Assistance?</h4>
+                        <p style="color: #cbd5e1; font-size: 13px; margin-bottom: 16px; line-height: 1.5;">Free
+                            pre-sales consultation and lifetime support for every installation.</p>
+                        <a href="mailto:support@incipientcorp.com"
+                            style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 20px; border-radius: 8px; display: block; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Contact
+                            Technical Support</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXECUTIVE HIGHLIGHTS & KEY CAPABILITIES CARDS -->
+        <section class="p-4 p-md-5 bg-light border-bottom">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">KEY ADVANTAGES</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Built for Sales Risk Mitigation</h3>
+                <p class="text-muted">Eliminate unauthorized commitments and premature stock dispatch with automated dual sign-off gates</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm"
+                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #000000, #222222); font-size: 20px;">
+                                ✍️
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Customer Sign-Off</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Client Authorization</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Require explicit customer approval and track sign-off date and recorder before custom or high-risk products proceed to fulfillment.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm"
+                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #111111, #333333); font-size: 20px;">
+                                🛡️
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Manager Gate</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Security Enforced</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Strict security group controls prevent unauthorized confirmations—only authorized Sales Managers can release restricted orders.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm"
+                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #000000, #1c1c1c); font-size: 20px;">
+                                📦
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Fulfillment Hold</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Zero Stock Leakage</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Orders enter a dedicated Waiting Approval state, strictly halting warehouse pickings and inventory reservations until all gates clear.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEM VS SOLUTION COMPARISON -->
+        <section id="impact" class="p-4 p-md-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">OPERATIONAL IMPACT</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">The Business Transformation
+                </h3>
+                <p class="text-muted">How Per-Product Dual Approval Gate prevents costly fulfillment errors</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-4 p-md-5 rounded-4 border border-secondary bg-light h-100 shadow-sm">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="badge bg-secondary text-white rounded-pill px-3 py-1 fw-bold">WITHOUT
+                                APP</span>
+                            <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Default
+                                Odoo Limitation</h4>
+                        </div>
+                        <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
+                            style="line-height: 1.6;">
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>Sales orders confirm immediately upon clicking Confirm, creating stock pickings instantly.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>No native mechanism to halt high-risk, custom-engineered, or expensive products for customer sign-off.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>Sales representatives can commit to high-value orders without mandatory sales management validation.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="p-4 p-md-5 rounded-4 border border-dark bg-dark text-white h-100 shadow-sm">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="badge bg-white text-dark rounded-pill px-3 py-1 fw-bold">WITH INCIPIENT
+                                APP</span>
+                            <h4 class="h5 fw-bold text-white mb-0" style="font-family: 'Outfit', sans-serif;">Automated
+                                Dual Approval Gate</h4>
+                        </div>
+                        <ul class="list-unstyled text-white-50 small mb-0 d-flex flex-column gap-2"
+                            style="line-height: 1.6;">
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>Orders containing restricted items automatically route to a dedicated "Waiting Approval" status.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>Stock reservation and warehouse pickings are completely held until all required gates are approved.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>Rigid security enforcement ensures only designated Sales Managers can grant manager release.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENHANCED 12-FEATURE SUITE (NO NUMBERS) -->
+        <section id="features" class="p-4 p-md-5 bg-light border-top border-bottom">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">EXTENSIVE
+                    CAPABILITIES</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Comprehensive Feature Suite
+                </h3>
+                <p class="text-muted">12 Core capabilities engineered for sales control and compliance</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Per-Product Flags</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Configure customer sign-off or manager approval requirements directly on individual product templates without hardcoding.</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Dedicated Holding State</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Orders containing restricted products route seamlessly into a native "Waiting Approval" state instead of confirming immediately.</p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Zero Premature Pickings</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Completely blocks warehouse delivery orders (stock pickings) and inventory reservations until all required gates are passed.</p>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Customer Sign-Off Gate</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Enforces client written or verbal sign-off recording before proceeding, logging the user and timestamp.</p>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Sales Manager Gate</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Strict backend permission check ensures only users with Sales Manager rights can grant managerial approval.</p>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Dual Gate Support</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Combine both Customer Sign-Off and Manager Approval on high-value products; order auto-confirms only after both clear.</p>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Automated Auto-Confirm</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Once the final pending approval gate is granted, the sales order instantly confirms and triggers fulfillment flows.</p>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Audit Trail & Chatter Log</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Every gate transition, approval timestamp, approving officer, and restricted product list is permanently logged in chatter.</p>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">One-Click Rejection</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Instantly reject unapproved or risky orders, cancelling the quotation and notifying team members with detailed audit records.</p>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Dynamic Approval Tab</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">A clean "Approval Gate" tab dynamically appears only when an order contains gated products, showing visual badge statuses.</p>
+                    </div>
+                </div>
+                <!-- 11 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Native Odoo 19 Compatible</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">100% compatible with Odoo 19 Community Edition, Enterprise Edition, and Odoo.sh cloud deployments.</p>
+                    </div>
+                </div>
+                <!-- 12 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Zero External Dependencies</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Built strictly with core Odoo ORM methods with no third-party libraries or recurring subscription dependencies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISUAL WALKTHROUGH -->
+        <section id="walkthrough" class="p-4 p-md-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">INTERFACE SHOWCASE</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Step-by-Step Visual
+                    Walkthrough</h3>
+                <p class="text-muted">How Per-Product Dual Approval Gate operates in Odoo</p>
+            </div>
+
+            <!-- Step 1 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 01</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Navigate to Users & Companies</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Access system user management via Quick Search (Command Palette) under Settings / Users & Companies / Users.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Configure permissions to test role-based approval controls between regular sales representatives and managers.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_1.png" alt="Navigate to Users" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 02</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Configure Standard Sales User (User-1)</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Set User-1 access right to standard sales level ("Sales: User: All Documents").</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Ensures standard salespersons can create quotations but cannot bypass manager approval gates.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_2.png" alt="Sales User Configuration" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 03</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Configure Sales Manager User (User-2)</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Set User-2 access right to management level ("Sales: Administrator").</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Grants authority to grant Sales Manager Approval and release orders from the Waiting Approval state.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_3.png" alt="Sales Manager Configuration" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 04</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Navigate to Products Menu</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Open the product catalogue via Sales / Products / Products to configure per-product approval gates.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Easily access and manage approval settings directly on product template forms.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_4.png" alt="Navigate to Products" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 05</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Product 1: Requires Customer Sign-Off</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Enable "Requires Customer Sign-Off" under Dual Approval Gate Requirements on Product 1.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Any quotation containing Product 1 will mandate customer sign-off before confirmation.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_5.png" alt="Product 1 Customer Sign-Off" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 06</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Product 2: Requires Sales Manager Approval</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Enable "Requires Sales Manager Approval" under Dual Approval Gate Requirements on Product 2.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Enforces administrative manager sign-off before this product can be confirmed and fulfilled.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_6.png" alt="Product 2 Manager Approval" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 7 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 07</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Product 3: Dual Gate (Customer + Manager)</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Enable BOTH "Requires Customer Sign-Off" and "Requires Sales Manager Approval" on Product 3.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">High-risk or bespoke products require dual validation from both customer and management.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_7.png" alt="Product 3 Dual Gate" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 8 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 08</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Product 4: Standard Product (No Gates)</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Leave both approval gate checkboxes unchecked on Product 4.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Standard catalog items flow straight through the default confirmation process without holding.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_8.png" alt="Product 4 Standard Product" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 9 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 09</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Navigate to Sales Orders</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Navigate to Sales / Orders / Orders to create and verify test quotations across scenarios.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Test standard orders, single-gate orders, dual-gate orders, and rejection workflows.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_9.png" alt="Navigate to Sales Orders" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 10 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 10</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Standard Order Direct Confirmation (S00030)</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Confirming an order with Product 4 immediately transitions to "Sales Order" with Delivery created.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">No approval delays or holding state for routine, non-restricted products.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_10.png" alt="Direct Order Confirmation" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 11 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 11</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Waiting Approval Triggered (S00031)</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Confirming S00031 with Product 1 routes order to "Waiting Approval" and shows "Customer Sign-Off" button.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Delivery order creation is strictly blocked, and the chatter records pending approval gates.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_11.png" alt="Waiting Approval Customer Sign-Off" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 12 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 12</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Customer Sign-Off Recorded & Auto-Confirm (S00031)</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Clicking "Customer Sign-Off" marks the status as "Signed Off" with user and timestamp recorded.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Because all required gates are fulfilled, the order auto-confirms to Sales Order and releases Delivery #1.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_12.png" alt="Customer Sign-Off Completed" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 13 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 13</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Manager Gate Order in Waiting Approval (S00033)</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Confirming S00033 with Product 2 routes into "Waiting Approval" with the "Manager Approve" button active.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Standard salespeople cannot confirm; the button is strictly protected by the sales manager security group.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_13.png" alt="Manager Gate Order Waiting Approval" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 14 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 14</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Manager Approval Granted & Confirmed (S00033)</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Sales Manager clicks "Manager Approve", logging manager name, date, and "Approved" status badge.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Order automatically confirms into "Sales Order" state and generates warehouse pickings.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_14.png" alt="Manager Approval Granted" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 15 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 15</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Dual Gate Order in Waiting Approval (S00035)</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Order S00035 with Product 3 requires BOTH Customer Sign-Off and Sales Manager Approval.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Chatter and Approval Gate tab display both approval gates pending simultaneously.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_15.png" alt="Dual Gate Waiting Approval" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 16 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 16</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Partial Sign-Off: Still Waiting Approval (S00035)</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Clicking "Customer Sign-Off" approves customer gate, but the order stays in "Waiting Approval".</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Stock pickings remain completely blocked until the Sales Manager also provides approval.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_16.png" alt="Partial Approval Gate Holding" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 17 -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 17</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Full Dual Approval Satisfied (S00035)</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Manager clicks "Manager Approve". With both gates now satisfied, the order instantly auto-confirms.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Transitions to "Sales Order" state and creates warehouse fulfillment pickings.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_17.png" alt="Full Dual Approval Satisfied" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 18 -->
+            <div class="row align-items-center g-4">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 18</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Approval Rejection Flow (S00036)</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Clicking the "Reject" button transitions the order immediately into "Cancelled" status.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Approval statuses are updated to "Rejected" (Red Badge) and a clear rejection audit is posted in Chatter.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_18.png" alt="Approval Rejection Flow" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPANDED 10 FAQ ACCORDION ITEMS -->
+
+        <!-- EXPANDED 10 FAQ SECTION WITH QUESTION HEADERS AND ANSWER BODIES -->
+
+        <!-- INTERACTIVE HTML5 FAQ SECTION (CLICK TO OPEN/CLOSE WITHOUT JS) -->
+
+        <!-- PURE HTML5 CLICK-TO-OPEN FAQ SECTION (NO JS NEEDED, SANITIZER SAFE) -->
+        <section id="faq" class="p-4 p-md-5 bg-light border-top">
+            <div class="text-center mb-5">
+                <h3 class="h2 fw-bold" style="font-family: 'Outfit', sans-serif; color: #111827;">Frequently Asked
+                    Questions</h3>
+                <p style="color: #6b7280;">Click any question below to expand or collapse details</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <details open
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            1. Is Per-Product Dual Approval Gate compatible with Odoo Enterprise, Community, and Odoo.sh?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Yes! The module is 100% compatible with Odoo 19 Community Edition, Enterprise Edition, and Odoo.sh cloud deployments without overriding or modifying core Odoo code.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            2. What happens if a sales order contains only standard products without approval flags?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            If an order has no products requiring approval, clicking "Confirm" immediately confirms the order into state "sale" and creates stock delivery pickings as usual. Standard operations remain completely uninterrupted.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            3. Are warehouse delivery orders (stock pickings) created while waiting for approval?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            No. While in the "Waiting Approval" state, warehouse pickings and inventory reservations are strictly halted. Delivery pickings are only created after all required approval gates are satisfied.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            4. Who can approve the "Sales Manager Approval" gate?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Only users with Sales Administrator / Manager privileges (security group sales_team.group_sale_manager) can grant Manager Approval. If a standard salesperson attempts it, Odoo blocks the action with a clear security validation error.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            5. How does Customer Sign-Off work?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            When authorized customer agreement is received, clicking "Customer Sign-Off" records the signing user and current timestamp under the "Approval Gate" tab and logs the event in the chatter audit trail.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            6. Can both approval gates (Customer + Manager) be enforced simultaneously?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Yes! If an order contains a product requiring both gates (or separate products each requiring one gate), the order remains in "Waiting Approval" until BOTH approvals are fulfilled. Once the second gate clears, the order automatically confirms.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            7. What happens when an approval is rejected?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Clicking the "Reject" button sets the order state to "Cancelled", marks the approval status badge as "Rejected" in red, and posts a permanent audit message in chatter detailing who rejected the order.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            8. Does this module affect existing sales orders or past history?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            No. Existing confirmed or historical sales orders remain untouched. The approval gate only evaluates actively confirming orders.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            9. Are approval activities recorded for compliance audits?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Yes. Every status transition, approving user, timestamp, and triggering restricted product is permanently recorded in both the order fields and Odoo Chatter message trail.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            10. How do I get technical support or assistance if needed?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Simply email our dedicated engineering team at <a href="mailto:support@incipientcorp.com"
+                                style="color: #111827; font-weight: 700;">support@incipientcorp.com</a>. We respond
+                            within 24 hours.
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- SERVICE TRUST & CONTACT CARDS -->
+        <section id="support" class="p-4 p-md-5 bg-white border-top">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🌐</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Pre-Sales Enquiry
+                        </h5>
+                        <p class="text-secondary small mb-2">Schedule a live walkthrough with our technical team.</p>
+                        <a href="mailto:support@incipientcorp.com"
+                            class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🛠️</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Custom Development
+                        </h5>
+                        <p class="text-secondary small mb-2">Request custom Odoo features or workflow tweaks.</p>
+                        <a href="mailto:support@incipientcorp.com"
+                            class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🎧</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Lifetime Support
+                        </h5>
+                        <p class="text-secondary small mb-2">Direct assistance for configuration & upgrades.</p>
+                        <a href="mailto:support@incipientcorp.com"
+                            class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER BANNER -->
+        <footer
+            style="background-color: #000000; color: #ffffff; text-align: center; padding: 40px 20px; border-radius: 0 0 24px 24px; border-top: 1px solid #222222;">
+            <div style="text-align: center;">
+                <img src="incipient-corp.png" alt="Incipient Corp"
+                    style="height: 48px; filter: brightness(0) invert(1); margin-bottom: 16px; display: inline-block;">
+            </div>
+            <h3
+                style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 22px; font-weight: 700; margin-bottom: 8px; text-align: center;">
+                Incipient Corp — Enterprise Odoo Solutions</h3>
+            <p
+                style="color: #cbd5e1; font-size: 14px; max-width: 600px; margin: 0 auto 24px auto; line-height: 1.6; text-align: center;">
+                High-performance, business-tested Odoo apps designed for accounting, sales, and supply chain excellence.
+            </p>
+            <div style="text-align: center; width: 100%; margin-top: 20px;">
+                <a href="mailto:support@incipientcorp.com"
+                    style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 28px; border-radius: 50px; text-decoration: none; display: inline-block; margin: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">Pre-Sales
+                    Enquiries</a>
+                <a href="mailto:support@incipientcorp.com"
+                    style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 28px; border-radius: 50px; text-decoration: none; display: inline-block; margin: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">Technical
+                    Support</a>
+            </div>
+        </footer>
+
+    </div>
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sale_order_observer,sale.order observer,sale.model_sale_order,group_sale_observer,1,0,0,0
+access_sale_order_line_observer,sale.order.line observer,sale.model_sale_order_line,group_sale_observer,1,0,0,0
+access_crm_team_observer,crm.team observer,sales_team.model_crm_team,group_sale_observer,1,0,0,0
+access_stock_picking_sale_observer,stock.picking sale observer,stock.model_stock_picking,group_sale_observer,1,0,0,0
+access_stock_move_sale_observer,stock.move sale observer,stock.model_stock_move,group_sale_observer,1,0,0,0
+access_stock_move_line_sale_observer,stock.move.line sale observer,stock.model_stock_move_line,group_sale_observer,1,0,0,0
+access_account_move_sale_observer,account.move sale observer,account.model_account_move,group_sale_observer,1,0,0,0
+access_account_move_line_sale_observer,account.move.line sale observer,account.model_account_move_line,group_sale_observer,1,0,0,0
+access_mrp_bom_sale_observer,mrp.bom sale observer,mrp.model_mrp_bom,group_sale_observer,1,0,0,0
+access_mrp_bom_line_sale_observer,mrp.bom.line sale observer,mrp.model_mrp_bom_line,group_sale_observer,1,0,0,0
+access_purchase_order_observer,purchase.order observer,purchase.model_purchase_order,group_purchase_observer,1,0,0,0
+access_purchase_order_line_observer,purchase.order.line observer,purchase.model_purchase_order_line,group_purchase_observer,1,0,0,0
+access_stock_picking_purchase_observer,stock.picking purchase observer,stock.model_stock_picking,group_purchase_observer,1,0,0,0
+access_stock_move_purchase_observer,stock.move purchase observer,stock.model_stock_move,group_purchase_observer,1,0,0,0
+access_stock_move_line_purchase_observer,stock.move.line purchase observer,stock.model_stock_move_line,group_purchase_observer,1,0,0,0
+access_account_move_purchase_observer,account.move purchase observer,account.model_account_move,group_purchase_observer,1,0,0,0
+access_account_move_line_purchase_observer,account.move.line purchase observer,account.model_account_move_line,group_purchase_observer,1,0,0,0
+access_mrp_bom_purchase_observer,mrp.bom purchase observer,mrp.model_mrp_bom,group_purchase_observer,1,0,0,0
+access_mrp_bom_line_purchase_observer,mrp.bom.line purchase observer,mrp.model_mrp_bom_line,group_purchase_observer,1,0,0,0
+access_sale_order_spreadsheet_observer,sale.order.spreadsheet observer,spreadsheet_sale_management.model_sale_order_spreadsheet,group_sale_observer,1,0,0,0

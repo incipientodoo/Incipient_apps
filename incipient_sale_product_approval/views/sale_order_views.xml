@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_order_form_dual_approval" model="ir.ui.view">
+        <field name="name">sale.order.form.dual.approval</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_customer_approve" type="object" string="Customer Sign-Off"
+                        class="btn-primary"
+                        invisible="state != 'waiting_approval' or not needs_customer_approval or customer_approval_state == 'approved'"/>
+                <button name="action_manager_approve" type="object" string="Manager Approve"
+                        class="btn-success"
+                        groups="sales_team.group_sale_manager"
+                        invisible="state != 'waiting_approval' or not needs_manager_approval or manager_approval_state == 'approved'"/>
+                <button name="action_approval_reject" type="object" string="Reject"
+                        class="btn-secondary"
+                        invisible="state != 'waiting_approval'"/>
+            </xpath>
+            <xpath expr="//field[@name='state'][@widget='statusbar']" position="attributes">
+                <attribute name="statusbar_visible">draft,sent,waiting_approval,sale</attribute>
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page name="approval_information" string="Approval Gate"
+                      invisible="not needs_customer_approval and not needs_manager_approval">
+                    <group>
+                        <group string="Customer Sign-Off">
+                            <field name="needs_customer_approval"/>
+                            <field name="customer_approval_state" widget="badge"
+                                   decoration-warning="customer_approval_state == 'pending'"
+                                   decoration-success="customer_approval_state == 'approved'"
+                                   decoration-danger="customer_approval_state == 'rejected'"/>
+                            <field name="customer_approval_date" invisible="customer_approval_state != 'approved'"/>
+                            <field name="customer_approval_user_id" invisible="customer_approval_state != 'approved'"/>
+                        </group>
+                        <group string="Sales Manager Approval">
+                            <field name="needs_manager_approval"/>
+                            <field name="manager_approval_state" widget="badge"
+                                   decoration-warning="manager_approval_state == 'pending'"
+                                   decoration-success="manager_approval_state == 'approved'"
+                                   decoration-danger="manager_approval_state == 'rejected'"/>
+                            <field name="manager_approval_date" invisible="manager_approval_state != 'approved'"/>
+                            <field name="manager_approval_user_id" invisible="manager_approval_state != 'approved'"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

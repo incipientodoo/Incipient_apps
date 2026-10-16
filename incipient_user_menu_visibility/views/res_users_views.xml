@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_users_form_hidden_menus" model="ir.ui.view">
+        <field name="name">res.users.form.hidden.menus</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page name="menu_visibility" string="Menu Visibility" groups="base.group_erp_manager">
+                    <group>
+                        <div class="alert alert-info" role="alert">
+                            Select specific menus to hide from this user. All child sub-menus will also be automatically hidden.
+                            Restrictions are automatically cleared if the user loses internal user access.
+                        </div>
+                    </group>
+                    <group>
+                        <field name="accessible_menu_ids" invisible="1"/>
+                        <field name="hidden_menu_ids" widget="many2many" nolabel="1">
+                            <list string="Hidden Menus">
+                                <field name="name"/>
+                                <field name="parent_id"/>
+                                <field name="action"/>
+                            </list>
+                        </field>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
