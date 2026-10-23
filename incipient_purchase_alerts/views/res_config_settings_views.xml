@@ -1,0 +1,38 @@
+<odoo>
+    <record id="res_config_settings_view_form_inherit_incipient_purchase_alerts" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.incipient.purchase.alerts</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="purchase.res_config_settings_view_form_purchase"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@name='matrix_setting_container']" position="before">
+                <setting id="po_change_alert_setting" title="Alert when confirmed PO lines change." string="PO Change Email Alerts" help="Emails configured recipients when a confirmed PO quantity or unit price is modified.">
+                    <field name="enable_po_change_alert"/>
+                    <div class="content-group" invisible="not enable_po_change_alert">
+                        <div class="row mt16">
+                            <label for="po_change_alert_user_ids" class="col-lg-4 o_light_label"/>
+                            <field name="po_change_alert_user_ids" widget="many2many_tags" class="col-lg-8"/>
+                        </div>
+                    </div>
+                </setting>
+                <setting id="po_price_increase_alert_setting" title="Alert on product price increases." string="PO Price Increase Alerts" help="Alerts buyers when a PO unit price is higher than the vendor/product last purchased price.">
+                    <field name="enable_po_price_increase_alert"/>
+                    <div class="content-group" invisible="not enable_po_price_increase_alert">
+                        <div class="row mt16">
+                            <label for="po_price_increase_alert_user_ids" class="col-lg-4 o_light_label"/>
+                            <field name="po_price_increase_alert_user_ids" widget="many2many_tags" class="col-lg-8"/>
+                        </div>
+                    </div>
+                </setting>
+                <setting id="receipt_confirm_alert_setting" title="Alert when receipts are confirmed." string="Receipt Confirmation Alerts" help="Emails configured recipients when stock receipts for a Purchase Order are validated/done.">
+                    <field name="enable_receipt_confirm_alert"/>
+                    <div class="content-group" invisible="not enable_receipt_confirm_alert">
+                        <div class="row mt16">
+                            <label for="receipt_confirm_alert_user_ids" class="col-lg-4 o_light_label"/>
+                            <field name="receipt_confirm_alert_user_ids" widget="many2many_tags" class="col-lg-8"/>
+                        </div>
+                    </div>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>

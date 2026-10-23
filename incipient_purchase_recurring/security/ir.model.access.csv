@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_purchase_requisition_schedule_line_user,purchase.requisition.schedule.line user,model_purchase_requisition_schedule_line,base.group_user,1,1,1,1
+access_purchase_requisition_schedule_wizard_user,purchase.requisition.schedule.wizard user,model_purchase_requisition_schedule_wizard,base.group_user,1,1,1,1

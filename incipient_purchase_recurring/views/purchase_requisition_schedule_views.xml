@@ -1,0 +1,56 @@
+<odoo>
+    <!-- Wizard View for Generating Recurring Schedule -->
+    <record id="view_purchase_requisition_schedule_wizard_form" model="ir.ui.view">
+        <field name="name">purchase.requisition.schedule.wizard.form</field>
+        <field name="model">purchase.requisition.schedule.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Generate Recurring PO Schedule">
+                <sheet>
+                    <group>
+                        <group string="Schedule Duration">
+                            <field name="requisition_id" readonly="1"/>
+                            <field name="start_date"/>
+                            <field name="end_date"/>
+                        </group>
+                        <group string="Recurrence Frequency">
+                            <label for="period_num" string="Repeat Every"/>
+                            <div class="o_row">
+                                <field name="period_num" class="oe_inline"/>
+                                <field name="period_unit" class="oe_inline"/>
+                            </div>
+                        </group>
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="action_generate_schedule" type="object" string="Generate Schedule" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Inherit Purchase Requisition Form View -->
+    <record id="view_purchase_requisition_form_inherit_schedule" model="ir.ui.view">
+        <field name="name">purchase.requisition.form.inherit.schedule</field>
+        <field name="model">purchase.requisition</field>
+        <field name="inherit_id" ref="purchase_requisition.view_purchase_requisition_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_open_schedule_wizard" type="object" string="Generate Recurring Schedule" class="btn-primary" invisible="state in ('cancel', 'closed')"/>
+            </xpath>
+
+            <xpath expr="//notebook" position="inside">
+                <page string="Scheduled PO Releases" name="scheduled_po_releases">
+                    <field name="schedule_line_ids">
+                        <list editable="bottom" decoration-success="state == 'generated'" decoration-info="state == 'draft'">
+                            <field name="date_scheduled"/>
+                            <field name="purchase_id"/>
+                            <field name="state" widget="badge"/>
+                            <button name="action_generate_po" type="object" string="Generate PO Now" class="btn-secondary" invisible="state == 'generated'"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

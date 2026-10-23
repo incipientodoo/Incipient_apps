@@ -1,0 +1,21 @@
+{
+    'name': 'Incipient Recurring Purchase Orders from Blanket Agreements',
+    'version': '19.0.1.0.0',
+    'category': 'Purchasing',
+    'summary': 'Schedule recurring PO releases from Blanket Agreements with automated daily cron',
+    'author': 'Incipient Corp',
+    'website': 'www.incipientcorp.com',
+    'license': 'OPL-1',
+    'depends': ['purchase', 'purchase_requisition'],
+    'data': [
+        'security/ir.model.access.csv',
+        'data/cron_data.xml',
+        'views/purchase_requisition_schedule_views.xml',
+    ],
+    'installable': True,
+    'application': False,
+    'auto_install': False,
+    'images': ['static/description/banner.gif'],
+    'price': 40,
+    'currency': 'USD',
+}

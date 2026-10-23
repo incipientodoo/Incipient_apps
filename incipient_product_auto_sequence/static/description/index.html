@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Category-Based Product Auto-Sequencing | Incipient Corp</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="index_file.css" rel="stylesheet" />
+</head>
+
+<body style="font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; color: #111827;"
+    class="py-4 py-md-5">
+    <div class="container p-0 overflow-hidden bg-white shadow-lg"
+        style="border-radius: 24px; border: 1px solid #e2e8f0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; scroll-behavior: smooth;">
+
+        <!-- BRAND HEADER -->
+        <header id="top"
+            class="d-flex flex-column flex-md-row align-items-center justify-content-between p-4 px-md-5 bg-white border-bottom gap-3">
+            <div class="d-flex align-items-center gap-3">
+                <img src="incipient-corp.png" alt="Incipient Corp" style="height: 50px; object-fit: contain;">
+                <div class="border-start ps-3">
+                    <h1 class="h5 fw-extrabold text-dark mb-1"
+                        style="font-family: 'Outfit', sans-serif; letter-spacing: -0.3px; color: #111827;">Category-Based Auto-Sequencing of Product Internal References</h1>
+                    <span class="badge bg-dark text-white px-3 py-1 rounded-pill small fw-bold"
+                        style="font-size: 11px; background-color: #000000; color: #ffffff;">Incipient Enterprise
+                        Suite</span>
+                </div>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <span
+                    style="background-color: #000000; color: #ffffff; padding: 6px 18px; border-radius: 50px; font-weight: 700; font-size: 12px; display: inline-block;">Odoo
+                    19.0 Ready</span>
+                <span
+                    style="background-color: #f1f5f9; color: #000000; border: 1px solid #cbd5e1; padding: 6px 18px; border-radius: 50px; font-weight: 700; font-size: 12px; display: inline-block;">Enterprise
+                    Certified</span>
+            </div>
+        </header>
+
+        <!-- QUICK-NAV BAR -->
+        <nav class="d-flex align-items-center justify-content-center gap-2 py-2 px-3 border-bottom flex-wrap"
+            style="background-color: #f8fafc;">
+            <a href="#overview"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Overview</a>
+            <a href="#impact"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Business
+                Impact</a>
+            <a href="#features"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Feature
+                Suite</a>
+            <a href="#walkthrough"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Walkthrough</a>
+            <a href="#faq"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">FAQ</a>
+            <a href="#support"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Support</a>
+        </nav>
+
+        <!-- EXECUTIVE HERO BANNER -->
+        <!-- EXECUTIVE HERO BANNER SECTION -->
+        <section id="overview"
+            style="background-color: #000000; color: #ffffff; padding: 40px 30px; border-radius: 0 0 20px 20px; margin: 0 0 30px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8">
+                    <h1
+                        style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 34px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 16px; line-height: 1.2;">
+                        Category-Based Product Auto-Sequencing
+                    </h1>
+                    <p
+                        style="color: #cbd5e1; font-size: 16px; line-height: 1.6; max-width: 680px; margin-bottom: 24px;">
+                        Automate standardized internal reference (SKU / default_code) generation per product category with custom prefixes, dedicated sequences, and seamless re-categorization synchronization.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span
+                            style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓
+                            Community Edition</span>
+                        <span
+                            style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓
+                            Enterprise Edition</span>
+                        <span
+                            style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓
+                            Odoo.sh Cloud</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div
+                        style="background-color: #111111; border: 1px solid #333333; padding: 24px; border-radius: 16px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                        <h4
+                            style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 18px; font-weight: 700; margin-bottom: 8px;">
+                            Need Setup Assistance?</h4>
+                        <p style="color: #cbd5e1; font-size: 13px; margin-bottom: 16px; line-height: 1.5;">Free
+                            pre-sales consultation and lifetime support for every installation.</p>
+                        <a href="mailto:support@incipientcorp.com"
+                            style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 20px; border-radius: 8px; display: block; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Contact
+                            Technical Support</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXECUTIVE HIGHLIGHTS & KEY CAPABILITIES CARDS -->
+        <section class="p-4 p-md-5 bg-light border-bottom">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">KEY ADVANTAGES</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Built for Standardized Inventory Management</h3>
+                <p class="text-muted">Eliminate human numbering errors and duplicate product SKUs across your catalog</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm"
+                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #000000, #222222); font-size: 20px;">
+                                🏷️
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Category Numbering</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Dedicated Sequences</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Each category gets its own independent ir.sequence engine with custom prefixes (e.g., ELEC-, FOOD-, CHEM-).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm"
+                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #111111, #333333); font-size: 20px;">
+                                ⚡
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">
+                                    Auto & Dynamic Sync</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Creation & Re-Category</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Automatically assigns internal references on creation and re-sequences products dynamically whenever their category changes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm"
+                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #000000, #1c1c1c); font-size: 20px;">
+                                🔄
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Variant & Template</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Seamless Flow</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Synchronizes references across templates and variants while preserving manual overrides whenever custom SKUs are needed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEM VS SOLUTION COMPARISON -->
+        <section id="impact" class="p-4 p-md-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">OPERATIONAL IMPACT</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">The Business Transformation
+                </h3>
+                <p class="text-muted">How Category-Based Product Auto-Sequencing resolves standard Odoo product reference limitations</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-4 p-md-5 rounded-4 border border-secondary bg-light h-100 shadow-sm">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="badge bg-secondary text-white rounded-pill px-3 py-1 fw-bold">WITHOUT
+                                APP</span>
+                            <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Default
+                                Odoo Limitation</h4>
+                        </div>
+                        <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
+                            style="line-height: 1.6;">
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>Users must manually type Internal References (SKU), leading to duplicates and inconsistencies.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>No category-specific sequence configuration or custom automated prefixes out-of-the-box.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>Moving a product to a different category leaves old obsolete SKUs unchanged, creating catalog confusion.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="p-4 p-md-5 rounded-4 border border-dark bg-dark text-white h-100 shadow-sm">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="badge bg-white text-dark rounded-pill px-3 py-1 fw-bold">WITH INCIPIENT
+                                APP</span>
+                            <h4 class="h5 fw-bold text-white mb-0" style="font-family: 'Outfit', sans-serif;">Automated Reference Intelligence</h4>
+                        </div>
+                        <ul class="list-unstyled text-white-50 small mb-0 d-flex flex-column gap-2"
+                            style="line-height: 1.6;">
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>Automated category-based sequence assigns unique, formatted codes on product creation.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>One-click sequence generator creates dedicated ir.sequence with customizable prefix and padding.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>Automatic re-sequencing on category reassignment keeps product references aligned with catalog structure.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENHANCED 12-FEATURE SUITE (NO NUMBERS) -->
+        <section id="features" class="p-4 p-md-5 bg-light border-top border-bottom">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">EXTENSIVE
+                    CAPABILITIES</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Comprehensive Feature Suite
+                </h3>
+                <p class="text-muted">12 Core capabilities engineered for precision inventory catalog control</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Category Auto-Sequence Toggle</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Enable or disable auto-sequencing per product category directly from category form and list views using a clean boolean switch.</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Custom Sequence Prefixes</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Define custom category prefixes (e.g. ELEC-, FOOD-, CHEM-) or let Odoo auto-suggest from the category title.</p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">One-Click Sequence Generation</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Automatically creates an isolated, dedicated ir.sequence record with configurable padding and increments on save or via button.</p>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Product Creation Automation</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Generates and applies the next sequential reference code immediately upon creating any product under an active category.</p>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Re-Categorization Sync</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Changing a product's category instantly assigns a new code from the destination category's sequence engine automatically.</p>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Variant-Level Synchronization</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Ensures consistency between product templates and product variants while preserving individual variant overrides when needed.</p>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Manual Override Flexibility</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Explicitly provided internal references during import or manual entry are respected and never overwritten without request.</p>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Informative UI Placeholders</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Product form fields clearly show helpful placeholder tips explaining that codes are auto-assigned by the category.</p>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Sales & Inventory Cross-App</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Auto-generated references flow transparently into Inventory deliveries, Sales quotations, Purchase orders, and Invoices.</p>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Multi-Company Support</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Sequences function seamlessly across single or multi-company Odoo databases without colliding reference counters.</p>
+                    </div>
+                </div>
+                <!-- 11 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Edition Compatibility</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">100% compatible with Odoo Community Edition, Enterprise Edition, and Odoo.sh cloud deployments.</p>
+                    </div>
+                </div>
+                <!-- 12 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Zero External Dependencies</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Built strictly with standard Odoo ORM methods with zero third-party dependencies or performance bottlenecks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISUAL WALKTHROUGH -->
+        <section id="walkthrough" class="p-4 p-md-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">INTERFACE SHOWCASE</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Step-by-Step Visual Walkthrough</h3>
+                <p class="text-muted">How Category-Based Product Auto-Sequencing operates in Odoo</p>
+            </div>
+
+            <!-- Step 1 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 01</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Access Product Categories Menu</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Use the command palette or navigate to <em>Invoicing &rarr; Configuration &rarr; Invoicing &rarr; Product Categories</em> (or via <em>Inventory &rarr; Configuration &rarr; Products &rarr; Categories</em>).</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Quickly locate and open your product categories list to configure auto-sequencing rules.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_1.png" alt="Access Product Categories Menu" class="img-fluid rounded-3 w-100"
+                            onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 02</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Configure Category Sequence (Electronics)</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Open a category such as <strong>Electronics</strong>. Under the dedicated <em>Internal Reference Auto-Sequencing</em> group, enable the <strong>Auto-Sequence Internal Ref</strong> toggle.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Define a custom prefix like <code>ELEC-</code>. The system automatically creates and links the sequence: <em>Internal Reference Sequence - Electronics</em>.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_2.png" alt="Configure Category Sequence (Electronics)" class="img-fluid rounded-3 w-100"
+                            onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 03</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Configure Second Category (Toys)</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Open another category such as <strong>Toys</strong> and enable <strong>Auto-Sequence Internal Ref</strong>.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Set the sequence prefix to <code>TOY-</code>. An isolated sequence <em>Internal Reference Sequence - Toys</em> is automatically generated and linked.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_3.png" alt="Configure Second Category (Toys)" class="img-fluid rounded-3 w-100"
+                            onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 04</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Inspect & Fine-Tune Sequence Rules</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Click into the generated sequence record to inspect sequence code (<code>product.category.auto.sequence</code>), prefix (<code>TOY-</code>), sequence size/padding (5), and next counter values.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Leverages standard Odoo <code>ir.sequence</code> flexibility with zero custom configuration overhead.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_4.png" alt="Inspect & Fine-Tune Sequence Rules" class="img-fluid rounded-3 w-100"
+                            onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 05</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Automatic SKU Assignment on Product Creation</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Create a new product like <strong>Toy Product</strong> under the <em>Toys</em> category and save.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">The system automatically assigns the next sequence number (<code>TOY-00001</code>) to the <strong>Reference</strong> field without any manual typing.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_5.png" alt="Automatic SKU Assignment on Product Creation" class="img-fluid rounded-3 w-100"
+                            onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 6 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 06</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Manual Reference Override Support</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Create a second product, such as <strong>Toy Product - 2</strong>, and enter a custom internal reference (e.g. <code>TOY-SKU-2</code>).</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">The module respects user input and does not overwrite custom manual codes, ensuring maximum operational flexibility.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_6.png" alt="Manual Reference Override Support" class="img-fluid rounded-3 w-100"
+                            onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 7 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 07</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Category with Custom Prefix (Home Construction)</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Set up another category, such as <strong>Home Construction</strong>, with sequence prefix <code>HOME_CONST -</code>.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Supports alphanumeric prefixes, dashes, underscores, and spacing to match your enterprise naming convention.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_7.png" alt="Category with Custom Prefix (Home Construction)" class="img-fluid rounded-3 w-100"
+                            onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 8 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 08</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Independent Sequential Reference Generation</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Create <strong>Home Product</strong> under <em>Home Construction</em> and save the product.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">The product immediately receives reference <code>HOME_CONST -00001</code>, demonstrating perfectly isolated sequence tracking across different product categories.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_8.png" alt="Independent Sequential Reference Generation" class="img-fluid rounded-3 w-100"
+                            onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPANDED 10 FAQ ACCORDION ITEMS -->
+        <section id="faq" class="p-4 p-md-5 bg-light border-top">
+            <div class="text-center mb-5">
+                <h3 class="h2 fw-bold" style="font-family: 'Outfit', sans-serif; color: #111827;">Frequently Asked Questions</h3>
+                <p style="color: #6b7280;">Click any question below to expand or collapse details</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <details open
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            1. Is Category-Based Product Auto-Sequencing compatible with Odoo Enterprise, Community, and Odoo.sh?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Yes! The module is 100% compatible with Odoo 19.0 Community Edition, Enterprise Edition, and Odoo.sh cloud deployments without altering core models.
+                        </div>
+                    </details>
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            2. How does the module generate sequence numbers for each category?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            When you enable "Auto-Sequence Internal Ref" on a category, the system automatically creates a dedicated ir.sequence record. You can specify a custom prefix (e.g. ELEC-) or let it generate one from the first 3 letters of the category name.
+                        </div>
+                    </details>
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            3. What happens if I manually enter an Internal Reference when creating a product?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            If you provide a manual Internal Reference, the module respects your entry and does not overwrite it with an automated sequence number.
+                        </div>
+                    </details>
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            4. What happens when I change an existing product's category?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            If the product is reassigned to another category with auto-sequencing enabled, the system automatically draws a new reference from the target category's sequence engine.
+                        </div>
+                    </details>
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            5. Are product variants supported?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Yes. Product variants automatically inherit the template's auto-generated internal reference, and variants created directly under auto-sequenced categories also receive unique references.
+                        </div>
+                    </details>
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            6. Can I customize the padding and prefix of each sequence?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Yes. You can edit the prefix directly from the Category form, or click on the linked sequence to customize padding length, prefix, suffix, and next counter values in standard Odoo Sequence management.
+                        </div>
+                    </details>
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            7. Does this affect existing products created before installation?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Existing products keep their existing internal references intact. They are only assigned new numbers if their category is actively changed to an auto-sequenced category.
+                        </div>
+                    </details>
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            8. Does this module impact database performance on bulk product creation or import?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            No. The module leverages native multi-create (create_multi) and standard PostgreSQL sequences, ensuring optimal batch speed with zero lag during bulk imports.
+                        </div>
+                    </details>
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            9. Does the module require installing external Python packages?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            No external Python packages or system binaries are required. It installs cleanly and instantly using standard Odoo framework dependencies.
+                        </div>
+                    </details>
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            10. How do I get technical support or assistance if needed?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Simply email our dedicated engineering team at <a href="mailto:support@incipientcorp.com"
+                                style="color: #111827; font-weight: 700;">support@incipientcorp.com</a>. We respond within 24 hours.
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- SERVICE TRUST & CONTACT CARDS -->
+        <section id="support" class="p-4 p-md-5 bg-white border-top">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🌐</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Pre-Sales Enquiry
+                        </h5>
+                        <p class="text-secondary small mb-2">Schedule a live walkthrough with our technical team.</p>
+                        <a href="mailto:support@incipientcorp.com"
+                            class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🛠️</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Custom Development
+                        </h5>
+                        <p class="text-secondary small mb-2">Request custom Odoo features or workflow tweaks.</p>
+                        <a href="mailto:support@incipientcorp.com"
+                            class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🎧</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Lifetime Support
+                        </h5>
+                        <p class="text-secondary small mb-2">Direct assistance for configuration & upgrades.</p>
+                        <a href="mailto:support@incipientcorp.com"
+                            class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER BANNER -->
+        <footer
+            style="background-color: #000000; color: #ffffff; text-align: center; padding: 40px 20px; border-radius: 0 0 24px 24px; border-top: 1px solid #222222;">
+            <div style="text-align: center;">
+                <img src="incipient-corp.png" alt="Incipient Corp"
+                    style="height: 48px; filter: brightness(0) invert(1); margin-bottom: 16px; display: inline-block;">
+            </div>
+            <h3
+                style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 22px; font-weight: 700; margin-bottom: 8px; text-align: center;">
+                Incipient Corp — Enterprise Odoo Solutions</h3>
+            <p
+                style="color: #cbd5e1; font-size: 14px; max-width: 600px; margin: 0 auto 24px auto; line-height: 1.6; text-align: center;">
+                High-performance, business-tested Odoo apps designed for accounting, sales, and supply chain excellence.
+            </p>
+            <div style="text-align: center; width: 100%; margin-top: 20px;">
+                <a href="mailto:support@incipientcorp.com"
+                    style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 28px; border-radius: 50px; text-decoration: none; display: inline-block; margin: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">Pre-Sales
+                    Enquiries</a>
+                <a href="mailto:support@incipientcorp.com"
+                    style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 28px; border-radius: 50px; text-decoration: none; display: inline-block; margin: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">Technical
+                    Support</a>
+            </div>
+        </footer>
+
+    </div>
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{
+    'name': 'Category-Based Auto-Sequencing of Product Internal References',
+    'version': '19.0.1.0.0',
+    'category': 'Inventory/Inventory',
+    'summary': 'Auto-sequence product internal references based on product category configuration',
+    'author': 'Incipient Corp',
+    'website': 'www.incipientcorp.com',
+    'license': 'OPL-1',
+    'depends': ['product', 'stock', 'sale'],
+    'data': [
+        'security/ir.model.access.csv',
+        'data/ir_sequence_data.xml',
+        'views/product_category_views.xml',
+        'views/product_template_views.xml',
+    ],
+    'installable': True,
+    'application': False,
+    'auto_install': False,
+    'images': ['static/description/banner.gif'],
+    'price':20,
+    'currency': 'USD',
+}

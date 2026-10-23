@@ -1,0 +1,36 @@
+<odoo>
+    <record id="product_category_form_view_inherit_auto_sequence" model="ir.ui.view">
+        <field name="name">product.category.form.inherit.auto.sequence</field>
+        <field name="model">product.category</field>
+        <field name="inherit_id" ref="product.product_category_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='first']" position="after">
+                <group name="auto_sequence_group" string="Internal Reference Auto-Sequencing">
+                    <group>
+                        <field name="auto_sequence" widget="boolean_toggle"/>
+                        <field name="sequence_prefix" invisible="not auto_sequence" placeholder="e.g. ELEC-"/>
+                    </group>
+                    <group invisible="not auto_sequence">
+                        <label for="sequence_id"/>
+                        <div class="o_row">
+                            <field name="sequence_id" readonly="1" options="{'no_create': True}"/>
+                            <button name="action_create_sequence" type="object" string="Generate Sequence" class="btn-link" invisible="sequence_id != False"/>
+                        </div>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_category_list_view_inherit_auto_sequence" model="ir.ui.view">
+        <field name="name">product.category.list.inherit.auto.sequence</field>
+        <field name="model">product.category</field>
+        <field name="inherit_id" ref="product.product_category_list_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='display_name']" position="after">
+                <field name="auto_sequence" widget="boolean_toggle" optional="show"/>
+                <field name="sequence_id" optional="hide"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
