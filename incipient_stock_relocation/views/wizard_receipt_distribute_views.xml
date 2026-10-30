@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_wizard_receipt_distribute_form" model="ir.ui.view">
+        <field name="name">wizard.receipt.distribute.form</field>
+        <field name="model">wizard.receipt.distribute</field>
+        <field name="arch" type="xml">
+            <form string="Distribute Receipt">
+                <sheet>
+                    <group>
+                        <field name="picking_id" readonly="1"/>
+                    </group>
+                    <field name="line_ids">
+                        <list editable="bottom">
+                            <field name="move_id" domain="[('picking_id', '=', parent.picking_id), ('state', '=', 'done')]"/>
+                            <field name="product_id"/>
+                            <field name="qty_to_distribute"/>
+                            <field name="dest_location_id"/>
+                        </list>
+                    </field>
+                </sheet>
+                <footer>
+                    <button name="action_distribute" string="Distribute" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_wizard_receipt_distribute" model="ir.actions.act_window">
+        <field name="name">Distribute Receipt</field>
+        <field name="res_model">wizard.receipt.distribute</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

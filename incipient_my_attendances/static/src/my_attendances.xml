@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="incipient_my_attendances.MyAttendancesTemplate" owl="1">
+        <div class="o_my_attendances_container o_action_manager">
+            <div t-if="state.loading" class="text-center mt-5">
+                <i class="fa fa-spinner fa-spin fa-3x"></i>
+            </div>
+            
+            <div t-elif="state.error" class="alert alert-danger m-4" role="alert">
+                <t t-esc="state.error"/>
+            </div>
+            
+            <div t-else="" class="o_attendance_card">
+                <div class="o_attendance_header">
+                    <h2>Welcome, <t t-esc="state.employeeName"/>!</h2>
+                    <p class="text-muted">Manage your daily attendance directly from this screen.</p>
+                </div>
+                
+                <div class="o_attendance_body text-center mt-4 mb-4">
+                    <div class="o_attendance_status mb-3">
+                        <span t-if="state.attendanceState === 'checked_in'" class="badge text-bg-success fs-5">Currently Checked In</span>
+                        <span t-if="state.attendanceState === 'checked_out'" class="badge text-bg-secondary fs-5">Currently Checked Out</span>
+                    </div>
+                    <div class="o_hours_today text-muted">
+                        <strong>Hours Today: </strong> <t t-esc="state.hoursToday.toFixed(2)"/>
+                    </div>
+                </div>
+                
+                <div class="o_attendance_action text-center mt-5">
+                    <button t-if="state.attendanceState === 'checked_out'" 
+                            class="btn btn-lg btn-primary rounded-pill px-5 py-3 shadow" 
+                            t-att-disabled="state.processing"
+                            t-on-click="toggleAttendance">
+                        <i t-if="!state.processing" class="fa fa-sign-in me-2"></i>
+                        <i t-else="" class="fa fa-spinner fa-spin me-2"></i> Check In
+                    </button>
+                    <button t-if="state.attendanceState === 'checked_in'" 
+                            class="btn btn-lg btn-warning rounded-pill px-5 py-3 shadow" 
+                            t-att-disabled="state.processing"
+                            t-on-click="toggleAttendance">
+                        <i t-if="!state.processing" class="fa fa-sign-out me-2"></i>
+                        <i t-else="" class="fa fa-spinner fa-spin me-2"></i> Check Out
+                    </button>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

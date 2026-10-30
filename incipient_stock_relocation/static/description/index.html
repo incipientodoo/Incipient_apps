@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Lot & Receipt-Based Internal Stock Relocation Wizards | Incipient Corp</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="index_file.css" rel="stylesheet" />
+</head>
+
+<body style="font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; color: #111827;"
+    class="py-4 py-md-5">
+    <div class="container p-0 overflow-hidden bg-white shadow-lg"
+        style="border-radius: 24px; border: 1px solid #e2e8f0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; scroll-behavior: smooth;">
+
+        <!-- BRAND HEADER -->
+        <header id="top"
+            class="d-flex flex-column flex-md-row align-items-center justify-content-between p-4 px-md-5 bg-white border-bottom gap-3">
+            <div class="d-flex align-items-center gap-3">
+                <img src="incipient-corp.png" alt="Incipient Corp" style="height: 50px; object-fit: contain;">
+                <div class="border-start ps-3">
+                    <h1 class="h5 fw-extrabold text-dark mb-1"
+                        style="font-family: 'Outfit', sans-serif; letter-spacing: -0.3px; color: #111827;">Internal
+                        Stock Relocation &amp; Receipt Distribution</h1>
+                    <span class="badge bg-dark text-white px-3 py-1 rounded-pill small fw-bold"
+                        style="font-size: 11px; background-color: #000000; color: #ffffff;">Incipient Warehouse &amp;
+                        Logistics Suite</span>
+                </div>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <span
+                    style="background-color: #000000; color: #ffffff; padding: 6px 18px; border-radius: 50px; font-weight: 700; font-size: 12px; display: inline-block;">Odoo
+                    19.0 Ready</span>
+                <span
+                    style="background-color: #f1f5f9; color: #000000; border: 1px solid #cbd5e1; padding: 6px 18px; border-radius: 50px; font-weight: 700; font-size: 12px; display: inline-block;">Enterprise
+                    Certified</span>
+            </div>
+        </header>
+
+        <!-- QUICK-NAV BAR -->
+        <nav class="d-flex align-items-center justify-content-center gap-2 py-2 px-3 border-bottom flex-wrap"
+            style="background-color: #f8fafc;">
+            <a href="#overview"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Overview</a>
+            <a href="#impact"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Business
+                Impact</a>
+            <a href="#features"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Feature
+                Suite</a>
+            <a href="#walkthrough"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Walkthrough</a>
+            <a href="#faq"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">FAQ</a>
+            <a href="#support"
+                class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Support</a>
+        </nav>
+
+        <!-- EXECUTIVE HERO BANNER -->
+        <!-- EXECUTIVE HERO BANNER SECTION -->
+        <section id="overview"
+            style="background-color: #000000; color: #ffffff; padding: 40px 30px; border-radius: 0 0 20px 20px; margin: 0 0 30px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8">
+                    <h1
+                        style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 34px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 16px; line-height: 1.2;">
+                        Lot &amp; Receipt-Based Internal Stock Relocation Wizards
+                    </h1>
+                    <p
+                        style="color: #cbd5e1; font-size: 16px; line-height: 1.6; max-width: 680px; margin-bottom: 24px;">
+                        Quickly relocate specific lot and serial quantities between warehouse locations with real-time
+                        stock validation, and seamlessly distribute completed purchase receipt lines across multiple
+                        storage locations into automated internal transfer pickings.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span
+                            style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓
+                            Community Edition</span>
+                        <span
+                            style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓
+                            Enterprise Edition</span>
+                        <span
+                            style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓
+                            Odoo.sh Cloud</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div
+                        style="background-color: #111111; border: 1px solid #333333; padding: 24px; border-radius: 16px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                        <h4
+                            style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 18px; font-weight: 700; margin-bottom: 8px;">
+                            Need Setup Assistance?</h4>
+                        <p style="color: #cbd5e1; font-size: 13px; margin-bottom: 16px; line-height: 1.5;">Free
+                            pre-sales consultation and lifetime support for every installation.</p>
+                        <a href="mailto:support@incipientcorp.com"
+                            style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 20px; border-radius: 8px; display: block; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Contact
+                            Technical Support</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXECUTIVE HIGHLIGHTS & KEY CAPABILITIES CARDS -->
+        <section class="p-4 p-md-5 bg-light border-bottom">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">KEY ADVANTAGES</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Engineered for Agile
+                    Warehouse Operations</h3>
+                <p class="text-muted">Eliminate manual stock move creation and speed up put-away workflows with smart
+                    wizard automation</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm"
+                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #000000, #222222); font-size: 20px;">
+                                📦
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">
+                                    Lot-Level Relocation</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Menu
+                                    Wizard</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Pick any Lot/Serial number to auto-detect product and location. Relocate exact quantities
+                            with instant validation and immediate picking execution.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm"
+                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #111111, #333333); font-size: 20px;">
+                                🚚
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Receipt
+                                    Distribution</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Multi-Location
+                                    Split</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Launch directly from validated purchase receipts to split delivered quantities across
+                            various internal storage locations in a single editable view.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm"
+                                style="width: 48px; height: 48px; background: linear-gradient(135deg, #000000, #1c1c1c); font-size: 20px;">
+                                ⚡
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Smart
+                                    Grouped Pickings</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Automated
+                                    Transfers</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Automatically groups distributed products by destination location, creating consolidated
+                            internal transfer pickings and assigning reserved stock.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEM VS SOLUTION COMPARISON -->
+        <section id="impact" class="p-4 p-md-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">OPERATIONAL IMPACT</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">The Inventory Movement
+                    Transformation</h3>
+                <p class="text-muted">How Lot &amp; Receipt Relocation Wizards solve standard Odoo stock movement
+                    bottlenecks</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-4 p-md-5 rounded-4 border border-secondary bg-light h-100 shadow-sm">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="badge bg-secondary text-white rounded-pill px-3 py-1 fw-bold">WITHOUT
+                                APP</span>
+                            <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Default
+                                Odoo Limitation</h4>
+                        </div>
+                        <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
+                            style="line-height: 1.6;">
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>Relocating a specific lot requires manually creating an internal transfer,
+                                    searching product quants, manually adding move lines, and assigning lots.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>After validating a large incoming shipment, warehouse operators must create
+                                    multiple separate transfers to distribute goods across different aisles or
+                                    bins.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>High risk of user error: operators can accidentally over-transfer quantities past
+                                    available stock or specify duplicate/conflicting locations.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="p-4 p-md-5 rounded-4 border border-dark bg-dark text-white h-100 shadow-sm">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="badge bg-white text-dark rounded-pill px-3 py-1 fw-bold">WITH INCIPIENT
+                                APP</span>
+                            <h4 class="h5 fw-bold text-white mb-0" style="font-family: 'Outfit', sans-serif;">
+                                Streamlined Warehouse Agility</h4>
+                        </div>
+                        <ul class="list-unstyled text-white-50 small mb-0 d-flex flex-column gap-2"
+                            style="line-height: 1.6;">
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>Dedicated Lot Relocation wizard auto-detects source location and on-hand quantity,
+                                    validating and executing the transfer in one step.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>Direct "Distribute Stock" button on completed receipts loads lines into an
+                                    editable table to split items across multiple destination locations
+                                    effortlessly.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>Intelligently consolidates moves by destination location, automatically creating
+                                    grouped internal transfers and preserving complete origin traceability.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENHANCED 12-FEATURE SUITE (NO NUMBERS) -->
+        <section id="features" class="p-4 p-md-5 bg-light border-top border-bottom">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">EXTENSIVE
+                    CAPABILITIES</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Comprehensive Feature Suite
+                </h3>
+                <p class="text-muted">12 Core capabilities engineered for fast, accurate warehouse put-away and stock
+                    relocations</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Lot Relocation
+                                Wizard</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Conveniently accessible under
+                            Inventory &gt; Warehouse Management to quickly transfer specific lots and serial numbers
+                            between internal locations.</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Automated
+                                Quant Detection</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Selecting a lot instantly fetches
+                            the product, current internal source location, and real-time positive quantity on hand.</p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Available
+                                Quantity Guard</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Enforces strict validation: users
+                            cannot relocate non-positive quantities or move more stock than is genuinely available in
+                            the source location.</p>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Immediate
+                                Transfer Execution</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Automatically creates an internal
+                            transfer picking, sets move lines, assigns the lot ID, and immediately validates the
+                            transfer.</p>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Receipt
+                                Put-Away Action</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Adds a visible "Distribute Stock"
+                            button directly in incoming stock pickings once in 'done' state for rapid post-receipt
+                            put-away.</p>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Multi-Location
+                                Line Splitting</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Split single or multiple receipt
+                            move lines across any number of distinct internal locations in a clean, editable grid view.
+                        </p>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Received
+                                Quantity Bound</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Prevents over-distribution by
+                            verifying that the total quantity distributed across lines never exceeds the actual received
+                            product quantity.</p>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Intelligent
+                                Location Grouping</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Groups distribution lines
+                            destined for identical storage locations into single unified pickings to avoid cluttered
+                            redundant transfers.</p>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Automated
+                                Reserve &amp; Assign</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Automatically creates, confirms,
+                            and reserves inventory (`action_assign`) on all generated internal transfer pickings.</p>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Complete
+                                Origin Traceability</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Links generated internal pickings
+                            back to their source purchase receipt document name and supplier partner for complete
+                            auditing.</p>
+                    </div>
+                </div>
+                <!-- 11 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Multi-Company
+                                Isolation</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Resolves internal operation types
+                            and warehouse stock pickings strictly within the active company's warehouse boundary.</p>
+                    </div>
+                </div>
+                <!-- 12 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Direct Window
+                                Views</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Wizards return the newly created
+                            transfers immediately in dedicated form or list views, giving operators instant visibility
+                            and control.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISUAL WALKTHROUGH -->
+        <section id="walkthrough" class="p-4 p-md-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">INTERFACE SHOWCASE</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Step-by-Step Visual
+                    Walkthrough</h3>
+                <p class="text-muted">How Lot &amp; Receipt-Based Stock Relocation Wizards operate in Odoo</p>
+            </div>
+
+            <!-- Step 1 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step
+                        01</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Warehouse Locations
+                        Navigation</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Quickly navigate to warehouse locations via
+                        Odoo search or reporting.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Use the command palette (`/loca`) or
+                        navigate to Inventory &gt; Reporting &gt; Locations to inspect storage zones, warehouse racks,
+                        and shelf layouts before relocating stock.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_1.png" alt="Warehouse Locations Navigation"
+                            class="img-fluid rounded-3 w-100"
+                            onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step
+                        02</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Internal Storage
+                        Hierarchy</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Review internal storage locations and shelf
+                        structures.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Inspect internal locations including
+                        main stock (`WH/Stock`) and specific shelves (`WH/Stock/Shelf 1`, `WH/Stock/Shelf 2`). Having
+                        proper sub-locations ensures organized stock segregation.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_2.png" alt="Internal Storage Hierarchy"
+                            class="img-fluid rounded-3 w-100"
+                            onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step
+                        03</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Access Lots &amp;
+                        Serial Numbers</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Quickly search and access tracked product
+                        lots and serial records.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Find lots and serial numbers using the
+                        command search (`/serial`) or via Inventory &gt; Products &gt; Lots / Serial Numbers to verify
+                        tracked item inventory.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_3.png" alt="Access Lots & Serial Numbers"
+                            class="img-fluid rounded-3 w-100"
+                            onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step
+                        04</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Lot Inventory &amp;
+                        Location Details</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Check available on-hand quantities and
+                        current storage locations for the lot.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">View lot details such as `Lot - 001`
+                        for product `[FURN_2100] Drawer Black`, verifying its current internal location (`WH/Stock`) and
+                        available on-hand quantity (`25.00`) before relocation.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_4.png" alt="Lot Inventory & Location Details"
+                            class="img-fluid rounded-3 w-100"
+                            onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step
+                        05</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Launch Lot Relocation
+                        Wizard</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Open the dedicated wizard directly from
+                        Warehouse Operations.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Easily access the relocation wizard
+                        from Inventory &gt; Operations &gt; Lot Relocation or type `/reloc` in the search bar to launch
+                        the instant stock transfer popup.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_5.png" alt="Launch Lot Relocation Wizard"
+                            class="img-fluid rounded-3 w-100"
+                            onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 6 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step
+                        06</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Configure Relocation
+                        Quantity &amp; Target</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Auto-detected source location with real-time
+                        quantity validation safeguards.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Selecting `Lot - 001` auto-fetches the
+                        product, source location (`WH/Stock`), and available quantity (`25.00`). Set the relocation
+                        quantity (`15.00`) and destination location (`WH/Stock/Shelf 1`) with built-in validation
+                        preventing over-allocation.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_6.png" alt="Configure Relocation Quantity & Target"
+                            class="img-fluid rounded-3 w-100"
+                            onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 7 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step
+                        07</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Automated Internal
+                        Transfer Execution</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Transfer is created, lot is assigned, and
+                        status is validated to Done automatically.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Clicking 'Relocate' creates the
+                        internal picking (`WH/INT/00001`), links the lot to move lines, confirms, and validates the
+                        transfer directly to 'Done' state, instantly opening the completed picking view.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_7.png" alt="Automated Internal Transfer Execution"
+                            class="img-fluid rounded-3 w-100"
+                            onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 8 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step
+                        08</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Receipt Put-Away:
+                        Distribute Stock</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Split received goods across multiple
+                        locations directly from validated receipts.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">On any done purchase receipt
+                        (`WH/IN/00002`), click 'Distribute Stock' to launch the distribution wizard. Allocate quantities
+                        across multiple destination locations (`TWH/Stock`, `WH/Stock/Shelf 1`, `WH/Stock/Shelf 2`) with
+                        built-in quantity cap validation.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_8.png" alt="Receipt Put-Away: Distribute Stock"
+                            class="img-fluid rounded-3 w-100"
+                            onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 9 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step
+                        09</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Smart Grouped
+                        Pickings Creation</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Consolidated internal transfers
+                        automatically created and reserved per destination.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Clicking 'Distribute' groups lines by
+                        destination location, generates distinct internal transfer pickings (`WH/INT/00002`,
+                        `WH/INT/00003`, `WH/INT/00004`), confirms and reserves inventory, and displays them in a
+                        dedicated Distributed Pickings list view.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_9.png" alt="Smart Grouped Pickings Creation"
+                            class="img-fluid rounded-3 w-100"
+                            onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPANDED 10 FAQ ACCORDION ITEMS -->
+
+        <!-- EXPANDED 10 FAQ SECTION WITH QUESTION HEADERS AND ANSWER BODIES -->
+
+        <!-- INTERACTIVE HTML5 FAQ SECTION (CLICK TO OPEN/CLOSE WITHOUT JS) -->
+
+        <!-- PURE HTML5 CLICK-TO-OPEN FAQ SECTION (NO JS NEEDED, SANITIZER SAFE) -->
+        <section id="faq" class="p-4 p-md-5 bg-light border-top">
+            <div class="text-center mb-5">
+                <h3 class="h2 fw-bold" style="font-family: 'Outfit', sans-serif; color: #111827;">Frequently Asked
+                    Questions</h3>
+                <p style="color: #6b7280;">Click any question below to expand or collapse details</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <details open
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            1. What problems does the Lot &amp; Receipt-Based Stock Relocation module solve?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Standard Odoo requires tedious manual multi-step operations to relocate specific lots or
+                            split a large incoming purchase receipt across various warehouse storage locations. This
+                            module provides two streamlined wizards that auto-detect stock, enforce quantity limits,
+                            auto-group transfers by destination location, and execute pickings immediately.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            2. Where do I find the Lot Relocation wizard in the Odoo menu?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            The Lot Relocation wizard is accessible under <strong>Inventory &gt; Warehouse Management
+                                &gt; Lot Relocation</strong>. It can be run at any time by inventory handlers to move
+                            lots between internal bins.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            3. How does the Lot Relocation wizard automatically determine available quantity?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            As soon as you select a Lot/Serial number, the onchange handler queries active stock quants
+                            (`stock.quant`) matching the lot in internal locations with positive quantities. It
+                            automatically fills the source location and sets the exact available on-hand quantity.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            4. Are lot transfers validated immediately upon clicking 'Relocate'?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Yes! The wizard creates an internal transfer picking (`stock.picking`), generates move
+                            lines, assigns the selected lot directly to move line records, confirms the transfer, and
+                            automatically validates it (`button_validate()`). It then immediately opens the validated
+                            picking form for complete transparency.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            5. How does the Receipt Distribution wizard work?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            On any validated incoming receipt (state = 'done'), a "Distribute Stock" button appears in
+                            the header. Clicking this button loads all completed receipt moves into an editable grid
+                            where operators can assign quantities to different internal destination locations.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            6. Can I split a single product's received quantity across multiple internal locations?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Yes! You can add multiple distribution lines referencing the same receipt move, assigning
+                            partial quantities to different internal storage locations (e.g. 30 units to Shelf A, 70
+                            units to Shelf B).
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            7. How does the module group pickings when distributing receipt lines?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            The wizard groups lines by their destination location. For each unique destination location,
+                            a consolidated internal transfer picking is created containing all products allocated to
+                            that location, automatically confirmed, and reserved (`action_assign()`).
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            8. What validations protect against inventory discrepancies?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            The module enforces multiple safety checks: relocate quantity must be positive, relocate
+                            quantity cannot exceed available quantity, source and destination locations cannot be
+                            identical, destination locations are required on all lines, and total distributed quantity
+                            for any product cannot exceed the received quantity.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            9. Is the module compatible with multi-company warehouse setups?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Yes. The wizards automatically detect the current company and warehouse operation types,
+                            ensuring that generated pickings and location movements strictly respect multi-company
+                            isolation.
+                        </div>
+                    </details>
+
+
+                    <details
+                        style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                        <summary
+                            style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                            10. How do I get technical support or assistance if needed?
+                        </summary>
+                        <div
+                            style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                            Simply email our dedicated engineering team at <a href="mailto:support@incipientcorp.com"
+                                style="color: #111827; font-weight: 700;">support@incipientcorp.com</a>. We offer fast
+                            turnarounds and comprehensive implementation support.
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- SERVICE TRUST & CONTACT CARDS -->
+        <section id="support" class="p-4 p-md-5 bg-white border-top">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🌐</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Pre-Sales Enquiry
+                        </h5>
+                        <p class="text-secondary small mb-2">Schedule a live walkthrough with our technical team.</p>
+                        <a href="mailto:support@incipientcorp.com"
+                            class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🛠️</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Custom Development
+                        </h5>
+                        <p class="text-secondary small mb-2">Request custom Odoo features or workflow tweaks.</p>
+                        <a href="mailto:support@incipientcorp.com"
+                            class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🎧</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Lifetime Support
+                        </h5>
+                        <p class="text-secondary small mb-2">Direct assistance for configuration & upgrades.</p>
+                        <a href="mailto:support@incipientcorp.com"
+                            class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER BANNER -->
+        <footer
+            style="background-color: #000000; color: #ffffff; text-align: center; padding: 40px 20px; border-radius: 0 0 24px 24px; border-top: 1px solid #222222;">
+            <div style="text-align: center;">
+                <img src="incipient-corp.png" alt="Incipient Corp"
+                    style="height: 48px; filter: brightness(0) invert(1); margin-bottom: 16px; display: inline-block;">
+            </div>
+            <h3
+                style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 22px; font-weight: 700; margin-bottom: 8px; text-align: center;">
+                Incipient Corp — Enterprise Odoo Solutions</h3>
+            <p
+                style="color: #cbd5e1; font-size: 14px; max-width: 600px; margin: 0 auto 24px auto; line-height: 1.6; text-align: center;">
+                High-performance, business-tested Odoo apps designed for accounting, sales, and supply chain excellence.
+            </p>
+            <div style="text-align: center; width: 100%; margin-top: 20px;">
+                <a href="mailto:support@incipientcorp.com"
+                    style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 28px; border-radius: 50px; text-decoration: none; display: inline-block; margin: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">Pre-Sales
+                    Enquiries</a>
+                <a href="mailto:support@incipientcorp.com"
+                    style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 28px; border-radius: 50px; text-decoration: none; display: inline-block; margin: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">Technical
+                    Support</a>
+            </div>
+        </footer>
+
+    </div>
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

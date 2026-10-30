@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_wizard_lot_relocate_form" model="ir.ui.view">
+        <field name="name">wizard.lot.relocate.form</field>
+        <field name="model">wizard.lot.relocate</field>
+        <field name="arch" type="xml">
+            <form string="Lot Relocation">
+                <group>
+                    <group>
+                        <field name="company_id" invisible="1"/>
+                        <field name="lot_id" options="{'no_create': True}"/>
+                        <field name="product_id"/>
+                        <field name="available_qty" force_save="1"/>
+                        <field name="relocate_qty"/>
+                    </group>
+                    <group>
+                        <field name="source_location_id" readonly="1" force_save="1"/>
+                        <field name="dest_location_id" options="{'no_create': True}"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="action_relocate" string="Relocate" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_wizard_lot_relocate" model="ir.actions.act_window">
+        <field name="name">Lot Relocation</field>
+        <field name="res_model">wizard.lot.relocate</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_wizard_lot_relocate"
+              name="Lot Relocation"
+              parent="stock.menu_stock_warehouse_mgmt"
+              action="action_wizard_lot_relocate"
+              sequence="120"/>
+</odoo>

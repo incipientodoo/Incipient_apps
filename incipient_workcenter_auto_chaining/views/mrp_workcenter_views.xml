@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mrp_workcenter_view_form_inherit_chaining" model="ir.ui.view">
+        <field name="name">mrp.workcenter.form.inherit.chaining</field>
+        <field name="model">mrp.workcenter</field>
+        <field name="inherit_id" ref="mrp.mrp_workcenter_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Automation &amp; Chaining" name="automation_chaining">
+                    <group>
+                        <group string="Auto-Finish">
+                            <field name="auto_finish_workorder" widget="boolean_toggle"/>
+                        </group>
+                        <group string="Workorder Chaining">
+                            <field name="auto_start_workcenter_ids" widget="many2many_tags" placeholder="Workcenters to start..."/>
+                            <field name="auto_stop_workcenter_ids" widget="many2many_tags" placeholder="Workcenters to stop..."/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

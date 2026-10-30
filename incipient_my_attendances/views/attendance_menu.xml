@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_my_attendances_self_service" model="ir.actions.client">
+        <field name="name">My Attendances</field>
+        <field name="tag">incipient_my_attendances.MyAttendances</field>
+        <field name="target">main</field>
+    </record>
+
+    <menuitem id="menu_my_attendances_self_service" 
+              name="My Attendances (Self-Service)" 
+              parent="hr_attendance.menu_hr_attendance_root" 
+              action="action_my_attendances_self_service" 
+              groups="base.group_user"
+              sequence="1"/>
+</odoo>
