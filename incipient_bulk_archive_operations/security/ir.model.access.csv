@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mrp_routing_archive_wizard_mrp_manager,mrp.routing.archive.wizard.mrp.manager,model_mrp_routing_archive_wizard,mrp.group_mrp_manager,1,1,1,1
+access_mrp_routing_archive_wizard_quality_manager,mrp.routing.archive.wizard.quality.manager,model_mrp_routing_archive_wizard,quality.group_quality_manager,1,1,1,1

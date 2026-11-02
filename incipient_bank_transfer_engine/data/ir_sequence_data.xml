@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="seq_account_internal_transfer_engine" model="ir.sequence">
+            <field name="name">Internal Transfer Engine Sequence</field>
+            <field name="code">account.internal.transfer.engine</field>
+            <field name="prefix">ITR/%(year)s/</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+</odoo>

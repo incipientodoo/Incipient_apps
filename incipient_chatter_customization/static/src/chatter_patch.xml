@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t t-inherit="mail.Chatter" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('o-mail-Chatter')]" position="attributes">
+            <attribute name="t-attf-class">{{ (this.isCollapseEnabled and state.isCollapsed) ? 'o-chatter-collapsed' : '' }}</attribute>
+        </xpath>
+        
+        <xpath expr="//button[hasclass('o-mail-Chatter-sendMessage')]" position="attributes">
+            <attribute name="t-if">!this.isSendMessageHidden</attribute>
+        </xpath>
+
+        <xpath expr="//div[hasclass('o-mail-Chatter-topbar')]" position="inside">
+            <button t-if="this.isCollapseEnabled" class="btn btn-link text-action o-mail-Chatter-collapseToggle ms-2" aria-label="Toggle Chatter" title="Toggle Chatter" t-on-click="toggleChatterCollapse">
+                <i class="fa" t-att-class="state.isCollapsed ? 'fa-expand' : 'fa-compress'" role="img"/>
+            </button>
+        </xpath>
+    </t>
+</templates>

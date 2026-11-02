@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Internal Bank/Cash Transfer Engine | Incipient Corp</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="index_file.css" rel="stylesheet"/>
+</head>
+
+<body style="font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; color: #111827;" class="py-4 py-md-5">
+    <div class="container p-0 overflow-hidden bg-white shadow-lg" style="border-radius: 24px; border: 1px solid #e2e8f0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; scroll-behavior: smooth;">
+        
+        <!-- BRAND HEADER -->
+        <header id="top" class="d-flex flex-column flex-md-row align-items-center justify-content-between p-4 px-md-5 bg-white border-bottom gap-3">
+            <div class="d-flex align-items-center gap-3">
+                <img src="incipient-corp.png" alt="Incipient Corp" style="height: 50px; object-fit: contain;">
+                <div class="border-start ps-3">
+                    <h1 class="h5 fw-extrabold text-dark mb-1" style="font-family: 'Outfit', sans-serif; letter-spacing: -0.3px; color: #111827;">Bank/Cash Transfer Engine</h1>
+                    <span class="badge bg-dark text-white px-3 py-1 rounded-pill small fw-bold" style="font-size: 11px; background-color: #000000; color: #ffffff;">Incipient Accounting Suite</span>
+                </div>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <span style="background-color: #000000; color: #ffffff; padding: 6px 18px; border-radius: 50px; font-weight: 700; font-size: 12px; display: inline-block;">Odoo 19.0 Ready</span>
+                <span style="background-color: #f1f5f9; color: #000000; border: 1px solid #cbd5e1; padding: 6px 18px; border-radius: 50px; font-weight: 700; font-size: 12px; display: inline-block;">Enterprise Certified</span>
+            </div>
+        </header>
+
+        <!-- QUICK-NAV BAR -->
+        <nav class="d-flex align-items-center justify-content-center gap-2 py-2 px-3 border-bottom flex-wrap" style="background-color: #f8fafc;">
+            <a href="#overview" class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Overview</a>
+            <a href="#impact" class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Business Impact</a>
+            <a href="#features" class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Feature Suite</a>
+            <a href="#walkthrough" class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Walkthrough</a>
+            <a href="#faq" class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">FAQ</a>
+            <a href="#support" class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Support</a>
+        </nav>
+
+        <!-- EXECUTIVE HERO BANNER -->
+        <!-- EXECUTIVE HERO BANNER SECTION -->
+        <section id="overview" style="background-color: #000000; color: #ffffff; padding: 40px 30px; border-radius: 0 0 20px 20px; margin: 0 0 30px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8">
+                    <h1 style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 34px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 16px; line-height: 1.2;">
+                        Internal Bank &amp; Cash Transfer Engine
+                    </h1>
+                    <p style="color: #cbd5e1; font-size: 16px; line-height: 1.6; max-width: 680px; margin-bottom: 24px;">
+                        Seamlessly transfer liquidity between any bank or cash journals by creating and posting a balanced pair of double-entry journal vouchers through a configurable transit clearing account, complete with draft, confirm, and reset workflows.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓ Community Edition</span>
+                        <span style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓ Enterprise Edition</span>
+                        <span style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓ Odoo.sh Cloud</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div style="background-color: #111111; border: 1px solid #333333; padding: 24px; border-radius: 16px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                        <h4 style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 18px; font-weight: 700; margin-bottom: 8px;">Need Setup Assistance?</h4>
+                        <p style="color: #cbd5e1; font-size: 13px; margin-bottom: 16px; line-height: 1.5;">Free pre-sales consultation and lifetime support for every installation.</p>
+                        <a href="mailto:support@incipientcorp.com" style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 20px; border-radius: 8px; display: block; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Contact Technical Support</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXECUTIVE HIGHLIGHTS & KEY CAPABILITIES CARDS -->
+        <section class="p-4 p-md-5 bg-light border-bottom">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">KEY ADVANTAGES</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Automated Double-Entry Fund Transfers</h3>
+                <p class="text-muted">Eliminate manual two-sided journal vouchers with zero transit account discrepancy</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm" style="width: 48px; height: 48px; background: linear-gradient(135deg, #000000, #222222); font-size: 20px;">
+                                🔄
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Dual Balanced Moves</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">2-Sided Auto Posting</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Generates and posts synchronized journal entries simultaneously in source and destination journals with exact debit/credit balancing.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm" style="width: 48px; height: 48px; background: linear-gradient(135deg, #111111, #333333); font-size: 20px;">
+                                ⚖️
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Transit Clearing Account</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Zero-Drift Balancing</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Routes funds through a dedicated transit clearing account that nets to zero instantly upon posting, maintaining pristine ledger auditability.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm" style="width: 48px; height: 48px; background: linear-gradient(135deg, #000000, #1c1c1c); font-size: 20px;">
+                                🔁
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Lifecycle & Reversal</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Draft, Confirm & Cancel</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Complete control workflow with one-click draft reversal that automatically cancels and resets posted entries without leaving orphaned records.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEM VS SOLUTION COMPARISON -->
+        <section id="impact" class="p-4 p-md-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">OPERATIONAL IMPACT</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">The Treasury Operations Transformation</h3>
+                <p class="text-muted">How Internal Bank/Cash Transfer Engine eliminates errors in treasury operations</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-4 p-md-5 rounded-4 border border-secondary bg-light h-100 shadow-sm">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="badge bg-secondary text-white rounded-pill px-3 py-1 fw-bold">WITHOUT APP</span>
+                            <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Manual Two-Sided Bookkeeping</h4>
+                        </div>
+                        <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2" style="line-height: 1.6;">
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>Manual entry required in both bank and cash journals separately, doubling bookkeeping time and entry mistakes.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>Transit clearing accounts frequently drift out of balance due to mismatched dates, typos, or forgotten counter-entries.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>Voiding or modifying a transfer requires finding and unposting each separate move manually without unified traceability.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="p-4 p-md-5 rounded-4 border border-dark bg-dark text-white h-100 shadow-sm">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="badge bg-white text-dark rounded-pill px-3 py-1 fw-bold">WITH INCIPIENT APP</span>
+                            <h4 class="h5 fw-bold text-white mb-0" style="font-family: 'Outfit', sans-serif;">Automated Transfer Engine</h4>
+                        </div>
+                        <ul class="list-unstyled text-white-50 small mb-0 d-flex flex-column gap-2" style="line-height: 1.6;">
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>Single voucher form generates and posts balanced dual entries in source and destination journals in one click.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>Enforces identical dates and amounts through a configurable transit account, ensuring transit accounts clear to zero immediately.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>Dedicated "Journal Entries" notebook tab links both moves, with 1-click Reset to Draft cancelling both entries simultaneously.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENHANCED 12-FEATURE SUITE (NO NUMBERS) -->
+        <section id="features" class="p-4 p-md-5 bg-light border-top border-bottom">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">EXTENSIVE CAPABILITIES</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Comprehensive Feature Suite</h3>
+                <p class="text-muted">12 Core capabilities engineered for seamless double-entry bank and cash transfers</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Automated Dual Journal Moves</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Generates and posts two balanced journal entries in a single click: crediting source journal and debiting destination journal through transit.</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Configurable Transit Account</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Select any intermediary clearing account. Both legs of the transfer post against this transit account, leaving its balance exactly zero.</p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Journal Difference Validation</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Prevents transfer errors by strictly validating that source and destination journals are distinct and restricted to bank or cash types.</p>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Strict Positive Amount Guard</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Built-in model constraints ensure transfer amounts are strictly greater than zero, preventing accidental negative or empty postings.</p>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">1-Click Confirmation &amp; Auto-Post</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Validates default accounts on both journals and immediately posts both generated entries into the general ledger in one transaction.</p>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Synchronized Reset to Draft</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">One-click rollback automatically drafts and cancels all generated journal entries, preventing orphaned moves or manual ledger cleanup.</p>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Dedicated Journal Entries Tab</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Integrated relational notebook page displays all generated accounting vouchers directly on the transfer form for total transparency.</p>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Sequential Reference Numbering</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Generates unique sequential reference codes automatically via an ir.sequence sequence engine for reliable financial tracking.</p>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Multi-Company Isolation</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Enforces strict company-level filtering so journals, accounts, currencies, and transfers remain isolated within the active entity.</p>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Memo &amp; Reference Propagation</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Transfer memos, transfer dates, and reference codes seamlessly propagate to move references and debit/credit line descriptions.</p>
+                    </div>
+                </div>
+                <!-- 11 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Safe Cancellation Workflow</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Cancel button drafts and cancels all generated journal vouchers in one operation, keeping company books audit-ready and compliant.</p>
+                    </div>
+                </div>
+                <!-- 12 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Zero External Dependencies</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Built strictly upon standard Odoo core accounting architecture (account.move, account.journal), ensuring 100% upgrade stability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISUAL WALKTHROUGH -->
+        <section id="walkthrough" class="p-4 p-md-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">INTERFACE SHOWCASE</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Step-by-Step Visual Walkthrough</h3>
+                <p class="text-muted">How Internal Bank/Cash Transfer Engine operates in Odoo</p>
+            </div>
+
+            <!-- Step 1 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 01</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Access Internal Transfers Menu</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Quickly locate the feature by navigating to <strong>Accounting &gt; Accounting &gt; Transactions &gt; Internal Transfers</strong> (or search via the command palette).</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Opens the centralized management interface for initiating, monitoring, and auditing bank and cash transfers.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_1.png" alt="Access Internal Transfers Menu" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 02</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Confirmed Transfer &amp; Generated Journal Entries</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Upon clicking <strong>Confirm</strong>, the transfer record moves to the <em>Confirmed</em> state.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">The system automatically creates and posts balanced two-sided journal entries for both Cash and Bank journals, displayed directly under the <strong>Journal Entries</strong> tab.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_2.png" alt="Confirmed Transfer & Generated Journal Entries" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 03</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Source Journal Entry Breakdown (Posted)</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Inspect the generated move for the Source Bank journal.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">The entry is in <em>Posted</em> state: debits the <strong>Transit Account (Liquidity Transfer)</strong> and credits the <strong>Bank Account</strong>, perfectly balanced with automated references.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_3.png" alt="Source Journal Entry Breakdown" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 04</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Destination Journal Entry Breakdown (Posted)</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Inspect the generated move for the Destination Cash journal.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">The entry is in <em>Posted</em> state: debits the <strong>Cash Account</strong> and credits the <strong>Transit Account (Liquidity Transfer)</strong>, zeroing out the transit clearing account balance instantaneously.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_4.png" alt="Destination Journal Entry Breakdown" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 05</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Reset to Draft Workflow</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Need to make adjustments? Click <strong>Reset to Draft</strong> from the confirmed transfer record.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">The transfer state seamlessly returns to <em>Draft</em>, reopening the record for field edits or re-execution while managing underlying vouchers safely.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_5.png" alt="Reset to Draft Workflow" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 6 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 06</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Automated Rollback &amp; Cancellation of Source Move</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">When resetting to draft, the engine unposts and cancels the linked source journal entry automatically.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">The Bank journal move status transitions cleanly to <em>Cancelled</em>, preventing erroneous GL impacts or ghost records.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_6.png" alt="Source Journal Entry Cancelled" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 7 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 07</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Automated Rollback &amp; Cancellation of Destination Move</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Simultaneously, the engine rolls back and cancels the linked destination Cash journal move.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">The Cash entry is marked as <em>Cancelled</em>, ensuring both ends of the transfer remain in perfect synchronization without requiring manual intervention.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_7.png" alt="Destination Journal Entry Cancelled" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 8 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 08</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Smart Validation &amp; Error Prevention</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Built-in constraint checks actively guard against bookkeeping mistakes.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">If a user selects the same journal as both Source and Destination, or enters an invalid amount, the engine raises an immediate <strong>Validation Error</strong> before any journal entries can be generated.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_8.png" alt="Smart Validation & Error Prevention" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPANDED 10 FAQ ACCORDION ITEMS -->
+        <section id="faq" class="p-4 p-md-5 bg-light border-top">
+            <div class="text-center mb-5">
+                <h3 class="h2 fw-bold" style="font-family: 'Outfit', sans-serif; color: #111827;">Frequently Asked Questions</h3>
+                <p style="color: #6b7280;">Click any question below to expand or collapse details</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    
+            <details open style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    1. Is Bank/Cash Transfer Engine compatible with Odoo Enterprise, Community, and Odoo.sh?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    Yes! The module is 100% compatible with Odoo Community Edition, Enterprise Edition, and Odoo.sh cloud hosting without altering core Odoo accounting tables.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    2. How does the double-entry accounting mechanism work?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    Upon confirmation, the engine posts two balanced journal entries: the first credits the source bank/cash journal and debits the transit account; the second debits the destination journal and credits the transit account.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    3. Does the transit account maintain a zero balance?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    Yes. Because both moves are posted simultaneously with the identical date and amount, the debit to the transit account is immediately offset by the credit, ensuring zero leftover balance.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    4. What happens when I click "Reset to Draft"?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    The engine automatically unposts both linked journal entries, transitions them to draft, cancels them, and resets the transfer voucher back to Draft state so you can make necessary adjustments.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    5. Can I accidentally select the same journal for source and destination?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    No. The module includes a strict Python validation constraint that prevents saving or confirming a transfer where source and destination journals are identical.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    6. Does it support both cash-to-bank and bank-to-cash transfers?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    Yes! Any journal with type 'bank' or 'cash' is supported. You can transfer from bank to bank, cash to bank, bank to cash, or between petty cash journals.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    7. Where can I find and review the generated journal entries?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    The generated moves appear directly on the transfer form under the "Journal Entries" notebook tab, and are also visible in the standard Accounting &gt; Journal Entries view.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    8. How does multi-company accounting work?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    The transfer engine enforces company isolation. Source/destination journals and transit accounts are filtered to match the transfer's assigned company.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    9. Does this module require installing third-party Python packages?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    None at all. It is built strictly on standard Odoo ORM models, ensuring complete compatibility with future versions and zero server setup overhead.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    10. How do I get technical support or assistance if needed?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    Simply email our dedicated engineering team at <a href="mailto:support@incipientcorp.com" style="color: #111827; font-weight: 700;">support@incipientcorp.com</a>. We respond within 24 hours.
+                </div>
+            </details>
+        
+                </div>
+            </div>
+        </section>
+    
+    
+    
+
+        <!-- SERVICE TRUST & CONTACT CARDS -->
+        <section id="support" class="p-4 p-md-5 bg-white border-top">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🌐</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Pre-Sales Enquiry</h5>
+                        <p class="text-secondary small mb-2">Schedule a live walkthrough with our technical team.</p>
+                        <a href="mailto:support@incipientcorp.com" class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🛠️</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Custom Development</h5>
+                        <p class="text-secondary small mb-2">Request custom Odoo features or workflow tweaks.</p>
+                        <a href="mailto:support@incipientcorp.com" class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🎧</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Lifetime Support</h5>
+                        <p class="text-secondary small mb-2">Direct assistance for configuration & upgrades.</p>
+                        <a href="mailto:support@incipientcorp.com" class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER BANNER -->
+        <footer style="background-color: #000000; color: #ffffff; text-align: center; padding: 40px 20px; border-radius: 0 0 24px 24px; border-top: 1px solid #222222;">
+            <div style="text-align: center;">
+                <img src="incipient-corp.png" alt="Incipient Corp" style="height: 48px; filter: brightness(0) invert(1); margin-bottom: 16px; display: inline-block;">
+            </div>
+            <h3 style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 22px; font-weight: 700; margin-bottom: 8px; text-align: center;">Incipient Corp — Enterprise Odoo Solutions</h3>
+            <p style="color: #cbd5e1; font-size: 14px; max-width: 600px; margin: 0 auto 24px auto; line-height: 1.6; text-align: center;">High-performance, business-tested Odoo apps designed for accounting, sales, and supply chain excellence.</p>
+            <div style="text-align: center; width: 100%; margin-top: 20px;">
+                <a href="mailto:support@incipientcorp.com" style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 28px; border-radius: 50px; text-decoration: none; display: inline-block; margin: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">Pre-Sales Enquiries</a>
+                <a href="mailto:support@incipientcorp.com" style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 28px; border-radius: 50px; text-decoration: none; display: inline-block; margin: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">Technical Support</a>
+            </div>
+        </footer>
+
+    </div>
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_chatter_config_tree" model="ir.ui.view">
+            <field name="name">chatter.config.tree</field>
+            <field name="model">chatter.config</field>
+            <field name="arch" type="xml">
+                <list string="Chatter Configuration">
+                    <field name="name"/>
+                    <field name="model_id"/>
+                    <field name="hide_send_message"/>
+                    <field name="enable_collapse"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_chatter_config_form" model="ir.ui.view">
+            <field name="name">chatter.config.form</field>
+            <field name="model">chatter.config</field>
+            <field name="arch" type="xml">
+                <form string="Chatter Configuration">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="model_id" options="{'no_create': True}"/>
+                                <field name="hide_send_message"/>
+                                <field name="enable_collapse"/>
+                            </group>
+                            <group>
+                                <field name="user_ids" widget="many2many_tags" options="{'no_create': True}"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_chatter_config" model="ir.actions.act_window">
+            <field name="name">Chatter Configuration</field>
+            <field name="res_model">chatter.config</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <menuitem id="menu_chatter_config" 
+                  name="Chatter Configuration" 
+                  parent="base.menu_custom" 
+                  action="action_chatter_config" 
+                  sequence="100"/>
+    </data>
+</odoo>

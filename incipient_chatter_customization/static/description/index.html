@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Chatter Customization &amp; Security Controls | Incipient Corp</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="index_file.css" rel="stylesheet"/>
+</head>
+
+<body style="font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; color: #111827;" class="py-4 py-md-5">
+    <div class="container p-0 overflow-hidden bg-white shadow-lg" style="border-radius: 24px; border: 1px solid #e2e8f0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; scroll-behavior: smooth;">
+        
+        <!-- BRAND HEADER -->
+        <header id="top" class="d-flex flex-column flex-md-row align-items-center justify-content-between p-4 px-md-5 bg-white border-bottom gap-3">
+            <div class="d-flex align-items-center gap-3">
+                <img src="incipient-corp.png" alt="Incipient Corp" style="height: 50px; object-fit: contain;">
+                <div class="border-start ps-3">
+                    <h1 class="h5 fw-extrabold text-dark mb-1" style="font-family: 'Outfit', sans-serif; letter-spacing: -0.3px; color: #111827;">Chatter Customization</h1>
+                    <span class="badge bg-dark text-white px-3 py-1 rounded-pill small fw-bold" style="font-size: 11px; background-color: #000000; color: #ffffff;">Incipient Productivity Suite</span>
+                </div>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <span style="background-color: #000000; color: #ffffff; padding: 6px 18px; border-radius: 50px; font-weight: 700; font-size: 12px; display: inline-block;">Odoo 19.0 Ready</span>
+                <span style="background-color: #f1f5f9; color: #000000; border: 1px solid #cbd5e1; padding: 6px 18px; border-radius: 50px; font-weight: 700; font-size: 12px; display: inline-block;">Enterprise Certified</span>
+            </div>
+        </header>
+
+        <!-- QUICK-NAV BAR -->
+        <nav class="d-flex align-items-center justify-content-center gap-2 py-2 px-3 border-bottom flex-wrap" style="background-color: #f8fafc;">
+            <a href="#overview" class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Overview</a>
+            <a href="#impact" class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Business Impact</a>
+            <a href="#features" class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Feature Suite</a>
+            <a href="#walkthrough" class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Walkthrough</a>
+            <a href="#faq" class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">FAQ</a>
+            <a href="#support" class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Support</a>
+        </nav>
+
+        <!-- EXECUTIVE HERO BANNER -->
+        <!-- EXECUTIVE HERO BANNER SECTION -->
+        <section id="overview" style="background-color: #000000; color: #ffffff; padding: 40px 30px; border-radius: 0 0 20px 20px; margin: 0 0 30px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8">
+                    <h1 style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 34px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 16px; line-height: 1.2;">
+                        Chatter Customization &amp; Workspace Controls
+                    </h1>
+                    <p style="color: #cbd5e1; font-size: 16px; line-height: 1.6; max-width: 680px; margin-bottom: 24px;">
+                        Configure chatter behavior per user and per model with granular administrative controls. Hide the "Send Message" button to restrict customer email dispatch, and add a toggle button to collapse the chatter panel—unlocking full-width view for complex data forms.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓ Community Edition</span>
+                        <span style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓ Enterprise Edition</span>
+                        <span style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓ Odoo.sh Cloud</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div style="background-color: #111111; border: 1px solid #333333; padding: 24px; border-radius: 16px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                        <h4 style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 18px; font-weight: 700; margin-bottom: 8px;">Need Setup Assistance?</h4>
+                        <p style="color: #cbd5e1; font-size: 13px; margin-bottom: 16px; line-height: 1.5;">Free pre-sales consultation and lifetime support for every installation.</p>
+                        <a href="mailto:support@incipientcorp.com" style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 20px; border-radius: 8px; display: block; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Contact Technical Support</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXECUTIVE HIGHLIGHTS & KEY CAPABILITIES CARDS -->
+        <section class="p-4 p-md-5 bg-light border-bottom">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">KEY ADVANTAGES</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Built for Focused Form Data Entry &amp; Communication Control</h3>
+                <p class="text-muted">Eliminate chatter screen clutter and restrict customer-facing messaging per user</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm" style="width: 48px; height: 48px; background: linear-gradient(135deg, #000000, #222222); font-size: 20px;">
+                                🔕
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Hide Send Message</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Per-User &amp; Model Security</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Hide the "Send Message" action button for specific users on specific business models, preventing unauthorized client emails while preserving internal log notes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm" style="width: 48px; height: 48px; background: linear-gradient(135deg, #111111, #333333); font-size: 20px;">
+                                ↔️
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Collapsible Chatter</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Maximize Screen Space</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Integrate a smooth collapse/expand toggle on the chatter topbar to shrink the chatter panel and allow the main form sheet to expand to 100% full width.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm" style="width: 48px; height: 48px; background: linear-gradient(135deg, #000000, #1c1c1c); font-size: 20px;">
+                                💾
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">State Persistence</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">User &amp; Model Memory</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Automatically saves and restores the collapsed or expanded state in local storage for each user and model, ensuring a personalized layout across sessions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEM VS SOLUTION COMPARISON -->
+        <section id="impact" class="p-4 p-md-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">OPERATIONAL IMPACT</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">The Chatter Workspace Transformation</h3>
+                <p class="text-muted">How Chatter Customization solves Odoo screen clutter and unauthorized communication</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-4 p-md-5 rounded-4 border border-secondary bg-light h-100 shadow-sm">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="badge bg-secondary text-white rounded-pill px-3 py-1 fw-bold">WITHOUT APP</span>
+                            <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Cluttered Layout &amp; Loose Control</h4>
+                        </div>
+                        <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2" style="line-height: 1.6;">
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>Side-by-side chatter panel consumes up to 50% of screen width, forcing long forms and order lines into narrow, cramped views.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>Any user with chatter access can accidentally post customer-facing "Send Message" emails on delicate records like Invoices or Sales Orders.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>Users must repeatedly look past unnecessary chatter threads on forms where only data entry is needed.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="p-4 p-md-5 rounded-4 border border-dark bg-dark text-white h-100 shadow-sm">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="badge bg-white text-dark rounded-pill px-3 py-1 fw-bold">WITH INCIPIENT APP</span>
+                            <h4 class="h5 fw-bold text-white mb-0" style="font-family: 'Outfit', sans-serif;">Tailored Control &amp; 100% Screen Space</h4>
+                        </div>
+                        <ul class="list-unstyled text-white-50 small mb-0 d-flex flex-column gap-2" style="line-height: 1.6;">
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>1-Click topbar button collapses chatter down to 50px, instantly freeing full screen width for forms and order tables.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>Granular configuration allows hiding "Send Message" for specific users while keeping internal Log Notes and Activities intact.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>Remembers collapsed state per user and model with zero database latency via pre-loaded session cache.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENHANCED 12-FEATURE SUITE (NO NUMBERS) -->
+        <section id="features" class="p-4 p-md-5 bg-light border-top border-bottom">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">EXTENSIVE CAPABILITIES</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Comprehensive Feature Suite</h3>
+                <p class="text-muted">12 Core capabilities engineered for seamless chatter control &amp; focused workspace</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">User-Specific Restraint</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Hide the "Send Message" button exclusively for selected users, avoiding inadvertent or unvetted external client communication.</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Model-Level Targeting</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Apply restrictions selectively to any mail-thread model (Sales Orders, Invoices, Purchase Orders, CRM Leads, Tasks).</p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">1-Click Collapsible Chatter</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Toggle chatter visibility on-the-fly via a neat topbar button with native FontAwesome expand and compress iconography.</p>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Full-Width Form Expansion</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Automatically stretches the form sheet to 100% full width when the side chatter is collapsed, giving maximum room for order lines and data tables.</p>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Preserved Internal Notes</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Even when "Send Message" is hidden, users retain full access to "Log Note" and activity scheduling for smooth internal teamwork.</p>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Smart State Persistence</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Remembers whether the user preferred chatter collapsed or open per model in local storage, preserving preferences across sessions.</p>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Side &amp; Bottom Layout Support</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Elegantly handles both Odoo's side-by-side aside chatter and bottom chatter layouts with responsive CSS styling.</p>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Duplicate Rule Prevention</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Python ORM validation constraint strictly prevents overlapping configuration rules for the same model and users.</p>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Zero-Lag Session Caching</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Pre-loads user configuration in session_info, providing instantaneous client-side UI rendering without recurring SQL queries.</p>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Clean OWL Component Patch</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Crafted with modern Odoo 19 OWL JavaScript and XML patching standards without brittle view overrides or hacks.</p>
+                    </div>
+                </div>
+                <!-- 11 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Edition Compatibility</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">100% compatible with Odoo Community Edition, Enterprise Edition, and Odoo.sh cloud deployments.</p>
+                    </div>
+                </div>
+                <!-- 12 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Zero External Dependencies</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Pure native Odoo architecture requiring zero external Python libraries, third-party microservices, or complex setup.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISUAL WALKTHROUGH -->
+        <section id="walkthrough" class="p-4 p-md-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">INTERFACE SHOWCASE</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Step-by-Step Visual Walkthrough</h3>
+                <p class="text-muted">How Chatter Customization works seamlessly inside Odoo</p>
+            </div>
+
+            <!-- Step 1 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 01</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Target User Setup: Chatter User A</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Configure standard internal users who need restricted customer communication permissions (e.g., Chatter User A with Sales: User: All Documents access).</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Setting up individual user profiles ensures granular control over who can post outward-facing messages on document threads.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_1.png" alt="Chatter User A Profile" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 02</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Comparison User Setup: Chatter User B</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Set up another user (Chatter User B) who will retain full communication permissions without chatter restrictions.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">This makes it easy to verify that restriction policies strictly apply only to specifically selected users and models.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_2.png" alt="Chatter User B Profile" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 03</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Quick Access via Command Palette</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Easily access the configuration screen by typing <code>Chatter Configuration</code> in the command palette (<kbd>Ctrl</kbd> + <kbd>K</kbd>) or via <strong>Settings &gt; Technical &gt; Chatter Configuration</strong>.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Direct navigation ensures administrators can quickly tune communication and collapse rules anytime.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_3.png" alt="Chatter Configuration Menu Access" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 04</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Hide 'Send Message' on Contact Model</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Create a rule specifying the target model (e.g., Contact / <code>res.partner</code>), assign Chatter User A, and check <strong>Hide Send Message</strong>.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Only mail thread enabled models can be selected, guaranteeing compatibility and preventing invalid configurations.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_4.png" alt="Hide Contact Send Message Button" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 05</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Hide 'Send Message' on Sales Orders</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Set up another configuration rule on Sales Order (<code>sale.order</code>) for Chatter User A with <strong>Hide Send Message</strong> activated.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">You can define customized rules across various business models including Sales Orders, Invoices, Contacts, and CRM Leads.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_5.png" alt="Hide Send Message Button on Sales Order" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 6 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 06</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Built-in Duplicate Rule Validation</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">The system includes built-in duplicate prevention. Attempting to create duplicate rules for the same model and user automatically triggers a clear validation error.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">This integrity check prevents conflicting chatter behavior and ensures robust configuration management.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_6.png" alt="Duplicate Rule Validation Error" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 7 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 07</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">'Send Message' Hidden for Restricted User</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">When Chatter User A opens a Sales Order record, the "Send Message" button is completely hidden from the chatter header.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">User A can still log internal notes and schedule activities without risk of sending unintended messages to clients.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_7.png" alt="Restricted User Chatter View" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 8 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 08</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Full Access Retained for Unrestricted Users</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">When Chatter User B opens a Sales Order, the "Send message" button remains visible and fully accessible as expected.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Demonstrates precise per-user restriction while other team members continue their standard communication workflow undisturbed.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_8.png" alt="Unrestricted User Chatter View" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 9 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 09</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Enable Collapsible Chatter Panel</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">In the Chatter Configuration form, activate the <strong>Enable Collapse</strong> option for the target model.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">This injects an interactive collapse/expand toggle button into the top right header of the Chatter panel on record views.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_9.png" alt="Enable Collapse Configuration" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 10 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 10</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Interactive Collapse Button in Chatter Header</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">The collapse toggle button appears at the top-right corner of the Chatter panel on the document form view.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Users can click this button at any time to instantly minimize the chatter pane when working on data-heavy records.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_10.png" alt="Chatter Collapse Button Visible" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 11 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 11</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Collapsed Chatter with Maximized Form View</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Clicking the button smoothly collapses the chatter down to a slim vertical bar, providing full screen width for order lines and document data.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">The user preference is remembered per model and session via localStorage, preserving their layout choice automatically.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_11.png" alt="Collapsed Chatter Maximized Form" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 12 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 12</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Disable Collapsible Option</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Administrators can easily disable the collapsible functionality at any time by unchecking <strong>Enable Collapse</strong> in the configuration record.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Provides full flexibility to keep standard Odoo chatter behavior wherever collapsible panels are not desired.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_12.png" alt="Disable Collapse Configuration" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 13 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 13</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Standard Chatter Header Restored</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">With "Enable Collapse" turned off, the Chatter panel returns to standard view without the collapse toggle button.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Demonstrates seamless toggling between customized chatter behavior and default Odoo thread styling.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_13.png" alt="Standard Chatter Header Restored" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPANDED 10 FAQ ACCORDION ITEMS -->
+        <section id="faq" class="p-4 p-md-5 bg-light border-top">
+            <div class="text-center mb-5">
+                <h3 class="h2 fw-bold" style="font-family: 'Outfit', sans-serif; color: #111827;">Frequently Asked Questions</h3>
+                <p style="color: #6b7280;">Click any question below to expand or collapse details</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    
+            <details open style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    1. Is Chatter Customization compatible with Odoo Enterprise, Community, and Odoo.sh?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    Yes! Chatter Customization is 100% compatible with Odoo Community Edition, Enterprise Edition, and Odoo.sh cloud deployments without modifying any core Odoo source code.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    2. Can I hide the "Send Message" button for specific users while keeping "Log Note" active?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    Yes, exactly! When "Hide Send Message" is checked, the external "Send Message" composer button is hidden for the specified users on the selected model, while "Log Note" and activity scheduling remain fully accessible for internal collaboration.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    3. Does the module remember if a user collapsed the chatter panel?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    Yes. The collapsed or expanded state is saved in the browser's local storage per user ID and per model technical name (e.g., sale.order). When navigating across records or refreshing the page, your preferred state is automatically restored.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    4. Which Odoo business models can I configure chatter controls for?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    Any Odoo model that inherits the mail.thread capability is supported. This includes Sales Orders, Invoices, Vendor Bills, Purchase Orders, CRM Leads &amp; Opportunities, Project Tasks, Helpdesk Tickets, and custom models.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    5. How does collapsing chatter affect side-by-side versus bottom layouts?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    In side-by-side mode (wide screens), the chatter shrinks to a 50px sidebar with vertical toggle controls and the form sheet expands to 100% max width. In bottom layout, it folds down compactly so users don't need to scroll past long chat histories.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    6. Does this module add performance overhead to form view loading?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    Not at all! The configurations are fetched during the initial session initialization via ir.http session_info and stored client-side in the web session. Form switching and chatter rendering execute instantly without extra database roundtrips.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    7. What happens if conflicting rules are created for the same user and model?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    The module features a built-in Python validation constraint that prevents overlapping configurations for the same model and user, notifying the admin immediately with clear validation messages.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    8. Can different users have different chatter collapse or send message settings on the same model?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    Yes! You can configure rules for specific groups of users. For example, hide "Send Message" on Sales Orders for junior sales reps while leaving full access enabled for senior managers.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    9. Does this module modify any underlying database thread messages or records?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    No. Existing chatter messages, followers, scheduled activities, and tracking values remain 100% intact and untouched. The module only controls UI presentation, button visibility, and pane layout.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    10. How do I get technical support or assistance if needed?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    Simply reach out to our dedicated support team at <a href="mailto:support@incipientcorp.com" style="color: #111827; font-weight: 700;">support@incipientcorp.com</a>. We provide prompt assistance for installation, questions, or custom requirements.
+                </div>
+            </details>
+        
+                </div>
+            </div>
+        </section>
+    
+    
+    
+
+        <!-- SERVICE TRUST & CONTACT CARDS -->
+        <section id="support" class="p-4 p-md-5 bg-white border-top">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🌐</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Pre-Sales Enquiry</h5>
+                        <p class="text-secondary small mb-2">Schedule a live walkthrough with our technical team.</p>
+                        <a href="mailto:support@incipientcorp.com" class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🛠️</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Custom Development</h5>
+                        <p class="text-secondary small mb-2">Request custom Odoo features or workflow tweaks.</p>
+                        <a href="mailto:support@incipientcorp.com" class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🎧</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Lifetime Support</h5>
+                        <p class="text-secondary small mb-2">Direct assistance for configuration & upgrades.</p>
+                        <a href="mailto:support@incipientcorp.com" class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER BANNER -->
+        <footer style="background-color: #000000; color: #ffffff; text-align: center; padding: 40px 20px; border-radius: 0 0 24px 24px; border-top: 1px solid #222222;">
+            <div style="text-align: center;">
+                <img src="incipient-corp.png" alt="Incipient Corp" style="height: 48px; filter: brightness(0) invert(1); margin-bottom: 16px; display: inline-block;">
+            </div>
+            <h3 style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 22px; font-weight: 700; margin-bottom: 8px; text-align: center;">Incipient Corp — Enterprise Odoo Solutions</h3>
+            <p style="color: #cbd5e1; font-size: 14px; max-width: 600px; margin: 0 auto 24px auto; line-height: 1.6; text-align: center;">High-performance, business-tested Odoo apps designed for accounting, sales, and supply chain excellence.</p>
+            <div style="text-align: center; width: 100%; margin-top: 20px;">
+                <a href="mailto:support@incipientcorp.com" style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 28px; border-radius: 50px; text-decoration: none; display: inline-block; margin: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">Pre-Sales Enquiries</a>
+                <a href="mailto:support@incipientcorp.com" style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 28px; border-radius: 50px; text-decoration: none; display: inline-block; margin: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">Technical Support</a>
+            </div>
+        </footer>
+
+    </div>
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

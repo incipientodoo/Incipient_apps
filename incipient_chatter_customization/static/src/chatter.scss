@@ -1,0 +1,61 @@
+.o-chatter-collapsed-container.o-aside {
+    width: 50px !important;
+    min-width: 50px !important;
+    flex-grow: 0 !important;
+}
+
+.o-chatter-collapsed-container:not(.o-aside) {
+    width: 100% !important;
+    flex-grow: 0 !important;
+    height: auto !important;
+}
+
+/* Force form sheet to take full width when side chatter is collapsed */
+.o_form_sheet_bg:has(+ .o-chatter-collapsed-container.o-aside),
+.o_content:has(.o-chatter-collapsed-container.o-aside) .o_form_sheet_bg {
+    max-width: 100% !important;
+}
+
+.o-mail-Chatter {
+    &.o-chatter-collapsed {
+        .o-mail-Chatter-content,
+        .o-mail-Chatter-topbar > *:not(.o-mail-Chatter-collapseToggle),
+        .o-mail-Chatter-top > t > Composer {
+            display: none !important;
+        }
+
+        &.overflow-auto { /* aside mode */
+            width: 50px !important;
+            min-width: 50px !important;
+            flex-grow: 0 !important;
+            overflow: hidden !important;
+
+            .o-mail-Chatter-topbar {
+                flex-direction: column;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                justify-content: flex-start;
+                
+                .o-mail-Chatter-collapseToggle {
+                    margin: 0 !important;
+                }
+            }
+        }
+
+        &:not(.overflow-auto) { /* bottom mode */
+            height: auto !important;
+            min-height: unset !important;
+            width: 100% !important;
+            flex-grow: 0 !important;
+
+            .o-mail-Chatter-topbar {
+                padding: 5px 10px;
+                justify-content: flex-end;
+                
+                .o-mail-Chatter-collapseToggle {
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+}
