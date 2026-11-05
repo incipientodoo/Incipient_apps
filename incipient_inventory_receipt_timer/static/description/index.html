@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Inventory Receipt Timer | Incipient Corp</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="index_file.css" rel="stylesheet"/>
+</head>
+
+<body style="font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; color: #111827;" class="py-4 py-md-5">
+    <div class="container p-0 overflow-hidden bg-white shadow-lg" style="border-radius: 24px; border: 1px solid #e2e8f0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; scroll-behavior: smooth;">
+        
+        <!-- BRAND HEADER -->
+        <header id="top" class="d-flex flex-column flex-md-row align-items-center justify-content-between p-4 px-md-5 bg-white border-bottom gap-3">
+            <div class="d-flex align-items-center gap-3">
+                <img src="incipient-corp.png" alt="Incipient Corp" style="height: 50px; object-fit: contain;">
+                <div class="border-start ps-3">
+                    <h1 class="h5 fw-extrabold text-dark mb-1" style="font-family: 'Outfit', sans-serif; letter-spacing: -0.3px; color: #111827;">Inventory Receipt Timer</h1>
+                    <span class="badge bg-dark text-white px-3 py-1 rounded-pill small fw-bold" style="font-size: 11px; background-color: #000000; color: #ffffff;">Incipient Inventory & Timesheet Suite</span>
+                </div>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <span style="background-color: #000000; color: #ffffff; padding: 6px 18px; border-radius: 50px; font-weight: 700; font-size: 12px; display: inline-block;">Odoo 19.0 Ready</span>
+                <span style="background-color: #f1f5f9; color: #000000; border: 1px solid #cbd5e1; padding: 6px 18px; border-radius: 50px; font-weight: 700; font-size: 12px; display: inline-block;">Enterprise Certified</span>
+            </div>
+        </header>
+
+        <!-- QUICK-NAV BAR -->
+        <nav class="d-flex align-items-center justify-content-center gap-2 py-2 px-3 border-bottom flex-wrap" style="background-color: #f8fafc;">
+            <a href="#overview" class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Overview</a>
+            <a href="#impact" class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Business Impact</a>
+            <a href="#features" class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Feature Suite</a>
+            <a href="#walkthrough" class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Walkthrough</a>
+            <a href="#faq" class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">FAQ</a>
+            <a href="#support" class="px-3 py-1.5 rounded-pill text-dark text-decoration-none fw-bold small bg-white border shadow-sm">Support</a>
+        </nav>
+
+        <!-- EXECUTIVE HERO BANNER -->
+        <!-- EXECUTIVE HERO BANNER SECTION -->
+        <section id="overview" style="background-color: #000000; color: #ffffff; padding: 40px 30px; border-radius: 0 0 20px 20px; margin: 0 0 30px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8">
+                    <h1 style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 34px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 16px; line-height: 1.2;">
+                        Inventory Receipt Timer & Timesheet Integration
+                    </h1>
+                    <p style="color: #cbd5e1; font-size: 16px; line-height: 1.6; max-width: 680px; margin-bottom: 24px;">
+                        Seamlessly track labor hours on incoming warehouse shipments with real-time Start and Stop timers, auto-provisioning linked project tasks on first use, preventing simultaneous timers, and logging precise duration directly into employee timesheets.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓ Community Edition</span>
+                        <span style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓ Enterprise Edition</span>
+                        <span style="background-color: #1e293b; color: #ffffff; border: 1px solid #334155; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; display: inline-block;">✓ Odoo.sh Cloud</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div style="background-color: #111111; border: 1px solid #333333; padding: 24px; border-radius: 16px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                        <h4 style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 18px; font-weight: 700; margin-bottom: 8px;">Need Setup Assistance?</h4>
+                        <p style="color: #cbd5e1; font-size: 13px; margin-bottom: 16px; line-height: 1.5;">Free pre-sales consultation and lifetime support for every installation.</p>
+                        <a href="mailto:support@incipientcorp.com" style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 20px; border-radius: 8px; display: block; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Contact Technical Support</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXECUTIVE HIGHLIGHTS & KEY CAPABILITIES CARDS -->
+        <section class="p-4 p-md-5 bg-light border-bottom">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">KEY ADVANTAGES</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Precision Warehouse Labor & Time Tracking</h3>
+                <p class="text-muted">Eliminate estimated receiving times with 1-click live timers and automated timesheets</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm" style="width: 48px; height: 48px; background: linear-gradient(135deg, #000000, #222222); font-size: 20px;">
+                                ⏱️
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Live Receipt Timer</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Start & Stop Control</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Launch and stop real-time receiving timers directly from incoming stock receipt forms. Dynamic buttons adapt instantly based on user activity.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm" style="width: 48px; height: 48px; background: linear-gradient(135deg, #111111, #333333); font-size: 20px;">
+                                📋
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Auto-Provisioned Tasks</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Project Sync</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Starting a timer automatically creates and links a project task under your designated Receipt Timer Project, capturing partner and company details seamlessly.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100 position-relative overflow-hidden">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3 text-white fw-bold shadow-sm" style="width: 48px; height: 48px; background: linear-gradient(135deg, #000000, #1c1c1c); font-size: 20px;">
+                                💼
+                            </div>
+                            <div>
+                                <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Timesheet Logging & Conflict Guard</h4>
+                                <span class="badge bg-dark text-white border border-dark rounded-pill">Single Active Timer</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                            Automatically posts accurate timesheet lines to the employee account upon stopping, while strictly preventing overlapping timers per user or picking.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEM VS SOLUTION COMPARISON -->
+        <section id="impact" class="p-4 p-md-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">OPERATIONAL IMPACT</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">The Warehouse Operational Transformation</h3>
+                <p class="text-muted">How Inventory Receipt Timer bridges the gap between warehouse receiving operations and labor cost accounting</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-4 p-md-5 rounded-4 border border-secondary bg-light h-100 shadow-sm">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="badge bg-secondary text-white rounded-pill px-3 py-1 fw-bold">WITHOUT APP</span>
+                            <h4 class="h5 fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Default Receiving Inefficiency</h4>
+                        </div>
+                        <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2" style="line-height: 1.6;">
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>No built-in timer mechanism on stock receipts; warehouse labor hours remain untracked or roughly guessed.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>Warehouse operators must manually switch to Project or Timesheet apps, manually searching and recording time entries.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-dark fw-bold">✕</span>
+                                <span>Multiple users can unknowingly log conflicting hours or forget running tasks, creating inaccurate landed/labor cost records.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="p-4 p-md-5 rounded-4 border border-dark bg-dark text-white h-100 shadow-sm">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="badge bg-white text-dark rounded-pill px-3 py-1 fw-bold">WITH INCIPIENT APP</span>
+                            <h4 class="h5 fw-bold text-white mb-0" style="font-family: 'Outfit', sans-serif;">Automated Receipt Tracking</h4>
+                        </div>
+                        <ul class="list-unstyled text-white-50 small mb-0 d-flex flex-column gap-2" style="line-height: 1.6;">
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>One-click Start & Stop timer right on the incoming shipment header with automatic duration calculation in hours.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>Auto-provisions a linked project task on first use under your receipt project, linking partner and company automatically.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="text-white fw-bold">✓</span>
+                                <span>Enforces one active timer per user and locks concurrent processing conflicts, ensuring clean timesheet accounting.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENHANCED 12-FEATURE SUITE (NO NUMBERS) -->
+        <section id="features" class="p-4 p-md-5 bg-light border-top border-bottom">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">EXTENSIVE CAPABILITIES</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Comprehensive Feature Suite</h3>
+                <p class="text-muted">12 Core capabilities engineered for seamless warehouse time-tracking and timesheet integration</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">1-Click Start/Stop Timer</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Start and stop timers directly from incoming receipt headers with dynamic visibility based on current state and user ownership.</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Auto-Provisioned Tasks</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Automatically creates a dedicated project task titled "Processing [Receipt Name]" when starting a timer on a receipt for the first time.</p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Receipt Project Flag</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Designate any standard project with the "Use for Receipt Timers" checkbox to route all receiving tasks to the appropriate team workspace.</p>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Single Active Timer Enforcement</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Prevents users from running multiple timers simultaneously across different receipts, preventing inflated or ghost labor hours.</p>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Concurrency Conflict Guard</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Warns and prevents another warehouse team member from starting a timer on a receipt that is actively being processed by a colleague.</p>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Direct Timesheet Writing</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Automatically computes duration in hours and logs a timesheet entry (`account.analytic.line`) linked to the user's employee record.</p>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Linked Task Smart Button</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Convenient stat button on the receipt form opens the auto-provisioned project task for stage changes or additional notes.</p>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Timesheet Counter Stat Button</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Displays a live counter of logged timesheets on the picking form, offering 1-click drill-down to all logged labor records.</p>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Multi-Company Isolation</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Respects company configurations so receipt tasks and timesheet records match the operating company of the receipt.</p>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Native Stock Integration</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Buttons seamlessly show only on incoming shipments in actionable operational states (excluding draft, done, and cancel states).</p>
+                    </div>
+                </div>
+                <!-- 11 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Edition Compatibility</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">100% compatible with Odoo Community Edition, Enterprise Edition, and Odoo.sh cloud hosting environments.</p>
+                    </div>
+                </div>
+                <!-- 12 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
+                        <div class="d-flex align-items-center gap-2.5 mb-3">
+                            <span class="badge bg-dark rounded-circle p-2" style="width: 12px; height: 12px;"></span>
+                            <h5 class="fw-bold text-dark mb-0" style="font-family: 'Outfit', sans-serif;">Clean ORM Architecture</h5>
+                        </div>
+                        <p class="text-secondary small mb-0" style="line-height: 1.6;">Pure Odoo framework extension requiring zero external Python libraries or third-party background services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISUAL WALKTHROUGH -->
+        <section id="walkthrough" class="p-4 p-md-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill fw-bold mb-2">INTERFACE SHOWCASE</span>
+                <h3 class="h2 fw-bold text-dark" style="font-family: 'Outfit', sans-serif;">Step-by-Step Visual Walkthrough</h3>
+                <p class="text-muted">How Inventory Receipt Timer operates in Odoo</p>
+            </div>
+
+            <!-- Step 1 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 01</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Access Project Application</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Open the Project module from the Odoo main menu or command search bar.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Quickly navigate to Project app using the search palette (<code>/project</code>) to access and configure operational projects for warehouse receiving tasks.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_1.png" alt="Access Project Application" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 02</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Configure Receipt Timer Project</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Enable the "Use for Receipt Timers" configuration option in Project Settings.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Open your designated project (e.g., <strong>Project : Warehouse Operations</strong>) and check the "Use for Receipt Timers" option under the Settings tab. This designates where automatic tasks will be generated when starting timers.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_2.png" alt="Configure Receipt Timer Project" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 03</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Navigate to Incoming Receipts</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Access incoming warehouse receipts via the Inventory menu or quick search.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Go to <strong>Inventory &gt; Operations &gt; Transfers &gt; Receipts</strong> (or search <code>/receipt</code>) to view the list of incoming shipments awaiting warehouse processing and unloading.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_3.png" alt="Navigate to Incoming Receipts" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 04</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">View Receipt &amp; Linked Project</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Open an incoming receipt to view shipment details and designated project information.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Inspect the incoming receipt (e.g., <strong>WH/IN/00007</strong>). Under the <strong>Additional Info</strong> tab, verify the assigned project (<strong>Project : Warehouse Operations</strong>) configured for logging receipt operations.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_4.png" alt="View Receipt and Linked Project" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 05</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Start Timer on Ready Receipt</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Click the green "Start Timer" button in the receipt header when ready to process.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">When a receipt reaches the <strong>Ready</strong> state, the green <strong>Start Timer</strong> button appears in the action bar. Warehouse operators can click it to instantly start tracking labor time for unloading and inspection.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_5.png" alt="Start Timer on Ready Receipt" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 6 (Image Left, Text Right) -->
+            <div class="row align-items-center g-4 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 06</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Active Timer &amp; Auto-Provisioned Task</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Timer runs live with a "Stop Timer" button, while auto-provisioning a linked project task.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Once started, the header button transforms into a red <strong>Stop Timer</strong> button, and a <strong>Linked Task</strong> smart button is automatically created and attached to the receipt under the designated project.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_6.png" alt="Active Timer and Auto-Provisioned Task" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 7 (Text Left, Image Right) -->
+            <div class="row align-items-center g-4">
+                <div class="col-lg-5">
+                    <span class="px-3 py-1 rounded-pill bg-dark text-white fw-bold small mb-2 d-inline-block">Step 07</span>
+                    <h4 class="h3 fw-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif;">Stop Timer &amp; Automatic Timesheet Entry</h4>
+                    <p class="text-secondary mb-3" style="line-height: 1.6;">Stop the timer upon completion to post recorded hours directly into employee timesheets.</p>
+                    <p class="text-secondary small mb-0" style="line-height: 1.6;">Clicking <strong>Stop Timer</strong> calculates the elapsed time and automatically generates a timesheet line with employee, project, task, and duration details. Click the <strong>Timesheets</strong> smart button on the receipt to review all logged entries.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-2 bg-white rounded-4 border shadow-sm">
+                        <img src="./assets/screenshots/step_7.png" alt="Stop Timer and Automatic Timesheet Entry" class="img-fluid rounded-3 w-100" onerror="this.onerror=null; this.src='incipient-corp.png';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PURE HTML5 CLICK-TO-OPEN FAQ SECTION (NO JS NEEDED, SANITIZER SAFE) -->
+        <section id="faq" class="p-4 p-md-5 bg-light border-top">
+            <div class="text-center mb-5">
+                <h3 class="h2 fw-bold" style="font-family: 'Outfit', sans-serif; color: #111827;">Frequently Asked Questions</h3>
+                <p style="color: #6b7280;">Click any question below to expand or collapse details</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    
+            <details open style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    1. Is Inventory Receipt Timer compatible with Odoo Enterprise, Community, and Odoo.sh?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    Yes! Inventory Receipt Timer is 100% compatible with Odoo Community Edition, Enterprise Edition, and Odoo.sh cloud deployments without modifying any core files.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    2. How does the auto-provisioning of project tasks work?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    When a user starts the timer on a receipt that has no linked task yet, the system automatically finds the project marked with "Use for Receipt Timers" and creates a task titled "Processing [Receipt Name]" linked to that receipt.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    3. Can a user run multiple timers on different receipts simultaneously?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    No. The module enforces a strict single-active-timer policy per user. If you attempt to start a timer while another receipt timer is running, a validation prompt reminds you to stop the existing one first.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    4. Can multiple users start timers on the same receipt at the same time?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    No. To avoid overlapping work entries and data corruption, if a user is actively processing a receipt, any other user attempting to start a timer will be alerted that the receipt is already being processed.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    5. How are timesheet hours calculated and recorded?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    Upon clicking "Stop Timer", the time difference between start and stop is converted into decimal hours and automatically saved as a timesheet record linked to the employee profile of the active user.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    6. What happens if the logged-in user is not linked to an employee profile?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    Standard Odoo timesheets require an employee record. If an unlinked user tries to stop a timer, the module displays a clear user error asking to link an employee record before timesheets can be logged.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    7. On which picking types are the timer buttons available?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    The Start/Stop Timer buttons are specifically designed for incoming receipts (`picking_type_code == 'incoming'`) in ready/operational state, keeping delivery orders and internal transfers uncluttered.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    8. Does this module support multi-company environments?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    Yes! Tasks and timesheets automatically respect the multi-company scope of the receipt and the designated project for each operating company.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    9. Can I view all timesheets logged for a receipt directly from the form?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    Yes! A dedicated "Timesheets" smart button appears on the receipt form showing the exact count of timesheet entries, allowing warehouse managers to review logs with one click.
+                </div>
+            </details>
+        
+
+            <details style="margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); background-color: #ffffff;">
+                <summary style="background-color: #111827; color: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 14px 20px; font-size: 15px; cursor: pointer; list-style-position: inside;">
+                    10. How do I receive support or request customization?
+                </summary>
+                <div style="color: #374151; font-size: 14px; line-height: 1.6; padding: 16px 20px; border-top: 1px solid #e2e8f0; background-color: #ffffff;">
+                    Simply email our dedicated engineering team at <a href="mailto:support@incipientcorp.com" style="color: #111827; font-weight: 700;">support@incipientcorp.com</a>. We respond within 24 hours.
+                </div>
+            </details>
+        
+                </div>
+            </div>
+        </section>
+    
+    
+    
+
+        <!-- SERVICE TRUST & CONTACT CARDS -->
+        <section id="support" class="p-4 p-md-5 bg-white border-top">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🌐</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Pre-Sales Enquiry</h5>
+                        <p class="text-secondary small mb-2">Schedule a live walkthrough with our technical team.</p>
+                        <a href="mailto:support@incipientcorp.com" class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🛠️</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Custom Development</h5>
+                        <p class="text-secondary small mb-2">Request custom Odoo features or workflow tweaks.</p>
+                        <a href="mailto:support@incipientcorp.com" class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-4 border text-center h-100 shadow-sm">
+                        <div class="h3 mb-2">🎧</div>
+                        <h5 class="fw-bold text-dark mb-1" style="font-family: 'Outfit', sans-serif;">Lifetime Support</h5>
+                        <p class="text-secondary small mb-2">Direct assistance for configuration & upgrades.</p>
+                        <a href="mailto:support@incipientcorp.com" class="fw-bold text-dark text-decoration-underline small">support@incipientcorp.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER BANNER -->
+        <footer style="background-color: #000000; color: #ffffff; text-align: center; padding: 40px 20px; border-radius: 0 0 24px 24px; border-top: 1px solid #222222;">
+            <div style="text-align: center;">
+                <img src="incipient-corp.png" alt="Incipient Corp" style="height: 48px; filter: brightness(0) invert(1); margin-bottom: 16px; display: inline-block;">
+            </div>
+            <h3 style="color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 22px; font-weight: 700; margin-bottom: 8px; text-align: center;">Incipient Corp — Enterprise Odoo Solutions</h3>
+            <p style="color: #cbd5e1; font-size: 14px; max-width: 600px; margin: 0 auto 24px auto; line-height: 1.6; text-align: center;">High-performance, business-tested Odoo apps designed for accounting, sales, and supply chain excellence.</p>
+            <div style="text-align: center; width: 100%; margin-top: 20px;">
+                <a href="mailto:support@incipientcorp.com" style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 28px; border-radius: 50px; text-decoration: none; display: inline-block; margin: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">Pre-Sales Enquiries</a>
+                <a href="mailto:support@incipientcorp.com" style="background-color: #ffffff; color: #000000; font-family: 'Outfit', sans-serif; font-weight: 700; padding: 12px 28px; border-radius: 50px; text-decoration: none; display: inline-block; margin: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">Technical Support</a>
+            </div>
+        </footer>
+
+    </div>
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_picking_form_inherit_timer" model="ir.ui.view">
+        <field name="name">stock.picking.form.inherit.timer</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <field name="is_timer_running" invisible="1"/>
+                <field name="picking_type_code" invisible="1"/>
+                
+                <button name="action_start_timer" type="object" class="btn-success" string="Start Timer"
+                    invisible="is_timer_running or picking_type_code != 'incoming' or state in ('draft', 'done', 'cancel')"
+                    icon="fa-play"/>
+                
+                <button name="action_stop_timer" type="object" class="btn-danger" string="Stop Timer"
+                    invisible="not is_timer_running"
+                    icon="fa-stop"/>
+            </xpath>
+            
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <field name="project_task_id" invisible="1"/>
+                
+                <button name="action_view_task" type="object" class="oe_stat_button" icon="fa-tasks" invisible="not project_task_id">
+                    <div class="o_stat_info">
+                        <span class="o_stat_text">Linked Task</span>
+                    </div>
+                </button>
+                
+                <button name="action_view_timesheets" type="object" class="oe_stat_button" icon="fa-clock-o" invisible="timesheet_count == 0">
+                    <field name="timesheet_count" widget="statinfo" string="Timesheets"/>
+                </button>
+            </xpath>
+        </field>
+    </record>
+</odoo>
